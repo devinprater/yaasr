@@ -140,14 +140,6 @@ public class FocusProcessorForLogicalNavigation {
    */
   private static final boolean YAASR_SPEAK_AHEAD = true;
 
-  /**
-   * YAASR: retry a failed directional navigation once with a refreshed pivot. Combined with
-   * speak-ahead, this closes the last silent-swipe hole: focus failing on a node that went
-   * stale mid-scroll. Single retry only (calls the directional handler directly, so no
-   * recursion), and only on outright failure.
-   */
-  private static final boolean YAASR_RETRY_STALE_NAVIGATION = true;
-
   private static final Filter<AccessibilityNodeInfoCompat>
       SCROLLABLE_ROLE_FILTER_FOR_DIRECTION_NAVIGATION = FILTER_AUTO_SCROLL;
 
@@ -243,28 +235,9 @@ public class FocusProcessorForLogicalNavigation {
       return false;
     }
     return switch (navigationAction.actionType) {
-      case NavigationAction.DIRECTIONAL_NAVIGATION -> {
-        boolean result =
-            onDirectionalNavigationAction(
-                pivot, /* ignoreDescendantsOfPivot= */ false, navigationAction, eventId);
-        if (!result && YAASR_RETRY_STALE_NAVIGATION) {
-          // YAASR: the target found pre-scroll can go stale while the list is still moving
-          // (fast swiping), so the focus action fails and the swipe dies silently. Retry once
-          // against a fresh tree: re-resolve the pivot to current focus and run again. This
-          // only triggers on outright failure, never on success, so it cannot double-speak.
-          AccessibilityNodeInfoCompat freshPivot =
-              focusFinder.findFocusCompat(AccessibilityNodeInfo.FOCUS_ACCESSIBILITY);
-          if (freshPivot != null && !freshPivot.equals(pivot)) {
-            LogUtils.d(TAG, "Retrying directional navigation with refreshed pivot.");
-            yield onDirectionalNavigationAction(
-                freshPivot, /* ignoreDescendantsOfPivot= */ false, navigationAction, eventId);
-          }
-          LogUtils.d(TAG, "Retrying directional navigation with original pivot.");
-          yield onDirectionalNavigationAction(
+      case NavigationAction.DIRECTIONAL_NAVIGATION ->
+          onDirectionalNavigationAction(
               pivot, /* ignoreDescendantsOfPivot= */ false, navigationAction, eventId);
-        }
-        yield result;
-      }
       case NavigationAction.JUMP_TO_TOP, NavigationAction.JUMP_TO_BOTTOM ->
           onJumpAction(pivot, navigationAction, eventId);
       case NavigationAction.SCROLL_FORWARD, NavigationAction.SCROLL_BACKWARD ->
