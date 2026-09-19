@@ -54,6 +54,15 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
   private DirectionNavigationActor directionNavigationActor;
   private UniversalSearchActor universalSearchActor;
 
+  /** YAASR: actor notified of every scroll event so its fail-fast watchdog sees all activity. */
+  @Nullable private com.google.android.accessibility.talkback.actor.AutoScrollActor scroller;
+
+  /** YAASR: lets the interpreter report scroll activity (matched or not) to the actor. */
+  public void setAutoScrollActor(
+      @Nullable com.google.android.accessibility.talkback.actor.AutoScrollActor scroller) {
+    this.scroller = scroller;
+  }
+
   public AutoScrollInterpreter() {
     autoScrollHandler = new AutoScrollHandler(this);
   }
@@ -78,6 +87,12 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
   public void onScrollEvent(
       AccessibilityEvent event, ScrollEventInterpretation interpretation, EventId eventId) {
     LogUtils.d(TAG, "onScrollEvent, event = %s", event);
+
+    // YAASR: any scroll activity counts against fail-fast silence, even events that don't
+    // match the current record (e.g. the user's own finger on a still-settling list).
+    if (scroller != null) {
+      scroller.notifyScrollEvent();
+    }
 
     if ((interpretation.scrollInstanceId != UNKNOWN_SCROLL_INSTANCE_ID)
         && (autoScrollRecordId() == interpretation.scrollInstanceId)

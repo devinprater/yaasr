@@ -1836,6 +1836,8 @@ public class TalkBackService extends AccessibilityServiceCompat
     accessibilityFocusMonitor =
         new AccessibilityFocusMonitor(this, focusFinder, focusHistory.reader);
     AutoScrollInterpreter autoScrollInterpreter = new AutoScrollInterpreter();
+    // YAASR: report all scroll activity to the actor for the fail-fast silence check.
+    autoScrollInterpreter.setAutoScrollActor(scroller);
 
     imageCaptioner =
         new ImageCaptioner(
