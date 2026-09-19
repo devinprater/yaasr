@@ -21,3 +21,9 @@ build/
 proguard/build/
 talkback/build/
 utils/build/
+
+## YAASR: ndk-build outputs
+braille/brltty/src/phone/jni/libs/
+braille/brltty/src/phone/jni/obj/
+braille/translate/src/phone/jni/libs/
+braille/translate/src/phone/jni/obj/
