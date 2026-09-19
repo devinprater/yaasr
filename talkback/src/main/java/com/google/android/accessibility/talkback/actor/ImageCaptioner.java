@@ -409,9 +409,8 @@ public class ImageCaptioner extends Handler
 
           @Override
           public void handleDialogDismiss() {
-            if (nodeToBeDetailDescribed == null) {
-              return;
-            }
+            // YAASR: nodeToBeDetailDescribed may be null when the app exposes nothing focusable;
+            // performScreenOverview(null) falls back to a full capture instead of doing nothing.
             if (SharedPreferencesUtils.getBooleanPref(
                 prefs,
                 context.getResources(),
@@ -1078,6 +1077,13 @@ public class ImageCaptioner extends Handler
       handleScreenshotCaptureFailure(isUserRequested);
       return;
     }
+    // YAASR: describe the app, not the chrome. Crops status/nav bars out via the active app
+    // window bounds; falls back to the full capture when no app window is available.
+    screenCapture = cropScreenshotToAppWindow(screenCapture);
+    if (screenCapture == null) {
+      handleScreenshotCaptureFailure(isUserRequested);
+      return;
+    }
     byte[] imageBytes = DataFieldUtils.encodeImageToByteArray(screenCapture);
     if (imageBytes == null) {
       handleScreenshotCaptureFailure(isUserRequested);
@@ -1093,6 +1099,65 @@ public class ImageCaptioner extends Handler
     }
 
     screenshotRequests.performNextRequest();
+  }
+
+  /**
+   * YAASR: crops a full-screen capture down to the active application window, excluding status
+   * and navigation bars from screen descriptions. Returns the original bitmap when no suitable
+   * app window is found. The original is recycled when a crop succeeds; the caller still owns
+   * (and recycles) the returned bitmap.
+   */
+  private Bitmap cropScreenshotToAppWindow(Bitmap screenCapture) {
+    if (screenCapture == null || screenCapture.isRecycled() || service == null) {
+      return screenCapture;
+    }
+    List<AccessibilityWindowInfo> windows;
+    try {
+      windows = service.getWindows();
+    } catch (SecurityException e) {
+      LogUtils.w(TAG, "Cannot query windows for crop: %s", e.getMessage());
+      return screenCapture;
+    }
+    if (windows == null) {
+      return screenCapture;
+    }
+    Rect bitmapRect =
+        new Rect(0, 0, screenCapture.getWidth(), screenCapture.getHeight());
+    Rect bestBounds = null;
+    for (AccessibilityWindowInfo window : windows) {
+      if (window == null
+          || window.getType() != AccessibilityWindowInfo.TYPE_APPLICATION
+          || (!window.isFocused() && !window.isActive())) {
+        continue;
+      }
+      Rect bounds = new Rect();
+      window.getBoundsInScreen(bounds);
+      if (!bounds.intersect(bitmapRect) || bounds.isEmpty()) {
+        continue;
+      }
+      if (bestBounds == null || bounds.height() * bounds.width() > bestBounds.height() * bestBounds.width()) {
+        bestBounds = bounds;
+      }
+    }
+    if (bestBounds == null
+        || (bestBounds.width() == bitmapRect.width()
+            && bestBounds.height() == bitmapRect.height())) {
+      return screenCapture;
+    }
+    try {
+      Bitmap cropped =
+          Bitmap.createBitmap(
+              screenCapture,
+              bestBounds.left,
+              bestBounds.top,
+              bestBounds.width(),
+              bestBounds.height());
+      screenCapture.recycle();
+      return cropped;
+    } catch (IllegalArgumentException e) {
+      LogUtils.w(TAG, "App-window crop failed, using full capture: %s", e.getMessage());
+      return screenCapture;
+    }
   }
 
   /**

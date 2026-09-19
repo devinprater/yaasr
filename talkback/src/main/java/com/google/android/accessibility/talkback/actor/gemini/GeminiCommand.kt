@@ -53,7 +53,8 @@ sealed interface GeminiCommand {
   /** Generates a summary of the screen along with top actions and images */
   data class ScreenOverview(
     val screenshot: ByteArray,
-    val focusedNode: AccessibilityNodeInfoCompat,
+    // YAASR: null when the app exposes nothing focusable; the screenshot still describes fine.
+    val focusedNode: AccessibilityNodeInfoCompat?,
     val listener: GeminiResponseCallback<OverviewResponse>,
   ) : GeminiCommand
 

@@ -677,9 +677,9 @@ public class GeminiFunctionUtils {
 
     SharedPreferences prefs = SharedPreferencesUtils.getSharedPreferences(context);
 
-    if (node == null) {
-      return null;
-    }
+    // YAASR: a null node (app exposes nothing focusable) used to abort the request silently.
+    // Fall through instead: the caption path screenshots without an anchor and describes the
+    // screen anyway.
     if (SharedPreferencesUtils.getBooleanPref(
         prefs,
         context.getResources(),
