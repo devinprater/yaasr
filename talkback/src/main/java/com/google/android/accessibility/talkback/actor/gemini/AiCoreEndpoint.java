@@ -33,6 +33,8 @@ import com.google.mlkit.genai.common.DownloadCallback;
 import com.google.mlkit.genai.common.FeatureStatus;
 import com.google.mlkit.genai.common.GenAiException;
 import com.google.mlkit.genai.imagedescription.ImageDescriber;
+import com.google.mlkit.genai.imagedescription.ImageDescriberOptions;
+import com.google.mlkit.genai.imagedescription.ImageDescription;
 import com.google.mlkit.genai.imagedescription.ImageDescriptionRequest;
 import com.google.mlkit.genai.imagedescription.ImageDescriptionResult;
 import java.util.concurrent.Executor;
@@ -82,7 +84,8 @@ public class AiCoreEndpoint implements GeminiEndpoint {
 
   private synchronized ImageDescriber describer() {
     if (imageDescriber == null) {
-      imageDescriber = ImageDescriber.getClient(appContext);
+      imageDescriber =
+          ImageDescription.getClient(ImageDescriberOptions.builder(appContext).build());
     }
     return imageDescriber;
   }
@@ -228,7 +231,7 @@ public class AiCoreEndpoint implements GeminiEndpoint {
     ListenableFuture<ImageDescriptionResult> inference =
         Futures.transformAsync(
             prepared,
-            unused -> client.runInference(new ImageDescriptionRequest(image)),
+            unused -> client.runInference(ImageDescriptionRequest.builder(image).build()),
             MoreExecutors.directExecutor());
     pendingRequest = inference;
     Futures.addCallback(
@@ -239,7 +242,9 @@ public class AiCoreEndpoint implements GeminiEndpoint {
             pendingRequest = null;
             String description = result == null ? null : result.getDescription();
             if (description == null || description.isEmpty()) {
-              geminiResponseListener.onError(ErrorReason.ERROR_RESPONSE);
+              // No dedicated model-error reason exists; UNSUPPORTED surfaces the generic
+              // error message rather than falsely blaming the network for an offline failure.
+              geminiResponseListener.onError(ErrorReason.UNSUPPORTED);
             } else {
               geminiResponseListener.onResponse(FinishReason.STOP, description);
             }
@@ -251,7 +256,7 @@ public class AiCoreEndpoint implements GeminiEndpoint {
             if (t instanceof GenAiException) {
               LogUtils.w(TAG, "On-device inference failed: %s", t.getMessage());
             }
-            geminiResponseListener.onError(ErrorReason.ERROR_RESPONSE);
+            geminiResponseListener.onError(ErrorReason.UNSUPPORTED);
           }
         },
         mainExecutor);

@@ -4,6 +4,11 @@ apply from: "../shared.gradle"
 
 dependencies {
     implementation project(':proguard')
+    // YAASR: on-device image description via AICore (Gemini Nano). Runtime-gated; reports
+    // unavailable on devices without AICore. Kept on this module only: the lib's Kotlin 2.1
+    // metadata is unreadable by the repo's Kotlin 1.9 compiler, so its use stays quarantined
+    // here (see kotlinOptions below) instead of leaking onto every module via shared.gradle.
+    implementation 'com.google.mlkit:genai-image-description:1.0.0-beta1'
     implementation project(':utils')
     implementation project(':brailleime')
     implementation project(':brailleinterfaces')
@@ -20,5 +25,11 @@ android {
     defaultConfig {
         buildConfigField("String", "APPLICATION_ID", '"' + talkbackApplicationId + '"')
         buildConfigField("String", "GEMINI_API_KEY", "\"\"")
+    }
+    // YAASR: genai-image-description ships Kotlin 2.1 metadata; the repo builds with Kotlin
+    // 1.9, which refuses it by default. We only call its stable Java-visible API, so skip the
+    // metadata version check for this module instead of upgrading the whole repo's Kotlin.
+    kotlinOptions {
+        freeCompilerArgs += ["-Xskip-metadata-version-check"]
     }
 }

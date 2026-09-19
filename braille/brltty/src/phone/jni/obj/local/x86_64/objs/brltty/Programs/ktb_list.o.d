@@ -1,0 +1,65 @@
+./obj/local/x86_64/objs/brltty/Programs/ktb_list.o: \
+  brlttywrapper\third_party\brltty\Programs\ktb_list.c \
+  brlttywrapper\third_party\brltty\Headers\prologue.h \
+  brlttywrapper\third_party\brltty\config.h \
+  brlttywrapper\third_party\brltty\Headers\log.h \
+  brlttywrapper\third_party\brltty\Headers\prologue.h \
+  brlttywrapper\third_party\brltty\Headers\strfmt.h \
+  brlttywrapper\third_party\brltty\Headers\strfmth.h \
+  brlttywrapper\third_party\brltty\Headers\utf8.h \
+  brlttywrapper\third_party\brltty\Headers\cmd.h \
+  brlttywrapper\third_party\brltty\Headers\cmd_types.h \
+  brlttywrapper\third_party\brltty\Headers\brl_cmds.h \
+  brlttywrapper\third_party\brltty\Headers\brl_dots.h \
+  brlttywrapper\third_party\brltty\Headers\ktb.h \
+  brlttywrapper\third_party\brltty\Headers\ktb_types.h \
+  brlttywrapper\third_party\brltty\Programs\ktb_list.h \
+  brlttywrapper\third_party\brltty\Programs\ktb_internal.h \
+  brlttywrapper\third_party\brltty\Headers\strfmth.h \
+  brlttywrapper\third_party\brltty\Headers\cmd_types.h \
+  brlttywrapper\third_party\brltty\Headers\async_handle.h \
+  brlttywrapper\third_party\brltty\Headers\async_types_handle.h \
+  brlttywrapper\third_party\brltty\Programs\ktb_inspect.h \
+  brlttywrapper\third_party\brltty\Programs\ktb_cmds.h
+
+brlttywrapper\third_party\brltty\Headers\prologue.h:
+
+brlttywrapper\third_party\brltty\config.h:
+
+brlttywrapper\third_party\brltty\Headers\log.h:
+
+brlttywrapper\third_party\brltty\Headers\prologue.h:
+
+brlttywrapper\third_party\brltty\Headers\strfmt.h:
+
+brlttywrapper\third_party\brltty\Headers\strfmth.h:
+
+brlttywrapper\third_party\brltty\Headers\utf8.h:
+
+brlttywrapper\third_party\brltty\Headers\cmd.h:
+
+brlttywrapper\third_party\brltty\Headers\cmd_types.h:
+
+brlttywrapper\third_party\brltty\Headers\brl_cmds.h:
+
+brlttywrapper\third_party\brltty\Headers\brl_dots.h:
+
+brlttywrapper\third_party\brltty\Headers\ktb.h:
+
+brlttywrapper\third_party\brltty\Headers\ktb_types.h:
+
+brlttywrapper\third_party\brltty\Programs\ktb_list.h:
+
+brlttywrapper\third_party\brltty\Programs\ktb_internal.h:
+
+brlttywrapper\third_party\brltty\Headers\strfmth.h:
+
+brlttywrapper\third_party\brltty\Headers\cmd_types.h:
+
+brlttywrapper\third_party\brltty\Headers\async_handle.h:
+
+brlttywrapper\third_party\brltty\Headers\async_types_handle.h:
+
+brlttywrapper\third_party\brltty\Programs\ktb_inspect.h:
+
+brlttywrapper\third_party\brltty\Programs\ktb_cmds.h:
