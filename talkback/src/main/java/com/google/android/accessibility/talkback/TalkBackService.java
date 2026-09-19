@@ -3291,6 +3291,11 @@ public class TalkBackService extends AccessibilityServiceCompat
     LogUtils.setLogLevel(
         SharedPreferencesUtils.getIntFromStringPref(
             prefs, getResources(), R.string.pref_log_level_key, R.string.pref_log_level_default));
+    // YAASR: debug builds always log verbosely so field testing never needs the hidden
+    // developer-logging toggle.
+    if (com.google.android.accessibility.talkback.BuildConfig.DEBUG) {
+      LogUtils.setLogLevel(Log.VERBOSE);
+    }
     enforceDiagnosisModeLogging();
   }
 
