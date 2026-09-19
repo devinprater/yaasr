@@ -2047,6 +2047,8 @@ public class TalkBackService extends AccessibilityServiceCompat
     accessibilityEventProcessor.setAccessibilityEventIdleListener(pipeline);
 
     autoScrollInterpreter.setDirectionNavigationActor(directionNavigationActor);
+    // YAASR: flush pending scroll-success on each new navigation (no swipe left behind).
+    directionNavigationActor.setAutoScrollInterpreter(autoScrollInterpreter);
 
     // TalkBack menu and Reading Controls.
     NodeMenuRuleCreator nodeMenuCreator =
