@@ -57,10 +57,13 @@ public class AutoScrollActor {
 
   /**
    * YAASR fail-fast: if no scroll-progress event arrives within this long after performing a
-   * scroll action, give up early instead of waiting out the full {@link ScrollTimeout}. A working
-   * scroll emits {@code TYPE_VIEW_SCROLLED} within a frame or two, which cancels this watchdog via
-   * {@link #cancelTimeout()}; a dead scroll (an app that never performs the action and never
-   * reports progress) hits this and proceeds to focus+speech hundreds of ms sooner per swipe.
+   * scroll action, give up early instead of waiting out the full {@link ScrollTimeout}. Fires
+   * only under complete scroll silence (no scroll event of any kind since the action): a working
+   * scroll emits {@code TYPE_VIEW_SCROLLED} within a frame or two, which cancels this watchdog
+   * via {@link #cancelTimeout()}, and even unmatched scroll activity (e.g. the user's own
+   * finger on a still-settling list) suppresses it via {@link #notifyScrollEvent()}. A dead
+   * scroll (an app that never performs the action and never reports progress) hits this and
+   * proceeds to focus+speech hundreds of ms sooner per swipe.
    */
   private static final long FAIL_FAST_NO_PROGRESS_MS = 150;
 
@@ -101,6 +104,21 @@ public class AutoScrollActor {
 
   /** Scroll instance the pending fail-fast watchdog belongs to, or UNKNOWN if none is armed. */
   private int failFastInstanceId = UNKNOWN_SCROLL_INSTANCE_ID;
+
+  /**
+   * Uptime of the last scroll-related event seen for any scroll (not just the current record).
+   * Updated via {@link #notifyScrollEvent()}; the fail-fast watchdog only fires under complete
+   * scroll silence, so rapid swiping on a still-moving list can never trip it.
+   */
+  private volatile long lastScrollEventUptimeMs = 0;
+
+  /**
+   * Records that some scroll activity happened. Called by the scroll interpreter for every
+   * scroll-related event, matched to the current record or not.
+   */
+  public void notifyScrollEvent() {
+    lastScrollEventUptimeMs = SystemClock.uptimeMillis();
+  }
 
   private Pipeline.EventReceiver pipelineReceiver;
   private Pipeline.FeedbackReturner feedbackReturner;
@@ -287,7 +305,9 @@ public class AutoScrollActor {
         scrollTimeout.getTimeoutMillis(), /* handlerArg= */ new EventIdAnd<>(false, null));
 
     // YAASR fail-fast: never wait longer than FAIL_FAST_NO_PROGRESS_MS for the first sign of
-    // life. Capped by the full timeout so SHORT/LONG semantics are unchanged.
+    // life. Capped by the full timeout so SHORT/LONG semantics are unchanged. The silence
+    // baseline starts at the action: only events arriving after this point count as progress.
+    lastScrollEventUptimeMs = currentTime;
     failFastHandler.removeMessages();
     failFastInstanceId = scrollInstanceId;
     failFastHandler.delay(
@@ -329,6 +349,14 @@ public class AutoScrollActor {
   private void handleFailFast() {
     if (scrollActionRecord == null
         || scrollActionRecord.scrollInstanceId != failFastInstanceId) {
+      return;
+    }
+    if (SystemClock.uptimeMillis() - lastScrollEventUptimeMs < FAIL_FAST_NO_PROGRESS_MS) {
+      // Scroll activity happened since the action (just not for this record): the list is
+      // alive, e.g. still settling from a previous swipe. Stand down and let the normal
+      // timeout path handle it exactly as stock TalkBack would.
+      LogUtils.d(TAG, "Fail-fast suppressed: scroll activity present, waiting out full timeout.");
+      failFastInstanceId = UNKNOWN_SCROLL_INSTANCE_ID;
       return;
     }
     LogUtils.d(
