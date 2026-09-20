@@ -137,7 +137,13 @@ public class AiCoreEndpoint implements GeminiEndpoint {
 
   public boolean hasAiCore() {
     refreshAvailability();
-    return featureAvailable;
+    // yaasr: treat downloadable/downloading as available. The on-device candidates must win
+    // selection so requests reach the gate, which starts the download on first use and reports
+    // FEATURE_DOWNLOADING until the model lands. Only UNAVAILABLE (no AICore / unsupported
+    // device) stays false.
+    return featureAvailable
+        || lastFeatureStatus == FeatureStatus.DOWNLOADABLE
+        || lastFeatureStatus == FeatureStatus.DOWNLOADING;
   }
 
   /**
