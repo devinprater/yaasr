@@ -68,6 +68,7 @@ public class AiCoreEndpoint implements GeminiEndpoint {
   @Nullable private ImageDescriber imageDescriber;
   @Nullable private volatile ListenableFuture<?> pendingRequest;
   private volatile boolean featureAvailable = false;
+  private volatile int lastFeatureStatus = FeatureStatus.UNAVAILABLE;
   private volatile boolean availabilityRefreshInFlight = false;
   private volatile boolean featureDownloading = false;
   @Nullable private AiFeatureDownloadCallback downloadCallback;
@@ -111,8 +112,8 @@ public class AiCoreEndpoint implements GeminiEndpoint {
           @Override
           public void onSuccess(@Nullable Integer status) {
             availabilityRefreshInFlight = false;
-            featureAvailable =
-                status != null && status == FeatureStatus.AVAILABLE;
+            lastFeatureStatus = status == null ? FeatureStatus.UNAVAILABLE : status;
+            featureAvailable = lastFeatureStatus == FeatureStatus.AVAILABLE;
             LogUtils.d(TAG, "Image description feature status: %s", status);
           }
 
@@ -120,6 +121,7 @@ public class AiCoreEndpoint implements GeminiEndpoint {
           public void onFailure(Throwable t) {
             availabilityRefreshInFlight = false;
             featureAvailable = false;
+            lastFeatureStatus = FeatureStatus.UNAVAILABLE;
             LogUtils.w(TAG, "Feature status check failed: %s", t.getMessage());
           }
         },
@@ -165,12 +167,29 @@ public class AiCoreEndpoint implements GeminiEndpoint {
   }
 
   public boolean isAiFeatureDownloadable() {
-    // Exact status needs an async check; optimistically true so the UI offers the download and
-    // the real check happens inside createRequestGeminiCommand/downloadFeature.
-    return true;
+    refreshAvailability();
+    return lastFeatureStatus == FeatureStatus.DOWNLOADABLE
+        || lastFeatureStatus == FeatureStatus.DOWNLOADING
+        || lastFeatureStatus == FeatureStatus.AVAILABLE;
   }
 
   public void displayAiFeatureDownloadDialog(Consumer<Void> buttonClickCallback) {
+    startModelDownload(() -> buttonClickCallback.accept(null));
+  }
+
+  /** Starts the on-device model download unless already running. */
+  private void startModelDownload() {
+    startModelDownload(null);
+  }
+
+  /**
+   * Starts the on-device model download unless already running. When already running, the
+   * optional onComplete is NOT invoked (the in-flight download's own completion handles it).
+   */
+  private void startModelDownload(@Nullable Runnable onComplete) {
+    if (featureDownloading) {
+      return;
+    }
     featureDownloading = true;
     try {
       Futures.addCallback(
@@ -180,10 +199,13 @@ public class AiCoreEndpoint implements GeminiEndpoint {
             public void onSuccess(@Nullable Void result) {
               featureDownloading = false;
               featureAvailable = true;
+              lastFeatureStatus = FeatureStatus.AVAILABLE;
               if (downloadCallback != null) {
                 downloadCallback.onDownloadCompleted();
               }
-              buttonClickCallback.accept(null);
+              if (onComplete != null) {
+                onComplete.run();
+              }
             }
 
             @Override
@@ -216,6 +238,21 @@ public class AiCoreEndpoint implements GeminiEndpoint {
     if (image == null || image.isRecycled()) {
       geminiResponseListener.onError(ErrorReason.NO_IMAGE);
       return false;
+    }
+    refreshAvailability();
+    if (!featureAvailable) {
+      // The model isn't on the device yet. Kick off the download (first request, e.g. right
+      // after opting in, never passed through the settings download dialog) and tell the user
+      // it's on its way instead of failing outright.
+      if (lastFeatureStatus == FeatureStatus.DOWNLOADABLE
+          && !featureDownloading) {
+        startModelDownload();
+      }
+      geminiResponseListener.onError(
+          lastFeatureStatus == FeatureStatus.DOWNLOADING || featureDownloading
+              ? ErrorReason.FEATURE_DOWNLOADING
+              : ErrorReason.UNSUPPORTED);
+      return lastFeatureStatus == FeatureStatus.DOWNLOADING || featureDownloading;
     }
     cancelCommand();
     ImageDescriber client;
