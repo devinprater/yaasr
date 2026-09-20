@@ -80,9 +80,9 @@ public class DisplayCommandsActivity extends PreferencesActivity {
               String actionName = (String) newValue;
               BrailleUserPreferences.writeDisplayCommandOverride(
                   getContext(), command, actionName.isEmpty() ? null : actionName);
-              pref.setValue(actionName);
-              updateSummary(
-                  (ListPreference) pref, actionName.isEmpty() ? null : actionName);
+              ListPreference list = (ListPreference) pref;
+              list.setValue(actionName);
+              updateSummary(list, actionName.isEmpty() ? null : actionName);
               return false;
             });
         screen.addPreference(preference);
