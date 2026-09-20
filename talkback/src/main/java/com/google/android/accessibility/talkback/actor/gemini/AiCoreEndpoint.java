@@ -16,8 +16,10 @@
 package com.google.android.accessibility.talkback.actor.gemini;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 import com.google.android.accessibility.talkback.actor.gemini.GeminiActor.ErrorReason;
 import com.google.android.accessibility.talkback.actor.gemini.GeminiActor.FinishReason;
@@ -72,6 +74,11 @@ public class AiCoreEndpoint implements GeminiEndpoint {
   private volatile boolean availabilityRefreshInFlight = false;
   private volatile boolean featureDownloading = false;
   @Nullable private AiFeatureDownloadCallback downloadCallback;
+
+  /** yaasr: model-download progress notification. */
+  private static final String DOWNLOAD_CHANNEL_ID = "yaasr_model_download";
+  private static final int DOWNLOAD_NOTIFICATION_ID = 0x6D6C6B; // 'mlkit' bytes-ish
+  private volatile long downloadTotalBytes = 0;
 
   public AiCoreEndpoint(Context context) {
     this(context, /* withService= */ false);
@@ -335,6 +342,8 @@ public class AiCoreEndpoint implements GeminiEndpoint {
     return new DownloadCallback() {
       @Override
       public void onDownloadStarted(long bytesToDownload) {
+        downloadTotalBytes = bytesToDownload;
+        showDownloadNotification(0, bytesToDownload);
         if (downloadCallback != null) {
           downloadCallback.onDownloadProgress(0, bytesToDownload);
         }
@@ -343,21 +352,89 @@ public class AiCoreEndpoint implements GeminiEndpoint {
       @Override
       public void onDownloadFailed(GenAiException e) {
         LogUtils.w(TAG, "Model download failed: %s", e.getMessage());
+        cancelDownloadNotification();
       }
 
       @Override
       public void onDownloadProgress(long totalBytesDownloaded) {
+        showDownloadNotification(totalBytesDownloaded, downloadTotalBytes);
         if (downloadCallback != null) {
-          downloadCallback.onDownloadProgress(totalBytesDownloaded, totalBytesDownloaded);
+          downloadCallback.onDownloadProgress(totalBytesDownloaded, downloadTotalBytes);
         }
       }
 
       @Override
       public void onDownloadCompleted() {
+        cancelDownloadNotification();
         if (downloadCallback != null) {
           downloadCallback.onDownloadCompleted();
         }
       }
     };
+  }
+
+  /** yaasr: whether we may post notifications (Android 13+ needs a runtime grant). */
+  private boolean canPostNotifications() {
+    if (android.os.Build.VERSION.SDK_INT < 33) {
+      return true;
+    }
+    return ContextCompat.checkSelfPermission(appContext, android.Manifest.permission.POST_NOTIFICATIONS)
+        == PackageManager.PERMISSION_GRANTED;
+  }
+
+  /** yaasr: shows/updates the persistent model-download progress notification. */
+  private void showDownloadNotification(long downloadedBytes, long totalBytes) {
+    if (!canPostNotifications()) {
+      return;
+    }
+    try {
+      android.app.NotificationManager manager =
+          (android.app.NotificationManager)
+              appContext.getSystemService(Context.NOTIFICATION_SERVICE);
+      if (manager == null) {
+        return;
+      }
+      if (android.os.Build.VERSION.SDK_INT >= 26) {
+        android.app.NotificationChannel channel = manager.getNotificationChannel(DOWNLOAD_CHANNEL_ID);
+        if (channel == null) {
+          channel =
+              new android.app.NotificationChannel(
+                  DOWNLOAD_CHANNEL_ID,
+                  "yaasr model downloads",
+                  android.app.NotificationManager.IMPORTANCE_LOW);
+          manager.createNotificationChannel(channel);
+        }
+      }
+      int percent = totalBytes > 0 ? (int) ((downloadedBytes * 100) / totalBytes) : 0;
+      android.app.Notification notification =
+          new NotificationCompat.Builder(appContext, DOWNLOAD_CHANNEL_ID)
+              .setSmallIcon(android.R.drawable.stat_sys_download)
+              .setContentTitle("Downloading image description model")
+              .setContentText(
+                  totalBytes > 0
+                      ? percent + "% — offline descriptions start when it finishes"
+                      : "Starting download…")
+              .setProgress(100, percent, totalBytes <= 0)
+              .setOngoing(true)
+              .setOnlyAlertOnce(true)
+              .build();
+      manager.notify(DOWNLOAD_NOTIFICATION_ID, notification);
+    } catch (RuntimeException e) {
+      LogUtils.w(TAG, "Cannot show download notification: %s", e.getMessage());
+    }
+  }
+
+  /** yaasr: removes the model-download progress notification. */
+  private void cancelDownloadNotification() {
+    try {
+      android.app.NotificationManager manager =
+          (android.app.NotificationManager)
+              appContext.getSystemService(Context.NOTIFICATION_SERVICE);
+      if (manager != null) {
+        manager.cancel(DOWNLOAD_NOTIFICATION_ID);
+      }
+    } catch (RuntimeException e) {
+      LogUtils.w(TAG, "Cannot cancel download notification: %s", e.getMessage());
+    }
   }
 }
