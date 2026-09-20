@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- User-facing name of the Soft Braille IME. [CHAR_LIMIT=50] -->
-  <string name="braille_ime_service_name">TalkBack braille keyboard</string>
+  <string name="braille_ime_service_name">YAASR braille keyboard</string>
   <!-- User-facing name of the Soft Braille IME when connecting to a braille display. [CHAR_LIMIT=60] -->
   <string name="braille_ime_bd_mode_name">Braille display input</string>
   <!-- Audial announcement that plays when switching to tabletop mode. [CHAR_LIMIT=200] -->
@@ -21,7 +21,7 @@
   <!-- The braille ime display name for multiple languages selected. %s is the currently using braille language name. [CHAR_LIMIT=130] -->
   <string name="multiple_languages_braille_ime_displayed_name">braille keyboard, %s</string>
   <!-- Caption to help confused people to know what the app is. [CHAR LIMIT=100] -->
-  <string name="input_view_caption">TalkBack braille keyboard - for help, visit g.co/help/braille</string>
+  <string name="input_view_caption">YAASR braille keyboard - for help, visit g.co/help/braille</string>
   <!-- Perform enter action: move to next field. [CHAR_LIMIT=50] -->
   <string name="perform_action_next">Next</string>
   <!-- Perform enter action: submitting. [CHAR_LIMIT=50] -->
@@ -52,7 +52,7 @@
   <string name="switch_to_language_announcement">Switched to %s</string>
   <!-- Braille keyboard settings. -->
   <!-- Braille keyboard. [CHAR LIMIT=35] -->
-  <string name="braille_keyboard">Braille keyboard</string>
+  <string name="braille_keyboard">YAASR braille keyboard</string>
   <!-- Set up braille keyboard preference and dialog title. [CHAR LIMIT=60] -->
   <string name="set_up_braille_keyboard">Set up braille keyboard</string>
   <!-- How to use braille keyboard preference and dialog title. [CHAR LIMIT=60] -->
@@ -232,13 +232,13 @@
 
   <!-- Use braille keyboard when TalkBack is off dialog. -->
   <!-- Title of use braille keyboard when TalkBack is off dialog. [CHAR_LIMIT=100] -->
-  <string name="talkback_off_dialog_title">Turn on TalkBack to use braille keyboard</string>
+  <string name="talkback_off_dialog_title">Turn on yaasr to use braille keyboard</string>
   <!-- Positive button of use braille keyboard when TalkBack is off dialog. [CHAR_LIMIT=100] -->
   <string name="talkback_off_dialog_positive_button">Turn on in accessibility settings</string>
 
   <!-- Use braille keyboard when TalkBack is suspended dialog. -->
   <!-- Title of use braille keyboard when TalkBack is suspended dialog. [CHAR_LIMIT=100] -->
-  <string name="talkback_suspend_dialog_title">Resume TalkBack to use braille keyboard</string>
+  <string name="talkback_suspend_dialog_title">Resume yaasr to use braille keyboard</string>
   <!-- Message of use braille keyboard when TalkBack is off/suspended dialog. [CHAR_LIMIT=200] -->
   <string name="talkback_off_or_suspend_dialog_message">When TalkBack is on, you can tap your screen to enter braille symbols.</string>
 
@@ -458,7 +458,7 @@
   <!-- Announced when no gesture is performed. [CHAR_LIMIT=100] -->
   <string name="custom_gesture_no_gesture">No gesture performed</string>
   <!-- Announced to try another gesture. [CHAR_LIMIT=200] -->
-  <string name="custom_gesture_try_another">Try another gesture. To see list of all available gestures, go to the TalkBack braille keyboard help center. <xliff:g id="cancel">%s</xliff:g></string>
+  <string name="custom_gesture_try_another">Try another gesture. To see list of all available gestures, go to the YAASR braille keyboard help center. <xliff:g id="cancel">%s</xliff:g></string>
   <!-- Announced when gestures didn't match. [CHAR_LIMIT=100] -->
   <string name="custom_gesture_no_match">Gestures didn\'t match</string>
   <!-- Announced to perform the gesture again. [CHAR_LIMIT=100] -->
