@@ -54,10 +54,10 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
   private DirectionNavigationActor directionNavigationActor;
   private UniversalSearchActor universalSearchActor;
 
-  /** YAASR: actor notified of every scroll event so its fail-fast watchdog sees all activity. */
+  /** Actor notified of every scroll event so its fail-fast watchdog sees all activity. */
   @Nullable private com.google.android.accessibility.talkback.actor.AutoScrollActor scroller;
 
-  /** YAASR: lets the interpreter report scroll activity (matched or not) to the actor. */
+  /** Lets the interpreter report scroll activity (matched or not) to the actor. */
   public void setAutoScrollActor(
       @Nullable com.google.android.accessibility.talkback.actor.AutoScrollActor scroller) {
     this.scroller = scroller;
@@ -88,7 +88,7 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
       AccessibilityEvent event, ScrollEventInterpretation interpretation, EventId eventId) {
     LogUtils.d(TAG, "onScrollEvent, event = %s", event);
 
-    // YAASR: any scroll activity counts against fail-fast silence, even events that don't
+    // Any scroll activity counts against fail-fast silence, even events that don't
     // match the current record (e.g. the user's own finger on a still-settling list).
     if (scroller != null) {
       scroller.notifyScrollEvent();
@@ -192,7 +192,7 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
     return record;
   }
 
-  /** YAASR: flush a pending delayed scroll-success so no swiped-to item is dropped silently. */
+  /** Flush a pending delayed scroll-success so no swiped-to item is dropped silently. */
   public void flushPendingAutoScrollSuccess() {
     autoScrollHandler.flushPendingAutoScrollSuccess();
   }
@@ -233,7 +233,7 @@ public class AutoScrollInterpreter implements ScrollEventHandler {
     }
 
     /**
-     * YAASR: complete a pending delayed scroll-success right now instead of dropping it. A new
+     * Complete a pending delayed scroll-success right now instead of dropping it. A new
      * navigation while a scroll is settling (fast swiping) used to discard the in-flight item
      * silently — the delayed handler was reset before it fired, so the swiped-to item never
      * spoke and the user perceived a stall. Flushing speaks it immediately; the new navigation

@@ -118,7 +118,7 @@ public class DirectionNavigationActor implements UserInputEventListener {
   /** Converts direction-actions to focus-actions. */
   private final FocusProcessorForLogicalNavigation focusProcessorForLogicalNavigation;
 
-  /** YAASR: interpreter whose pending scroll-success is flushed on each new navigation. */
+  /** Interpreter whose pending scroll-success is flushed on each new navigation. */
   private @Nullable AutoScrollInterpreter autoScrollInterpreter;
 
   public DirectionNavigationActor(
@@ -170,7 +170,7 @@ public class DirectionNavigationActor implements UserInputEventListener {
     focusProcessorForLogicalNavigation.setActorState(actorState);
   }
 
-  /** YAASR: interpreter flushed on each new navigation so in-flight items are never dropped. */
+  /** Interpreter flushed on each new navigation so in-flight items are never dropped. */
   public void setAutoScrollInterpreter(@Nullable AutoScrollInterpreter autoScrollInterpreter) {
     this.autoScrollInterpreter = autoScrollInterpreter;
   }
@@ -229,7 +229,7 @@ public class DirectionNavigationActor implements UserInputEventListener {
   }
 
   private boolean sendNavigationAction(NavigationAction action, EventId eventId) {
-    // YAASR: a previous swipe's scroll may still be settling with its item unspoken; complete
+    // A previous swipe's scroll may still be settling with its item unspoken; complete
     // it now so every swipe is heard instead of silently dropped.
     if (autoScrollInterpreter != null) {
       autoScrollInterpreter.flushPendingAutoScrollSuccess();

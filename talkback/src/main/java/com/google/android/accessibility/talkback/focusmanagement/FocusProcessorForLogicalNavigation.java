@@ -129,7 +129,7 @@ public class FocusProcessorForLogicalNavigation {
   private static final String TAG = "FocusProcessor-LogicalNav";
 
   /**
-   * YAASR speak-ahead: when a swipe triggers a scroll, focus and speak the already-computed
+   * Speak-ahead: when a swipe triggers a scroll, focus and speak the already-computed
    * target immediately instead of waiting for the scroll to settle (~110ms), the post-scroll
    * re-search (~50ms) and the speech queue. The in-flight scroll bookkeeping is untouched, so
    * when the scroll resolves the normal path re-validates focus; if focus is already on the
@@ -138,7 +138,7 @@ public class FocusProcessorForLogicalNavigation {
    * is still scrolling into view, and a fast fling can speak an item the list then carries
    * away (the post-scroll pass still lands focus correctly).
    */
-  private static final boolean YAASR_SPEAK_AHEAD = true;
+  private static final boolean SPEAK_AHEAD_OF_SCROLL = true;
 
   private static final Filter<AccessibilityNodeInfoCompat>
       SCROLLABLE_ROLE_FILTER_FOR_DIRECTION_NAVIGATION = FILTER_AUTO_SCROLL;
@@ -1259,7 +1259,7 @@ public class FocusProcessorForLogicalNavigation {
         // event is ready.
         scrollCallback =
             new AutoScrollCallback(this, navigationAction, pivot, /* assumeScrollSuccess= */ true);
-        if (YAASR_SPEAK_AHEAD) {
+        if (SPEAK_AHEAD_OF_SCROLL) {
           speakAheadOfScroll(target, navigationAction, eventId);
         }
         return true;
@@ -2191,7 +2191,7 @@ public class FocusProcessorForLogicalNavigation {
   }
 
   /**
-   * YAASR speak-ahead: focus (and therefore speak) the already-computed scroll target right
+   * Speak-ahead: focus (and therefore speak) the already-computed scroll target right
    * away, while the requested scroll is still in flight. Deliberately unlike {@link
    * #setAccessibilityFocusInternal}, this does NOT reset the scroll record and does NOT force
    * refocus: the pending scroll bookkeeping stays alive so the normal post-scroll pass still
@@ -2898,7 +2898,7 @@ public class FocusProcessorForLogicalNavigation {
       ensureOnScreenInternal(scrolledNode, nodeToFocus, eventId);
     }
 
-    if (YAASR_SPEAK_AHEAD && isAlreadyFocusedOn(nodeToFocus)) {
+    if (SPEAK_AHEAD_OF_SCROLL && isAlreadyFocusedOn(nodeToFocus)) {
       // Speak-ahead already focused and spoke this exact node before the scroll settled;
       // re-focusing would force-refocus and repeat the utterance. Focus is correct, done.
       LogUtils.d(TAG, "Speak-ahead: focus already on post-scroll target, skipping re-focus.");
@@ -2908,7 +2908,7 @@ public class FocusProcessorForLogicalNavigation {
   }
 
   /**
-   * YAASR speak-ahead dedup: whether accessibility focus is currently on the given node, in
+   * speak-ahead dedup: whether accessibility focus is currently on the given node, in
    * which case focusing it again would only repeat speech.
    */
   private boolean isAlreadyFocusedOn(AccessibilityNodeInfoCompat node) {

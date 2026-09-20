@@ -56,7 +56,7 @@ public class AutoScrollActor {
   public static final int UNKNOWN_SCROLL_INSTANCE_ID = -1;
 
   /**
-   * YAASR fail-fast: if no scroll-progress event arrives within this long after performing a
+   * Fail-fast: if no scroll-progress event arrives within this long after performing a
    * scroll action, give up early instead of waiting out the full {@link ScrollTimeout}. Fires
    * only under complete scroll silence (no scroll event of any kind since the action): a working
    * scroll emits {@code TYPE_VIEW_SCROLLED} within a frame or two, which cancels this watchdog
@@ -95,7 +95,7 @@ public class AutoScrollActor {
   private final DelayHandler<EventIdAnd<Boolean>> postDelayHandler;
 
   /**
-   * YAASR fail-fast watchdog. Armed alongside {@link #postDelayHandler} in {@link
+   * Fail-fast watchdog. Armed alongside {@link #postDelayHandler} in {@link
    * #setScrollRecord}; disarmed by the first scroll-progress event ({@link #cancelTimeout()}) or
    * when the record is otherwise resolved. Fires {@link #handleFailFast()} if the app never starts
    * reporting scroll progress.
@@ -304,7 +304,7 @@ public class AutoScrollActor {
     postDelayHandler.delay(
         scrollTimeout.getTimeoutMillis(), /* handlerArg= */ new EventIdAnd<>(false, null));
 
-    // YAASR fail-fast: never wait longer than FAIL_FAST_NO_PROGRESS_MS for the first sign of
+    // Fail-fast: never wait longer than FAIL_FAST_NO_PROGRESS_MS for the first sign of
     // life. Capped by the full timeout so SHORT/LONG semantics are unchanged. The silence
     // baseline starts at the action: only events arriving after this point count as progress.
     lastScrollEventUptimeMs = currentTime;
@@ -340,7 +340,7 @@ public class AutoScrollActor {
   }
 
   /**
-   * YAASR fail-fast: the full scroll timeout has not expired, but no scroll-progress event has
+   * Fail-fast: the full scroll timeout has not expired, but no scroll-progress event has
    * arrived since the action was performed. Treat it exactly like the timeout: move the record to
    * failed and let the normal {@code SCROLL_TIMEOUT} path (assume-success retry, focus, speech)
    * run immediately. Safe against races: stale watches (superseded record, or progress that
