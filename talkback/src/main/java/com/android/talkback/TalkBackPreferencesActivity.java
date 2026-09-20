@@ -88,9 +88,6 @@ public class TalkBackPreferencesActivity extends PreferencesActivity
           new ViewModelProvider(this).get(HatsRequesterViewModel.class);
       viewModel.setHatsSurveyRequester(hatsSurveyRequester);
     }
-
-    // yaasr first run: offer to carry over stock TalkBack's settings.
-    SettingsImporter.maybeOfferImport(this);
   }
 
   @Override
