@@ -158,6 +158,11 @@
   <string name="bd_preference_key_bindings_title">Braille display commands</string>
   <!-- Braille display commands preference summary. Displays an activity that shows the user key bindings for their device. [CHAR_LIMIT=80] -->
   <string name="bd_preference_key_bindings_summary">Learn key commands for your braille display</string>
+  <!-- yaasr: remap display buttons to any command. -->
+  <string name="bd_preference_display_commands_title">Customize display buttons</string>
+  <string name="bd_preference_display_commands_summary">Assign any command to your braille display buttons</string>
+  <string name="bd_display_commands_default">Default</string>
+  <string name="bd_display_commands_reset">Reset all buttons to defaults</string>
   <!-- Instructions displayed in the braille display command activity. Explains how to use key bindings with a Braille display. [CHAR LIMIT=250]-->
   <string name="bd_commands_bindings_instructions">Use navigation keys to move the focus on the screen. Use the braille keys to enter text in a text box.\n\nBelow are all the commands supported by your device.</string>
   <!-- Braille display command preference: Title of basic controls. [CHAR LIMIT=30] -->

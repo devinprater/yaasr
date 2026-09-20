@@ -158,6 +158,10 @@ import androidx.preference.PreferenceFragmentCompat;
     keyBindingsPreference = findPreference(getString(R.string.pref_key_bindings_key));
     keyBindingsPreference.setIntent(new Intent(getContext(), KeyBindingsActivity.class));
 
+    Preference displayCommandsPreference =
+        findPreference(getString(R.string.pref_display_commands_key));
+    displayCommandsPreference.setIntent(new Intent(getContext(), DisplayCommandsActivity.class));
+
     autoConnectPreference = findPreference(getString(R.string.pref_key_bd_auto_connect));
     autoConnectPreference.setOnPreferenceChangeListener(
         (preference, newValue) -> {

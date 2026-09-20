@@ -2,6 +2,7 @@
 <resources>
   <!-- Preference keys -->
   <string name="pref_key_bindings_key" translatable="false">key_bindings</string>
+  <string name="pref_display_commands_key" translatable="false">display_commands</string>
   <string name="pref_key_braille_elements" translatable="false">key_braille_elements</string>
   <string name="pref_key_braille_grade_contracted" translatable="false">pref_key_braille_grade_contracted</string>
   <string name="pref_key_braille_grade_uncontracted" translatable="false">pref_key_braille_grade_uncontracted</string>

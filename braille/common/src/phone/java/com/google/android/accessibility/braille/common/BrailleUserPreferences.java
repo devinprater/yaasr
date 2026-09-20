@@ -110,6 +110,32 @@ public class BrailleUserPreferences {
 
   private BrailleUserPreferences() {}
 
+  /**
+   * yaasr: preference key prefix for braille-display button remapping. The full key is this
+   * prefix plus the integer display command (e.g. "..._4"), value is a ScreenReaderAction name
+   * or absent for the default behavior.
+   */
+  private static final String DISPLAY_COMMAND_OVERRIDE_PREFIX = "yaasr_display_cmd_override_";
+
+  /** yaasr: reads the user-assigned action for a display button, or null for default. */
+  public static String readDisplayCommandOverride(Context context, int displayCommand) {
+    return getSharedPreferences(context, BRAILLE_SHARED_PREFS_FILENAME)
+        .getString(DISPLAY_COMMAND_OVERRIDE_PREFIX + displayCommand, null);
+  }
+
+  /** yaasr: assigns a display button to an action; a null action name clears back to default. */
+  public static void writeDisplayCommandOverride(
+      Context context, int displayCommand, String actionName) {
+    SharedPreferences.Editor editor =
+        getSharedPreferences(context, BRAILLE_SHARED_PREFS_FILENAME).edit();
+    if (actionName == null) {
+      editor.remove(DISPLAY_COMMAND_OVERRIDE_PREFIX + displayCommand);
+    } else {
+      editor.putString(DISPLAY_COMMAND_OVERRIDE_PREFIX + displayCommand, actionName);
+    }
+    editor.apply();
+  }
+
   // Prefs that are common to BK and BD
   /** Writes current using input {@link Code}. */
   public static void writeCurrentActiveInputCode(Context context, Code code) {

@@ -223,6 +223,13 @@ class DefaultConsumer implements EventConsumer {
       trySwitchIme();
     }
     boolean success = false;
+    // yaasr: user remapping wins over the hardcoded behaviors below (except argument-carrying
+    // commands like routing keys, which never reach here as overrides).
+    ScreenReaderAction displayOverride =
+        BrailleDisplayCommandOverrides.resolve(context, event.getCommand());
+    if (displayOverride != null) {
+      return behaviorScreenReaderAction.performAction(displayOverride);
+    }
     if (FeatureFlagReader.useBrowseMode(context) || !isBrowseModeCommand(event.getCommand())) {
       switch (event.getCommand()) {
         case CMD_BRAILLE_KEY ->

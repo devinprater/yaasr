@@ -43,11 +43,18 @@
     </activity>
 
     <activity
-        android:name="com.google.android.accessibility.braille.brailledisplay.settings.KeyBindingsActivity"
-        android:label="@string/bd_preference_key_bindings_title"
-        android:configChanges="keyboard|keyboardHidden"
-        android:exported="false"
-        android:theme="@style/BrailleSettingsTheme" />
+      android:name="com.google.android.accessibility.braille.brailledisplay.settings.KeyBindingsActivity"
+      android:label="@string/bd_preference_key_bindings_title"
+      android:configChanges="keyboard|keyboardHidden"
+      android:exported="false"
+      android:theme="@style/BrailleSettingsTheme" />
+
+    <activity
+      android:name="com.google.android.accessibility.braille.brailledisplay.settings.DisplayCommandsActivity"
+      android:label="@string/bd_preference_display_commands_title"
+      android:configChanges="keyboard|keyboardHidden"
+      android:exported="false"
+      android:theme="@style/BrailleSettingsTheme" />
 
     <activity
         android:name="com.google.android.accessibility.braille.brailledisplay.settings.KeyBindingsCommandActivity"

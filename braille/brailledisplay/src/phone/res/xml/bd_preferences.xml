@@ -51,6 +51,11 @@
         android:summary="@string/bd_preference_key_bindings_summary"/>
 
     <Preference
+        android:key="@string/pref_display_commands_key"
+        android:title="@string/bd_preference_display_commands_title"
+        android:summary="@string/bd_preference_display_commands_summary"/>
+
+    <Preference
         android:key="@string/pref_key_braille_elements"
         android:title="@string/bd_preference_key_braille_elements_title"
         android:summary="@string/bd_preference_key_braille_elements_summary">
