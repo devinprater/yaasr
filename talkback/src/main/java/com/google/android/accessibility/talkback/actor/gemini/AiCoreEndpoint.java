@@ -119,8 +119,16 @@ public class AiCoreEndpoint implements GeminiEndpoint {
           @Override
           public void onSuccess(@Nullable Integer status) {
             availabilityRefreshInFlight = false;
+            boolean wasAvailable = featureAvailable;
             lastFeatureStatus = status == null ? FeatureStatus.UNAVAILABLE : status;
             featureAvailable = lastFeatureStatus == FeatureStatus.AVAILABLE;
+            if (featureAvailable && !wasAvailable) {
+              // yaasr: the model landed after our client was built. Drop the stale client so
+              // the next request prepares against the downloaded model, not pre-download state.
+              synchronized (AiCoreEndpoint.this) {
+                imageDescriber = null;
+              }
+            }
             LogUtils.d(TAG, "Image description feature status: %s", status);
           }
 
@@ -264,6 +272,16 @@ public class AiCoreEndpoint implements GeminiEndpoint {
       Bitmap image,
       boolean manualTrigger,
       GeminiResponseListener geminiResponseListener) {
+    return createRequestGeminiCommand(text, image, manualTrigger, geminiResponseListener, false);
+  }
+
+  /** Runs the request, retrying once with a fresh client on preparation failure. */
+  private boolean createRequestGeminiCommand(
+      String text,
+      Bitmap image,
+      boolean manualTrigger,
+      GeminiResponseListener geminiResponseListener,
+      boolean retried) {
     if (image == null || image.isRecycled()) {
       geminiResponseListener.onError(ErrorReason.NO_IMAGE);
       return false;
@@ -319,6 +337,20 @@ public class AiCoreEndpoint implements GeminiEndpoint {
           @Override
           public void onFailure(Throwable t) {
             pendingRequest = null;
+            // yaasr: first preparation right after the model lands can fail on a stale
+            // client. Retry once with a fresh client before giving up.
+            if (!retried
+                && t instanceof GenAiException
+                && t.getMessage() != null
+                && t.getMessage().contains("PREPARATION_ERROR")) {
+              LogUtils.w(TAG, "Retrying on-device inference with a fresh client.");
+              synchronized (AiCoreEndpoint.this) {
+                imageDescriber = null;
+              }
+              if (createRequestGeminiCommand(text, image, manualTrigger, geminiResponseListener, true)) {
+                return;
+              }
+            }
             if (t instanceof GenAiException) {
               LogUtils.w(TAG, "On-device inference failed: %s", t.getMessage());
             }
