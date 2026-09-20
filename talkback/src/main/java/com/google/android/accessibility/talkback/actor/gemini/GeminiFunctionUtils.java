@@ -260,8 +260,9 @@ public class GeminiFunctionUtils {
 
   public static final List<DescribeImageCandidate> imageDescriptionOption12 =
       ImmutableList.of(
-          geminiServerSide,
+          // yaasr: on-device first (no server key ships with the fork).
           geminiOnDevice,
+          geminiServerSide,
           nonGeminiImageCaptioning,
           showDetailedDescriptionUIFallBack);
 
@@ -334,6 +335,8 @@ public class GeminiFunctionUtils {
 
   public static final List<DescribeImageCandidate> imageDescriptionOption24 =
       ImmutableList.of(
+          // yaasr: on-device first (no server key ships with the fork).
+          geminiOnDevice,
           geminiServerSide,
           optInServerSide,
           nonGeminiImageCaptioning,
@@ -341,8 +344,9 @@ public class GeminiFunctionUtils {
 
   public static final List<DescribeImageCandidate> imageDescriptionOption25 =
       ImmutableList.of(
-          geminiServerSide,
+          // yaasr: on-device first (no server key ships with the fork).
           geminiOnDevice,
+          geminiServerSide,
           nonGeminiImageCaptioning,
           showDetailedDescriptionUIFallBack);
 
