@@ -194,6 +194,9 @@ public class BrailleInputPlanePhone extends BrailleInputPlane {
             : new Swipe(swipe);
     if (!isTableTopMode) {
       reorientedSwipe = Swipe.createFromMirror(reorientedSwipe);
+    } else if (BrailleUserPreferences.isTabletopChargePortLeft(context)) {
+      // yaasr: tabletop with charge port left is rotated 180 degrees; mirror swipes too.
+      reorientedSwipe = Swipe.createFromUpSideDown(reorientedSwipe);
     }
     return reorientedSwipe;
   }

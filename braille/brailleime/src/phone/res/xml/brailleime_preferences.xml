@@ -32,6 +32,11 @@
         android:title="@string/context_menu_layout_selection"
         android:summary="%s" />
 
+    <ListPreference
+        android:key="@string/pref_brailleime_tabletop_orientation"
+        android:title="@string/title_pref_tabletop_orientation"
+        android:summary="%s" />
+
     <SwitchPreferenceCompat
         android:key="@string/pref_brailleime_accumulate_mode"
         android:summary="@string/summary_pref_accumulate_presses"

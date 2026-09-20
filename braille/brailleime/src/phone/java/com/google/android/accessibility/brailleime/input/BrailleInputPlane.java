@@ -37,6 +37,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import androidx.annotation.ColorInt;
 import androidx.annotation.VisibleForTesting;
+import com.google.android.accessibility.braille.common.BrailleUserPreferences;
 import com.google.android.accessibility.braille.common.Constants.BrailleType;
 import com.google.android.accessibility.braille.interfaces.BrailleCharacter;
 import com.google.android.accessibility.brailleime.BrailleImeLog;
@@ -341,7 +342,23 @@ public abstract class BrailleInputPlane {
     if (options.reverseDots()) {
       dotNumberOrder = reverseDotNumberOrder(dotNumberOrder);
     }
+    if (isTableTopMode
+        && BrailleUserPreferences.isTabletopChargePortLeft(context)) {
+      // yaasr: charge port to the left means the phone lies rotated 180 degrees from the
+      // default tabletop pose; rotate the dot map to match so the same fingers type the same
+      // dots. Composes with reverse-dots above.
+      dotNumberOrder = reverseArray(dotNumberOrder);
+    }
     return dotNumberOrder;
+  }
+
+  /** yaasr: full reversal of the dot order (180-degree rotation). */
+  private static int[] reverseArray(int[] dotNumberOrder) {
+    int[] result = new int[dotNumberOrder.length];
+    for (int i = 0; i < dotNumberOrder.length; i++) {
+      result[i] = dotNumberOrder[dotNumberOrder.length - 1 - i];
+    }
+    return result;
   }
 
   private InputDotType getInputDotType(boolean tableTopMode) {

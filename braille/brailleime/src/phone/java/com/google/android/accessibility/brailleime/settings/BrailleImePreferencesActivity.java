@@ -258,6 +258,40 @@ public class BrailleImePreferencesActivity extends PreferencesActivity {
         }
       }
 
+      {
+        // yaasr: tabletop orientation (charge port right/left).
+        ListPreference tabletopOrientationPref =
+            findPreference(getString(R.string.pref_brailleime_tabletop_orientation));
+        if (tabletopOrientationPref != null) {
+          tabletopOrientationPref.setEntryValues(
+              new CharSequence[] {
+                BrailleUserPreferences.TABLETOP_PORT_RIGHT,
+                BrailleUserPreferences.TABLETOP_PORT_LEFT
+              });
+          tabletopOrientationPref.setEntries(
+              new CharSequence[] {
+                getString(R.string.tabletop_orientation_port_right),
+                getString(R.string.tabletop_orientation_port_left)
+              });
+          tabletopOrientationPref.setValue(
+              BrailleUserPreferences.isTabletopChargePortLeft(getContext())
+                  ? BrailleUserPreferences.TABLETOP_PORT_LEFT
+                  : BrailleUserPreferences.TABLETOP_PORT_RIGHT);
+          tabletopOrientationPref.setSummaryProvider(
+              preference ->
+                  BrailleUserPreferences.isTabletopChargePortLeft(getContext())
+                      ? getString(R.string.tabletop_orientation_port_left)
+                      : getString(R.string.tabletop_orientation_port_right));
+          tabletopOrientationPref.setOnPreferenceChangeListener(
+              (preference, newValue) -> {
+                BrailleUserPreferences.writeTabletopChargePortLeft(
+                    getContext(),
+                    BrailleUserPreferences.TABLETOP_PORT_LEFT.equals(newValue.toString()));
+                return true;
+              });
+        }
+      }
+
       // Preferred braille grade
       updateBrailleGradeSummary();
     }

@@ -329,6 +329,34 @@ public class BrailleUserPreferences {
         .apply();
   }
 
+  /** Stored tabletop orientations: which side the charge port is on. */
+  public static final String TABLETOP_PORT_RIGHT = "RIGHT";
+
+  /** Stored tabletop orientations: which side the charge port is on. */
+  public static final String TABLETOP_PORT_LEFT = "LEFT";
+
+  /**
+   * yaasr: reads which way round the phone lies in tabletop mode. With the charge port to the
+   * left the dot map is rotated 180 degrees relative to the default (port right).
+   */
+  public static boolean isTabletopChargePortLeft(Context context) {
+    return TABLETOP_PORT_LEFT.equals(
+        getSharedPreferences(context, BRAILLE_SHARED_PREFS_FILENAME)
+            .getString(
+                context.getString(R.string.pref_brailleime_tabletop_orientation),
+                TABLETOP_PORT_RIGHT));
+  }
+
+  /** yaasr: writes which way round the phone lies in tabletop mode. */
+  public static void writeTabletopChargePortLeft(Context context, boolean chargePortLeft) {
+    getSharedPreferences(context, BRAILLE_SHARED_PREFS_FILENAME)
+        .edit()
+        .putString(
+            context.getString(R.string.pref_brailleime_tabletop_orientation),
+            chargePortLeft ? TABLETOP_PORT_LEFT : TABLETOP_PORT_RIGHT)
+        .apply();
+  }
+
   /** Reads layout mode. */
   public static TouchDots readLayoutMode(Context context) {
     return BrailleCommonUtils.valueOfSafe(

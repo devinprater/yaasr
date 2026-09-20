@@ -15,6 +15,7 @@
   <string name="pref_brailleime_accumulate_mode" translatable="false">pref_brailleime_accumulate_mode</string>
   <string name="pref_brailleime_reverse_dots_mode" translatable="false">pref_brailleime_reverse_dots_mode</string>
   <string name="pref_brailleime_layout_mode" translatable="false">pref_brailleime_layout_mode</string>
+  <string name="pref_brailleime_tabletop_orientation" translatable="false">pref_brailleime_tabletop_orientation</string>
   <!-- Auto launch tutorial when opens Braille keyboard. -->
   <string name="pref_brailleime_auto_launch_tutorial" translatable="false">pref_brailleime_auto_launch_tutorial</string>
   <!-- How many times the keyboard has been exited (used by escape reminder). -->
