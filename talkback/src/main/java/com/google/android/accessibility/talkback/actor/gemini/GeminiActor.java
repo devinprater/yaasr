@@ -486,7 +486,13 @@ public class GeminiActor {
     analytics.onGeminiEvent(
         TalkBackAnalytics.GEMINI_REQUEST, /* serverSide= */ false, manualTrigger);
     if (!aiCoreEndpoint.hasAiCore()) {
-      handleImageCaptionErrorResponse(requestId, UNSUPPORTED, manualTrigger);
+      // yaasr: the model may simply not be downloaded yet. Start/resume the download and say
+      // so instead of failing outright.
+      if (aiCoreEndpoint.ensureModelDownloaded()) {
+        handleImageCaptionErrorResponse(requestId, FEATURE_DOWNLOADING, manualTrigger);
+      } else {
+        handleImageCaptionErrorResponse(requestId, UNSUPPORTED, manualTrigger);
+      }
       return;
     }
     startTime = SystemClock.uptimeMillis();

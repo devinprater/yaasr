@@ -140,6 +140,22 @@ public class AiCoreEndpoint implements GeminiEndpoint {
     return featureAvailable;
   }
 
+  /**
+   * yaasr: makes sure the model is on its way, starting the download when needed. Returns true
+   * when a download is running (or the feature just became available); the caller should then
+   * report FEATURE_DOWNLOADING instead of failing outright.
+   */
+  public boolean ensureModelDownloaded() {
+    refreshAvailability();
+    if (featureAvailable) {
+      return true;
+    }
+    if (lastFeatureStatus == FeatureStatus.DOWNLOADABLE && !featureDownloading) {
+      startModelDownload();
+    }
+    return featureDownloading || lastFeatureStatus == FeatureStatus.DOWNLOADING;
+  }
+
   public ListenableFuture<Boolean> hasAiCoreAsynchronous() {
     ListenableFuture<Integer> statusFuture;
     try {
