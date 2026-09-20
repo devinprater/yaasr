@@ -63,7 +63,8 @@ public final class GeminiConfiguration {
   }
 
   public static boolean isOnDeviceGeminiImageCaptioningEnabled(Context context) {
-    return false;
+    // yaasr: on-device is our only working backend (no server API key ships with the fork).
+    return true;
   }
 
   public static boolean useAratea(Context context) {

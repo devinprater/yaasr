@@ -17,6 +17,8 @@
 package com.android.talkback;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -87,6 +89,13 @@ public class TalkBackPreferencesActivity extends PreferencesActivity
       HatsRequesterViewModel viewModel =
           new ViewModelProvider(this).get(HatsRequesterViewModel.class);
       viewModel.setHatsSurveyRequester(hatsSurveyRequester);
+    }
+
+    // yaasr: model-download progress posts a notification; ask for the grant on 33+.
+    if (Build.VERSION.SDK_INT >= 33
+        && checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS)
+            != PackageManager.PERMISSION_GRANTED) {
+      requestPermissions(new String[] {android.Manifest.permission.POST_NOTIFICATIONS}, 0);
     }
   }
 

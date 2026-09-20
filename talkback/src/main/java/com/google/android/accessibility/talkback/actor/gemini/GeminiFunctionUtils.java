@@ -250,6 +250,9 @@ public class GeminiFunctionUtils {
 
   public static final List<DescribeImageCandidate> imageDescriptionOption11 =
       ImmutableList.of(
+          // yaasr: on-device first — the fork ships no server API key, so server-side can
+          // never succeed; the on-device gate starts the model download on first use.
+          geminiOnDevice,
           geminiServerSide,
           optInOnDevice,
           nonGeminiImageCaptioning,
