@@ -6,19 +6,19 @@
   <!-- Name of the application. [CHAR_LIMIT=30] -->
   <string name="bd_application_name">Android Accessibility Suite</string>
 
-  <!-- Title for the wizard that guides the user through the process of setting up TalkBack braille keyboard. [CHAR_LIMIT=80] -->
-  <string name="bd_ime_unavailable_activity_name">TalkBack braille keyboard unavailable</string>
-  <!-- Dialog title that lets the user know to enable TalkBack braille keyboard. [CHAR_LIMIT=80] -->
-  <string name="bd_ime_disabled_dialog_title">Turn on TalkBack braille keyboard</string>
-  <!-- Dialog message that lets the user know to enable TalkBack braille keyboard. [CHAR_LIMIT=200]-->
+  <!-- Title for the wizard that guides the user through the process of setting up YAASR braille keyboard. [CHAR_LIMIT=80] -->
+  <string name="bd_ime_unavailable_activity_name">YAASR braille keyboard unavailable</string>
+  <!-- Dialog title that lets the user know to enable YAASR braille keyboard. [CHAR_LIMIT=80] -->
+  <string name="bd_ime_disabled_dialog_title">Turn on YAASR braille keyboard</string>
+  <!-- Dialog message that lets the user know to enable YAASR braille keyboard. [CHAR_LIMIT=200]-->
   <string name="bd_ime_disabled_dialog_message">To use your braille display for typing, go to input settings to turn it on</string>
-  <!-- Dialog positive button that lets the user know to enable TalkBack braille keyboard. [CHAR_LIMIT=40] -->
+  <!-- Dialog positive button that lets the user know to enable YAASR braille keyboard. [CHAR_LIMIT=40] -->
   <string name="bd_ime_disabled_dialog_title_positive">Input settings</string>
-  <!-- Dialog title that lets the user know to switch to TalkBack braille keyboard. [CHAR_LIMIT=80] -->
+  <!-- Dialog title that lets the user know to switch to YAASR braille keyboard. [CHAR_LIMIT=80] -->
   <string name="bd_ime_not_default_dialog_title">Switch your input method</string>
-  <!-- Dialog message that lets the user know to switch to TalkBack braille keyboard. [CHAR_LIMIT=100] -->
-  <string name="bd_ime_not_default_dialog_message">To continue typing, set the TalkBack braille keyboard as your input method</string>
-  <!-- Dialog positive button that lets the user know to switch to TalkBack braille keyboard. [CHAR_LIMIT=40] -->
+  <!-- Dialog message that lets the user know to switch to YAASR braille keyboard. [CHAR_LIMIT=100] -->
+  <string name="bd_ime_not_default_dialog_message">To continue typing, set the YAASR braille keyboard as your input method</string>
+  <!-- Dialog positive button that lets the user know to switch to YAASR braille keyboard. [CHAR_LIMIT=40] -->
   <string name="bd_ime_not_default_dialog_positive">Switch input</string>
 
   <string name="checkmark_not_checked" translatable="false">( )</string>
@@ -69,9 +69,9 @@
   <!-- Title for the BrailleDisplay Preferences activity. [CHAR_LIMIT=40]  -->
   <string name="bd_preferences_title">Braille display</string>
   <!-- Banner message: Guide user to turn on TalkBack. [CHAR_LIMIT=100] -->
-  <string name="bd_preferences_banner_talkback_off_subtitle">To use braille display, first turn on TalkBack</string>
+  <string name="bd_preferences_banner_talkback_off_subtitle">To use braille display, first turn on yaasr</string>
   <!-- Banner button text: Go to TalkBack. [CHAR_LIMIT=50] -->
-  <string name="bd_preferences_banner_talkback_off_button">Go to TalkBack</string>
+  <string name="bd_preferences_banner_talkback_off_button">Go to yaasr</string>
   <!-- Banner message: Guide user to turn on Bluetooth. [CHAR_LIMIT=100] -->
   <string name="bd_preferences_banner_bluetooth_off_subtitle">To use braille display, first turn on Bluetooth</string>
   <!-- Banner button text: Settings. [CHAR_LIMIT=50] -->
@@ -143,7 +143,7 @@
   <!-- Dialog title for commands changed. [CHAR_LIMIT=200] -->
   <string name="bd_command_change_dialog_title">Some commands have been updated</string>
   <!-- Dialog message for commands changed. [CHAR_LIMIT=200] -->
-  <string name="bd_command_change_dialog_message">These braille display commands were updated in this version of TalkBack:\n\n• Previous item: Press dots 1, 7\n\n• Next item: Press dots 4, 8\n\n• Previous reading control: Press dots 2, 3, 7, 8\n\n• Next reading control: Press dots 5, 6, 7, 8</string>
+  <string name="bd_command_change_dialog_message">These braille display commands were updated in this version of yaasr:\n\n• Previous item: Press dots 1, 7\n\n• Next item: Press dots 4, 8\n\n• Previous reading control: Press dots 2, 3, 7, 8\n\n• Next reading control: Press dots 5, 6, 7, 8</string>
 
   <!-- Preferred braille grade page -->
   <!-- Radio button for the contracted braille preference. [CHAR_LIMIT=45] -->
@@ -178,7 +178,7 @@
   <!-- Braille display command preference: Summary of system actions. [CHAR LIMIT=60] -->
   <string name="bd_commands_bindings_category_system_actions_summary">Back, home, notifications and more</string>
   <!-- Braille display command preference: Title of talkBack features. [CHAR LIMIT=30] -->
-  <string name="bd_commands_bindings_category_talkback_features_title">TalkBack features</string>
+  <string name="bd_commands_bindings_category_talkback_features_title">yaasr features</string>
   <!-- Braille display command preference: Summary of talkBack features. [CHAR LIMIT=40] -->
   <string name="bd_commands_bindings_category_talkback_features_summary">Talkback menus and settings</string>
   <!-- Braille display command preference: Title of braille settings. [CHAR LIMIT=30] -->
@@ -285,10 +285,10 @@
   <!-- Label for the Braille learning mode instructions. Displayed in the learning mode activity and announced when entering learning mode. [CHAR_LIMIT=200] -->
   <!-- TODO: Update the string after approval. -->
   <string name="bd_learning_mode_instructions" translatable="false">Press a refreshable braille key to learn its function. Press control with w or escape to exit.</string>
-  <!-- Announced by TalkBack when user exits learning mode. -->
+  <!-- Announced by yaasr when user exits learning mode. -->
   <!-- TODO: Update the string after approval. -->
   <string name="bd_learning_mode_outro_message" translatable="false">Stopping learning mode</string>
-  <!-- Announced by TalkBack when no display is found while using learning mode. -->
+  <!-- Announced by yaasr when no display is found while using learning mode. -->
   <!-- TODO: Update the string after approval. -->
   <!-- TODO: Update or add string for auto-launch learning mode. -->
   <string name="bd_learning_mode_no_display_found" translatable="false">No display found, stopping learning mode. Please connect Braille display and relaunch learning mode.</string>
@@ -559,7 +559,7 @@
   <!-- Braille input command: Edit custom label. [CHAR_LIMIT=100]-->
   <string name="bd_cmd_edit_custom_label">Edit custom label</string>
   <!-- Braille input command: Open TalkBack menu. [CHAR_LIMIT=100]-->
-  <string name="bd_cmd_open_talkback_menu">Open TalkBack menu</string>
+  <string name="bd_cmd_open_talkback_menu">Open Yaasr menu</string>
   <!-- Braille input command: To turn voice feedback on/off(mute/unmute). [CHAR_LIMIT=100] -->
   <string name="bd_cmd_toggle_voice_feedback">Turn TalkBack speech on or off</string>
   <!-- Braille input command: Stop reading. [CHAR_LIMIT=100] -->

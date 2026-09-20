@@ -5,45 +5,45 @@
     <!--The human-readable name of this service. Do not translate. -->
     <string name="talkback_title" translatable="false">yaasr</string>
 
-    <!-- yaasr first-run TalkBack settings import. -->
-    <string name="yaasr_import_settings_title">Import TalkBack settings?</string>
+    <!-- yaasr first-run Yaasr settings import. -->
+    <string name="yaasr_import_settings_title">Import Yaasr settings?</string>
     <string name="yaasr_import_settings_message">yaasr found settings from %1$s. Copy them over, including verbosity, speech and gesture options? System speech settings are already shared.</string>
     <string name="yaasr_import_settings_import">Import</string>
     <string name="yaasr_import_settings_fresh">Start fresh</string>
-    <string name="yaasr_import_settings_done">TalkBack settings imported. Restart yaasr to apply everything.</string>
-    <string name="yaasr_import_settings_failed">Could not read TalkBack settings automatically. Android keeps each app\'s data private, so match the important ones by hand.</string>
+    <string name="yaasr_import_settings_done">Yaasr settings imported. Restart yaasr to apply everything.</string>
+    <string name="yaasr_import_settings_failed">Could not read Yaasr settings automatically. Android keeps each app\'s data private, so match the important ones by hand.</string>
 
     <!--
-      Source: A brief description of TalkBack.
+      Source: A brief description of Yaasr.
       Description: This is presented to the user on the accessibility settings view. [CHAR LIMIT=NONE]
     -->
     <string name="talkback_service_description">
-      When TalkBack is on, it provides spoken feedback so that you can use your device without looking at the screen. This can be helpful for people who are blind or have low vision.\n\nTo navigate using TalkBack:\n•  Swipe right or left to move between items\n•  Double-tap to activate an item\n•  Drag two fingers to scroll\n\nTo turn off TalkBack:\n•  Tap the switch. You’ll see an outline. Double-tap the switch.\n•  On the confirmation message, tap OK. Then double-tap OK.
+      When Yaasr is on, it provides spoken feedback so that you can use your device without looking at the screen. This can be helpful for people who are blind or have low vision.\n\nTo navigate using Yaasr:\n•  Swipe right or left to move between items\n•  Double-tap to activate an item\n•  Drag two fingers to scroll\n\nTo turn off Yaasr:\n•  Tap the switch. You’ll see an outline. Double-tap the switch.\n•  On the confirmation message, tap OK. Then double-tap OK.
     </string>
 
     <!-- TODO: Try to remove nbsp following li. -->
     <!--
-      Source: A html description of TalkBack for Android R and above.
+      Source: A html description of Yaasr for Android R and above.
       Description: This is presented in html to the user on the accessibility settings view. [CHAR_LIMIT=NONE]
     -->
     <string name="talkback_service_html_description">
-      <![CDATA[When TalkBack is on, it provides spoken feedback so that you can use your device without looking at the screen. TalkBack is intended for situations or people who have difficulty seeing the screen.<br><br><b>How to use TalkBack</b><br>• Swipe right or left to move between items<br>• Double-tap to activate an item<br>• Drag 2 fingers to scroll<br><b>How to turn off TalkBack</b><br>1. In Settings, tap <b>Use TalkBack</b>. There will be an outline. Double-tap it.<br>2. On the confirmation message, tap <b>Stop</b>. There will be an outline. Double-tap it.]]>
+      <![CDATA[When Yaasr is on, it provides spoken feedback so that you can use your device without looking at the screen. Yaasr is intended for situations or people who have difficulty seeing the screen.<br><br><b>How to use Yaasr</b><br>• Swipe right or left to move between items<br>• Double-tap to activate an item<br>• Drag 2 fingers to scroll<br><b>How to turn off Yaasr</b><br>1. In Settings, tap <b>Use Yaasr</b>. There will be an outline. Double-tap it.<br>2. On the confirmation message, tap <b>Stop</b>. There will be an outline. Double-tap it.]]>
     </string>
 
     <!--
-      Source: A brief summary of TalkBack.
+      Source: A brief summary of Yaasr.
       Description: This is presented to the user as subtext for the service preference on the accessibility settings view. [CHAR LIMIT=100]
     -->
     <string name="talkback_service_summary">Use a screen reader to hear items spoken aloud</string>
 
     <!--
-      Source: Title for the activity that manages TalkBack settings.
-      Description: This is presented to the user when managing TalkBack settings. [CHAR_LIMIT=NONE]
+      Source: Title for the activity that manages Yaasr settings.
+      Description: This is presented to the user when managing Yaasr settings. [CHAR_LIMIT=NONE]
     -->
-    <string name="talkback_preferences_title">TalkBack settings</string>
+    <string name="talkback_preferences_title">Yaasr settings</string>
 
     <!--
-      Source: Screen title of TalkBack settings shown as a breadcrumb like TalkBack > Settings
+      Source: Screen title of Yaasr settings shown as a breadcrumb like Yaasr > Settings
       Description: This is presented as the breadscrumb in the search result. [CHAR_LIMIT=NONE]
     -->
     <string name="talkback_settings_screen_title_breadcrumb">Settings</string>
@@ -58,12 +58,12 @@
     -->
     <string name="language_options">Languages</string>
     <!--
-    Source: Title for the menu item of TalkBack Menu that opens the dialog with TTS languages installed by the user.
+    Source: Title for the menu item of Yaasr Menu that opens the dialog with TTS languages installed by the user.
     Description: This is presented to the user. [CHAR LIMIT="70"]
     -->
     <string name="spoken_language">Spoken language</string>
     <!--
-    Source: Title for the menu item of TalkBack Menu that presents actions which can be performed by the user.
+    Source: Title for the menu item of Yaasr Menu that presents actions which can be performed by the user.
     Description: This is presented to the user. [CHAR_LIMIT=70]
     -->
   <string name="actions">Actions</string>
@@ -75,23 +75,23 @@
     <!-- Subtitle for settings activity. Argument is version name. [CHAR_LIMIT="NONE"]-->
     <string name="talkback_preferences_subtitle">Version <xliff:g id="version_name">%1$s</xliff:g></string>
     <!--
-      Source: Title for the summary activity that manages TalkBack custom labels.
-      Description: This is presented to the user when viewing a summary of TalkBack custom labels. [CHAR LIMIT=NONE]
+      Source: Title for the summary activity that manages Yaasr custom labels.
+      Description: This is presented to the user when viewing a summary of Yaasr custom labels. [CHAR LIMIT=NONE]
     -->
     <string name="label_manager_summary_title">Manage custom labels</string>
     <!--
-      Source: Title for the activity that manages TalkBack custom labels for a specific package.
-      Description: This is presented to the user when managing TalkBack custom labels for a package. [CHAR LIMIT=NONE]
+      Source: Title for the activity that manages Yaasr custom labels for a specific package.
+      Description: This is presented to the user when managing Yaasr custom labels for a package. [CHAR LIMIT=NONE]
     -->
     <string name="label_manager_package_title">Manage Labels for <xliff:g id="applicationLabel" example="Gmail">%1$s</xliff:g></string>
     <!--
-      Source: Title for the activity that manages TalkBack custom labels.
+      Source: Title for the activity that manages Yaasr custom labels.
       Description: This is spoken to the user. [[CHAR_LIMIT=NONE]
     -->
     <string name="manage_label">Manage label</string>
 
     <!-- A message on the label manager package summary screen when there are no packages with labels. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 305927220428084385]-->
-    <string name="label_manager_no_packages_message">There are currently no custom labels\n\n<b>How to create a custom label</b>\nNavigate to an unlabeled image and add a label from the TalkBack menu</string>
+    <string name="label_manager_no_packages_message">There are currently no custom labels\n\n<b>How to create a custom label</b>\nNavigate to an unlabeled image and add a label from the Yaasr menu</string>
     <!-- A label for the timestamp of when a custom label was stored or last modified. -->
     <string name="label_manager_timestamp_text">Last modified <xliff:g id="timestamp" example="1/1/11 11:11 AM">%1$s</xliff:g></string>
     <!-- Spoken when the search is canceled. -->
@@ -182,11 +182,11 @@
       Description: Contains preferences for customizing audio. [CHAR LIMIT=25]
     -->
     <string name="title_pref_category_audio">Audio</string>
-    <!-- Title for preference that controls the volume of TalkBack's speech output. [CHAR LIMIT=25] -->
+    <!-- Title for preference that controls the volume of Yaasr's speech output. [CHAR LIMIT=25] -->
     <string name="title_pref_speech_volume">Speech volume</string>
-    <!-- Title for preference that controls the speed of TalkBack's speech output. [CHAR LIMIT=25] -->
+    <!-- Title for preference that controls the speed of Yaasr's speech output. [CHAR LIMIT=25] -->
     <string name="title_pref_speech_rate">Speech rate</string>
-    <!-- Summary for Speech Rate preference that controls the speed of TalkBack's speech output. [CHAR LIMIT=100] -->
+    <!-- Summary for Speech Rate preference that controls the speed of Yaasr's speech output. [CHAR LIMIT=100] -->
     <string name="summary_pref_speech_rate">Speed at which the text is spoken</string>
     <!--
       Source: Preference for customizing how to speak when the screen is off.
@@ -307,8 +307,8 @@
 
     <!-- Title of dialog to confirm the typing focus delay reduction which enables the Lift-to-type to do the CLICK. [CHAR LIMIT=NONE] -->
     <string name="confirm_the_typing_focus_delay_reduction_dialog_title">Switch to lift-to-type?</string>
-    <!-- Description what the side effect would be when focus delay decreased, and TalkBack would enable the Lift-to-type. [CHAR LIMIT=NONE] -->
-    <string name="message_of_typing_focus_delay_reduction_confirm_dialog">When typing focus delay is set below 0.3 seconds, double-tap to type will be very difficult to perform. Choose \"Switch\" to automatically switch to lift to type.\n\nTo use lift-to-type, hold your finger to select any key, then lift for typing.\n\nYou can customize this in TalkBack settings.</string>
+    <!-- Description what the side effect would be when focus delay decreased, and Yaasr would enable the Lift-to-type. [CHAR LIMIT=NONE] -->
+    <string name="message_of_typing_focus_delay_reduction_confirm_dialog">When typing focus delay is set below 0.3 seconds, double-tap to type will be very difficult to perform. Choose \"Switch\" to automatically switch to lift to type.\n\nTo use lift-to-type, hold your finger to select any key, then lift for typing.\n\nYou can customize this in Yaasr settings.</string>
     <!-- Title of dialog to confirm the typing focus delay reading control items being added. [CHAR LIMIT=NONE] -->
     <string name="confirm_typing_focus_delay_reading_control_added_dialog_title">Typing focus delay added to reading control</string>
     <!-- Message of dialog to confirm the Focus delay reading control items being added. [CHAR LIMIT=NONE] -->
@@ -350,7 +350,7 @@
     <string name="pref_speak_roles_title">Speak element type</string>
     <!--
       Source: Summary subtext for preference to speak roles of elements.
-      Description: Explains that TalkBack will speak the element type of a focused item. [CHAR LIMIT=NONE]
+      Description: Explains that Yaasr will speak the element type of a focused item. [CHAR LIMIT=NONE]
     -->
     <string name="pref_speak_roles_summary">For focused items</string>
 
@@ -382,7 +382,7 @@
     <string name="summary_pref_allow_frequent_content_change_announcement">Includes updates while downloading, following driving directions, and more. When turned off, you’ll still get less frequent updates.</string>
     <!--
       Source: Summary subtext for preference to speak window titles.
-      Description: Explains that TalkBack will speak the window title of a focused item. [CHAR LIMIT=NONE]
+      Description: Explains that Yaasr will speak the window title of a focused item. [CHAR LIMIT=NONE]
     -->
     <string name="pref_speak_system_window_titles_summary">Speak system and input windows, like when you switch to the status bar, notifications, or another keyboard</string>
 
@@ -391,7 +391,7 @@
       Description: The user can check or not check this. [CHAR LIMIT=40]
     -->
     <string name="title_pref_explore_by_touch">Explore by touch</string>
-    <!-- Category for TalkBack visuyal settings. [CHAR LIMIT=40] -->
+    <!-- Category for Yaasr visuyal settings. [CHAR LIMIT=40] -->
     <string name="title_pref_category_visual">Visual</string>
     <!-- Category for gestures, menus or other controls. [CHAR LIMIT=40] -->
     <string name="title_pref_category_controls">Controls</string>
@@ -406,50 +406,50 @@
     <!-- Category for tutorial & help. [CHAR LIMIT=40] -->
     <string name="title_pref_category_tutorial_and_help">Tutorial &#38; help</string>
     <!-- Category summary for reduce latency. [CHAR LIMIT=NONE] -->
-    <string name="title_pref_category_reduce_latency_summary">These settings can reduce the delay before TalkBack announcements</string>
+    <string name="title_pref_category_reduce_latency_summary">These settings can reduce the delay before Yaasr announcements</string>
     <!-- Label for the reset latency settings. [CHAR LIMIT=NONE]-->
     <string name="reset_latency_settings_title">Reset all delay settings</string>
     <!-- Preference for single-tap activation. When enabled, the user can place accessibility focus on an item and activate it using a single tap, rather than the default double-tap. [CHAR LIMIT=NONE]-->
     <string name="title_pref_single_tap">Single-tap to activate</string>
     <!-- Summary sub-text for single-tap activation. When enabled, the user can place accessibility focus on an item and activate it using a single tap, rather than the default double-tap. [CHAR LIMIT=NONE]-->
     <string name="summary_pref_single_tap">Tap once on a focused item to activate. Faster navigation than double-tapping.</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's verbosity. [CHAR LIMIT=40] -->
+    <!-- Label for the button to launch an activity for managing Yaasr's verbosity. [CHAR LIMIT=40] -->
     <string name="pref_verbosity_title">Verbosity</string>
     <!--
       Source: Title of preference for speaking punctuation in the selector setting list.
       Description: The user can check or not check this. [CHAR LIMIT=40]
     -->
     <string name="pref_punctuation_title">Speak punctuation and symbols</string>
-    <!-- Label for the PreferenceScreen used to manage TalkBack's focus indicator. [CHAR LIMIT=40] -->
+    <!-- Label for the PreferenceScreen used to manage Yaasr's focus indicator. [CHAR LIMIT=40] -->
     <string name="title_pref_category_manage_focus_indicator">Change focus indicator</string>
-    <!-- Label for the PreferenceScreen used to manage TalkBack's gesture mapping. [CHAR LIMIT=40] -->
+    <!-- Label for the PreferenceScreen used to manage Yaasr's gesture mapping. [CHAR LIMIT=40] -->
     <string name="title_pref_category_manage_gestures">Gestures</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's custom view labels. [CHAR LIMIT=70] -->
+    <!-- Label for the button to launch an activity for managing Yaasr's custom view labels. [CHAR LIMIT=70] -->
     <string name="title_pref_manage_labels">Custom labels</string>
     <!-- Label for the button to launch an activity for managing custom menus. [CHAR LIMIT=70] -->
     <string name="title_pref_manage_customize_menus">Edit menus</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's custom menus. [CHAR LIMIT=100] -->
-    <string name="title_pref_category_context_menu">Customize TalkBack menu</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's custom menus. [CHAR LIMIT=100] -->
+    <!-- Label for the button to launch an activity for managing Yaasr's custom menus. [CHAR LIMIT=100] -->
+    <string name="title_pref_category_context_menu">Customize Yaasr menu</string>
+    <!-- Label for the button to launch an activity for managing Yaasr's custom menus. [CHAR LIMIT=100] -->
     <string name="title_pref_category_selector_menu">Customize reading controls</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's navigation options menus. [CHAR LIMIT=100] -->
+    <!-- Label for the button to launch an activity for managing Yaasr's navigation options menus. [CHAR LIMIT=100] -->
     <string name="title_pref_category_navigation_menu">Edit navigation options</string>
-    <!-- Label for the button to launch an activity for managing TalkBack's keyboard shortcuts. [CHAR LIMIT=40] -->
+    <!-- Label for the button to launch an activity for managing Yaasr's keyboard shortcuts. [CHAR LIMIT=40] -->
     <!--
-      Source: Summary subtext for TalkBack context menu setting.
-      Description: Explains how TalkBack context menu is opened. [CHAR LIMIT=NONE]
+      Source: Summary subtext for Yaasr context menu setting.
+      Description: Explains how Yaasr context menu is opened. [CHAR LIMIT=NONE]
     -->
-    <string name="pref_category_context_menu_summary">To use the TalkBack menu, tap the screen with 3 fingers. You can also swipe up then right, or swipe down then right.</string>
+    <string name="pref_category_context_menu_summary">To use the Yaasr menu, tap the screen with 3 fingers. You can also swipe up then right, or swipe down then right.</string>
     <!--
-    Source: Summary subtext for TalkBack context menu setting in XR.
-    Description: Explains how TalkBack context menu is opened on XR devices. [CHAR LIMIT=NONE]
+    Source: Summary subtext for Yaasr context menu setting in XR.
+    Description: Explains how Yaasr context menu is opened on XR devices. [CHAR LIMIT=NONE]
     -->
-    <string name="pref_category_context_menu_summary_xr">To use the TalkBack menu, turn your secondary palm in and pinch.</string>
+    <string name="pref_category_context_menu_summary_xr">To use the Yaasr menu, turn your secondary palm in and pinch.</string>
     <!--
-    Source: Summary subtext for TalkBack context menu setting.
-    Description: Explains how TalkBack context menu is opened without multifinger support. [CHAR LIMIT=NONE]
+    Source: Summary subtext for Yaasr context menu setting.
+    Description: Explains how Yaasr context menu is opened without multifinger support. [CHAR LIMIT=NONE]
     -->
-    <string name="pref_category_context_menu_summary_single_finger">To use the TalkBack menu, swipe down then right.</string>
+    <string name="pref_category_context_menu_summary_single_finger">To use the Yaasr menu, swipe down then right.</string>
     <!--
     Source: Summary subtext for quick menu setting.
     Description: Explains how quick menu is opened. [CHAR LIMIT=NONE]
@@ -469,15 +469,15 @@
     <!-- Label for the button to export custom labels data as a file. [CHAR LIMIT=40] -->
     <string name="title_pref_export_custom_labels">Export custom labels</string>
     <!-- Label for the button to open the Play Store page. -->
-    <string name="title_pref_play_store">Open TalkBack at the Play Store</string>
+    <string name="title_pref_play_store">Open Yaasr at the Play Store</string>
     <!-- Summary sub-text for the button to open the Play Store page. Argument is version number. -->
-    <string name="summary_pref_play_store">Current TalkBack Version: <xliff:g id="version_number">%1$s</xliff:g></string>
+    <string name="summary_pref_play_store">Current Yaasr Version: <xliff:g id="version_number">%1$s</xliff:g></string>
     <!-- The preference title of Help & feedback [CHAR_LIMIT=NONE]-->
     <string name="title_pref_help_and_feedback">Help &#38; feedback</string>
     <!-- The preference title of GUP support [CHAR_LIMIT=NONE]-->
     <string name="title_pref_gup">Contact Google Disability support</string>
     <!-- The preference subtitle of GUP support [CHAR_LIMIT=NONE]-->
-    <string name="subtitle_pref_gup">Get help using TalkBack or report issues</string>
+    <string name="subtitle_pref_gup">Get help using Yaasr or report issues</string>
     <!-- The label of a settings item that displays legal information about the licenses used in this app. [CHAR LIMIT=NONE] -->
     <string name="pref_item_licenses">Open Source Licenses</string>
     <!-- Label for the button to show tutorial [CHAR LIMIT=40] -->
@@ -491,7 +491,7 @@
     <!-- Category for assigning shortcuts to fingerprint sensor gestures. [CHAR LIMIT=40] -->
     <string name="title_pref_category_fingerprint_touch_shortcuts">Fingerprint gestures</string>
     <!-- Category for tutorial, the tutorial page contains help and feedback. [CHAR LIMIT=60] -->
-    <string name="title_pref_category_tutorial">TalkBack tutorial</string>
+    <string name="title_pref_category_tutorial">Yaasr tutorial</string>
     <!-- Category for helping page or feedback. [CHAR LIMIT=60] -->
     <string name="title_pref_category_help_no_tutorial">Help</string>
     <!-- Category for typing settings. [CHAR LIMIT=60] -->
@@ -502,16 +502,16 @@
       Source: Preference for showing mis-trigger prevention watermark on screen.
       Description: The user can check or not check this. [CHAR LIMIT=120]
     -->
-    <string name="title_pref_show_exit_watermark">Show instructions for turning off TalkBack</string>
+    <string name="title_pref_show_exit_watermark">Show instructions for turning off Yaasr</string>
     <!--
       Source: Summary subtext for showing mis-trigger prevention watermark on screen.
       Description: Explains whether to show the banner. [CHAR LIMIT=NONE]
     -->
-    <string name="summary_pref_show_exit_watermark">A message shows when TalkBack is turned on, to help you quickly turn it off</string>
-    <!-- The text of TalkBack mis-trigger-prevention watermark. [CHAR_LIMIT=NONE]-->
-    <string name="talkback_exit_watermark_text">TalkBack on. Hold 2 fingers on screen for 5 seconds to turn off. To stop showing this message, tap with 3 fingers to open the TalkBack menu.</string>
-    <!-- The hint text of TalkBack mis-trigger-prevention watermark. [CHAR_LIMIT=NONE]-->
-    <string name="talkback_exit_watermark_hint_text">Showing banner indicating TalkBack is on. To turn off TalkBack, hold 2 fingers on the screen for 5 seconds. To remove this banner, go to TalkBack Settings.</string>
+    <string name="summary_pref_show_exit_watermark">A message shows when Yaasr is turned on, to help you quickly turn it off</string>
+    <!-- The text of Yaasr mis-trigger-prevention watermark. [CHAR_LIMIT=NONE]-->
+    <string name="talkback_exit_watermark_text">Yaasr on. Hold 2 fingers on screen for 5 seconds to turn off. To stop showing this message, tap with 3 fingers to open the Yaasr menu.</string>
+    <!-- The hint text of Yaasr mis-trigger-prevention watermark. [CHAR_LIMIT=NONE]-->
+    <string name="talkback_exit_watermark_hint_text">Showing banner indicating Yaasr is on. To turn off Yaasr, hold 2 fingers on the screen for 5 seconds. To remove this banner, go to Yaasr Settings.</string>
 
     <!-- Label for the reset gesture settings. [CHAR_LIMIT=66] -->
     <string name="reset_gesture_settings_title">Reset gesture settings</string>
@@ -547,51 +547,51 @@
     <string name="pref_gesture_set_entry_1">1</string>
 
     <!-- Keyboard key map changes items. -->
-    <!-- TalkBack keyboard shortcut keymap changes. The title for Activity and Notification to notify user there is another keymap support more shortcut actions worth to try. [CHAR LIMIT=60] -->
-    <string name="keycombo_keymap_changes_instruction_title">Update your TalkBack keymap</string>
-    <!-- TalkBack keyboard shortcut keymap changes. The content for Activity and Notification to notify user there is another keymap support more shortcut actions worth to try. [CHAR LIMIT=200] -->
+    <!-- Yaasr keyboard shortcut keymap changes. The title for Activity and Notification to notify user there is another keymap support more shortcut actions worth to try. [CHAR LIMIT=60] -->
+    <string name="keycombo_keymap_changes_instruction_title">Update your Yaasr keymap</string>
+    <!-- Yaasr keyboard shortcut keymap changes. The content for Activity and Notification to notify user there is another keymap support more shortcut actions worth to try. [CHAR LIMIT=200] -->
     <string name="keycombo_keymap_changes_activity_content"><![CDATA[To keep using keyboard shortcuts, go to Settings and switch from the classic keymap to the default keymap.
       <br><br><b>What\'s different about the default keymap?</b>
       <br><br><ul><li>There are more navigation and web navigation actions.</li>
       <li>Some of the modifier keys are different.</li></ul>]]></string>
-    <!-- TalkBack keyboard shortcut keymap changes content append after keycombo_keymap_changes_activity_content with 2 newlines in the middle. Click it can open the web page to TalkBack keyboard help [CHAR LIMIT=100] -->
+    <!-- Yaasr keyboard shortcut keymap changes content append after keycombo_keymap_changes_activity_content with 2 newlines in the middle. Click it can open the web page to Yaasr keyboard help [CHAR LIMIT=100] -->
     <string name="keycombo_keymap_changes_activity_content_learn_more">Learn more about keymaps</string>
-    <!-- TalkBack keyboard go to settings button. Click the button will open the TalkBack keyboard settings. [CHAR LIMIT=40] -->
+    <!-- Yaasr keyboard go to settings button. Click the button will open the Yaasr keyboard settings. [CHAR LIMIT=40] -->
     <string name="keycombo_go_to_settings">Go to Settings</string>
-    <!-- TalkBack keyboard shortcut keymap changes notification content. [CHAR LIMIT=300] -->
-    <string name="keycombo_keymap_changes_notifications_content">TalkBack is getting ready to remove the classic keymap. To keep using keyboard shortcuts, switch to the default keymap.</string>
-    <!-- TalkBack keyboard shortcut keymap changes notification action button. Click the button will open the instruction activity. [CHAR LIMIT=40] -->
+    <!-- Yaasr keyboard shortcut keymap changes notification content. [CHAR LIMIT=300] -->
+    <string name="keycombo_keymap_changes_notifications_content">Yaasr is getting ready to remove the classic keymap. To keep using keyboard shortcuts, switch to the default keymap.</string>
+    <!-- Yaasr keyboard shortcut keymap changes notification action button. Click the button will open the instruction activity. [CHAR LIMIT=40] -->
     <string name="keycombo_keymap_changes_notifications_action">Learn more</string>
     <!-- Keyboard new key map notification dialog. -->
-    <!-- TalkBack new keymap notification positive button. Click the button will close the dialog. [CHAR LIMIT=40] -->
+    <!-- Yaasr new keymap notification positive button. Click the button will close the dialog. [CHAR LIMIT=40] -->
     <string name="keycombo_new_keymap_notification_dialog_positive_button">Got it</string>
-    <!-- TalkBack new keymap notification negative button. Click the button will open the TalkBack keyboard settings. [CHAR LIMIT=40] -->
+    <!-- Yaasr new keymap notification negative button. Click the button will open the Yaasr keyboard settings. [CHAR LIMIT=40] -->
     <string name="keycombo_new_keymap_notification_dialog_negative_button">Settings</string>
-    <!-- TalkBack new keymap notification neutral button. Click the button will open the help center page. [CHAR LIMIT=40] -->
+    <!-- Yaasr new keymap notification neutral button. Click the button will open the help center page. [CHAR LIMIT=40] -->
     <string name="keycombo_new_keymap_notification_dialog_neutral_button">Learn more</string>
     <!-- Keyboard new key map notification dialog for classic keymap users. -->
     <!-- Title of the dialog to notify classic keymap users. [CHAR LIMIT=60] -->
     <string name="keycombo_new_keymap_notification_dialog_title_for_classic_keymap">Classic keymap is no longer supported</string>
     <!-- Message of the dialog to notify classic keymap users. [CHAR LIMIT=200] -->
-    <string name="keycombo_new_keymap_notification_dialog_message_for_classic_keymap">You\'re now using the TalkBack default keymap. There is also a new enhanced keymap that has many new commands. Learn more in the help center or switch to the new keymap in Settings.</string>
+    <string name="keycombo_new_keymap_notification_dialog_message_for_classic_keymap">You\'re now using the Yaasr default keymap. There is also a new enhanced keymap that has many new commands. Learn more in the help center or switch to the new keymap in Settings.</string>
     <!-- Keyboard new key map notification dialog for default keymap users. -->
     <!-- Title of the dialog to notify default keymap users. [CHAR LIMIT=60] -->
     <string name="keycombo_new_keymap_notification_dialog_title_for_default_keymap">New keymap available</string>
     <!-- Message of the dialog to notify default keymap users. [CHAR LIMIT=200] -->
-    <string name="keycombo_new_keymap_notification_dialog_message_for_default_keymap">The new TalkBack enhanced keymap adds many new commands. Learn more in the help center or switch to the new keymap in Settings.</string>
+    <string name="keycombo_new_keymap_notification_dialog_message_for_default_keymap">The new Yaasr enhanced keymap adds many new commands. Learn more in the help center or switch to the new keymap in Settings.</string>
     <!-- Keyboard update modifier keys. -->
-    <!-- TalkBack keyboard shortcut keymap update modifier keys. The title for dialog and notification to notify user had better to update the modifier keys. [CHAR LIMIT=60] -->
-    <string name="keycombo_update_modifier_key_warning_title">Update your TalkBack modifier key</string>
-    <!-- TalkBack keyboard shortcut keymap update modifier keys. The title for dialog and notification to notify user had better to update the modifier keys. [CHAR LIMIT=60] -->
+    <!-- Yaasr keyboard shortcut keymap update modifier keys. The title for dialog and notification to notify user had better to update the modifier keys. [CHAR LIMIT=60] -->
+    <string name="keycombo_update_modifier_key_warning_title">Update your Yaasr modifier key</string>
+    <!-- Yaasr keyboard shortcut keymap update modifier keys. The title for dialog and notification to notify user had better to update the modifier keys. [CHAR LIMIT=60] -->
     <string name="keycombo_update_modifier_keys_warning_negative_button">Not now</string>
-    <!-- TalkBack keyboard update modifier key dialog. -->
-    <!-- Content description of an icon to open TalkBack keyboard update modifier key dialog. [CHAR LIMIT=80] -->
+    <!-- Yaasr keyboard update modifier key dialog. -->
+    <!-- Content description of an icon to open Yaasr keyboard update modifier key dialog. [CHAR LIMIT=80] -->
     <string name="keycombo_warning_content_description">More information about your modifier key</string>
-    <!-- Title of TalkBack keyboard update modifier key dialog. [CHAR LIMIT=40] -->
+    <!-- Title of Yaasr keyboard update modifier key dialog. [CHAR LIMIT=40] -->
     <string name="keycombo_warning_dialog_title">Update your modifier key</string>
-    <!-- Message of TalkBack keyboard update modifier key dialog. [CHAR LIMIT=400] -->
-    <string name="keycombo_warning_dialog_message">For TalkBack\'s keyboard shortcuts to work correctly, update your modifier key from Action to Alt.\n\nIf you keep using the Action modifier key, some shortcuts will take different actions for this version of Android.</string>
-    <!-- Button on TalkBack keyboard update modifier key dialog. [CHAR LIMIT=30] -->
+    <!-- Message of Yaasr keyboard update modifier key dialog. [CHAR LIMIT=400] -->
+    <string name="keycombo_warning_dialog_message">For Yaasr\'s keyboard shortcuts to work correctly, update your modifier key from Action to Alt.\n\nIf you keep using the Action modifier key, some shortcuts will take different actions for this version of Android.</string>
+    <!-- Button on Yaasr keyboard update modifier key dialog. [CHAR LIMIT=30] -->
     <string name="keycombo_warning_dialog_close_button">@string/close_string</string>
 
     <!-- Keyboard key combination assignment dialog items -->
@@ -608,7 +608,7 @@
     <!-- Title of alert dialog to reset keymap for changing trigger modifier [CHAR LIMIT=60] -->
     <string name="keycombo_menu_alert_title_trigger_modifier">Use <xliff:g id="new_trigger_modifier" example="Action">%1$s</xliff:g> as your modifier key?</string>
     <!-- Message of alert dialog to reset keymap for changing trigger modifier [CHAR LIMIT=200] -->
-    <string name="keycombo_menu_alert_message_trigger_modifier">TalkBack currently uses <xliff:g id="current_trigger_modifier" example="Alt">%1$s</xliff:g> as the modifier key.</string>
+    <string name="keycombo_menu_alert_message_trigger_modifier">Yaasr currently uses <xliff:g id="current_trigger_modifier" example="Alt">%1$s</xliff:g> as the modifier key.</string>
     <!-- Button of alert dialog to reset keymap for changing trigger modifier [CHAR LIMIT=40] -->
     <string name="keycombo_menu_alert_button_trigger_modifier">Use <xliff:g id="new_trigger_modifier" example="Action">%1$s</xliff:g></string>
     <!-- Announce that modifier key is changed -->
@@ -751,9 +751,9 @@
     <string name="keycombo_menu_other_show_control_list">Show controls list</string>
     <!-- Keyboard key combination assignment for show tables list in search UI action [CHAR LIMIT=40] -->
     <string name="keycombo_menu_other_show_table_list">Show tables list</string>
-    <!-- Keyboard key combination assignment for Show TalkBack Menu action
-    TalkBack menu actions are related to whole application [CHAR LIMIT=130] [BACKUP_MESSAGE_ID: 8053375494161376217] -->
-    <string name="keycombo_menu_other_talkback_context_menu">Show TalkBack Menu</string>
+    <!-- Keyboard key combination assignment for Show Yaasr Menu action
+    Yaasr menu actions are related to whole application [CHAR LIMIT=130] [BACKUP_MESSAGE_ID: 8053375494161376217] -->
+    <string name="keycombo_menu_other_talkback_context_menu">Show Yaasr Menu</string>
     <!-- Keyboard key combination assignment for opening the list of custom actions [CHAR LIMIT=60] -->
     <string name="keycombo_menu_other_custom_actions">Show actions</string>
     <!-- Keyboard key combination assignment for opening the list of TTS languages installed by the user. [CHAR LIMIT=60] -->
@@ -764,8 +764,8 @@
     <string name="keycombo_menu_other_toggle_selection" translatable="false">@string/shortcut_toggle_selection</string>
     <!-- Keyboard key combination assignment for opening the TTS settings. [CHAR LIMIT=60] -->
     <string name="keycombo_menu_other_open_tts_settings">Open text-to-speech settings</string>
-    <!-- Keyboard key combination assignment for opening TalkBack settings. [CHAR LIMIT=60] -->
-    <string name="keycombo_menu_other_open_talkback_settings">Open TalkBack settings</string>
+    <!-- Keyboard key combination assignment for opening Yaasr settings. [CHAR LIMIT=60] -->
+    <string name="keycombo_menu_other_open_talkback_settings">Open Yaasr settings</string>
     <!-- Keyboard key combination assignment for opening the Tutorial page. [CHAR LIMIT=60] -->
     <string name="keycombo_menu_other_show_tutorial" translatable="false">@string/shortcut_show_tutorial</string>
     <!-- Keyboard key combination assignment for toggle braille contracted mode. [CHAR LIMIT=60] -->
@@ -983,9 +983,9 @@
     <string name="title_pref_latency_reduction">Reduce delay</string>
     <!--
       Source: Summary subtext for the "Reduce latency" setting.
-      Description: go to a sub-page which contains settings for TalkBack latency. [CHAR LIMIT=NONE]
+      Description: go to a sub-page which contains settings for Yaasr latency. [CHAR LIMIT=NONE]
     -->
-    <string name="talkback_latency_reduction_summary">Settings to reduce the delay before TalkBack announcements</string>
+    <string name="talkback_latency_reduction_summary">Settings to reduce the delay before Yaasr announcements</string>
     <!--
       Source: Summary subtext for the "Use pitch changes" setting.
       Description: Explains that feedback from the keyboard, e.g. when a user deletes an "A" and the phone speaks "A deleted", will be spoken in a higer pitched voice. [CHAR LIMIT=NONE]
@@ -1010,7 +1010,7 @@
      Source: Preference for showing user how to control talkback speech settings.
      Description: This is used as a footer. [CHAR LIMIT=500]
     -->
-    <string name="title_pref_speech_footer">You can quickly adjust some of TalkBack\'s sound settings from any screen.\n\nAccessibility volume: Hold 1 finger on the screen and press the volume up or volume down key.\nTalkBack speech rate: Swipe up or down with 3 fingers. When you hear \"speech rate\", swipe up or down with 1 finger.</string>
+    <string name="title_pref_speech_footer">You can quickly adjust some of Yaasr\'s sound settings from any screen.\n\nAccessibility volume: Hold 1 finger on the screen and press the volume up or volume down key.\nYaasr speech rate: Swipe up or down with 3 fingers. When you hear \"speech rate\", swipe up or down with 1 finger.</string>
     <!--
       Source: Preference for whether to provide vibration feedback in response to system events.
       Description: The user can check or not check this. [CHAR LIMIT=25]
@@ -1022,7 +1022,7 @@
     -->
     <string name="title_pref_soundback">Sound feedback</string>
     <!--
-      Source: Title for the preference that causes TalkBack to decrease audio volume of other applications during speech output.
+      Source: Title for the preference that causes Yaasr to decrease audio volume of other applications during speech output.
       Description: The user can check or not check this. [CHAR LIMIT=35]
      -->
     <string name="title_pref_use_audio_focus">Audio ducking</string>
@@ -1117,7 +1117,7 @@
       Source: Message for the preference that allows user to type focus latency.
       Description: The user can check or not check this. In another seekbar preference, the user can adjust the slider to change latency value. [CHAR LIMIT=NONE]
      -->
-    <string name="message_pref_touch_explore_latency">Shorter typing focus delay means TalkBack announcements are made faster after touching the keyboard.\n\nSelect a delay</string>
+    <string name="message_pref_touch_explore_latency">Shorter typing focus delay means Yaasr announcements are made faster after touching the keyboard.\n\nSelect a delay</string>
     <!--
       Source: Preference title.
       Description: This preference that shows current touch focus time out to exploration. [CHAR_LIMIT=35]
@@ -1128,19 +1128,19 @@
       Description: This preference that shows summary of touch focus time. [CHAR_LIMIT=NONE]
     -->
     <string name="summary_pref_touch_focus_time">"
-Controls how quickly TalkBack speaks after focus moves. A shorter delay makes TalkBack feel faster, but can make double- and triple-taps harder to perform.\n\n
+Controls how quickly Yaasr speaks after focus moves. A shorter delay makes Yaasr feel faster, but can make double- and triple-taps harder to perform.\n\n
 Delays below 0.3 seconds will change double-tap to activate to two-finger tap to activate.
       "</string>
     <!--
       Source: Preference title.
-      Description: This preference turns on TalkBack gesture detection. [CHAR_LIMIT=96]
+      Description: This preference turns on Yaasr gesture detection. [CHAR_LIMIT=96]
       -->
-    <string name="title_pref_talkback_gesture_detection">Handle gestures in TalkBack</string>
+    <string name="title_pref_talkback_gesture_detection">Handle gestures in Yaasr</string>
     <!--
       Source: Toast.
-      Description: Hint text when turning on TalkBack gesture detection. [CHAR LIMIT=80]
+      Description: Hint text when turning on Yaasr gesture detection. [CHAR LIMIT=80]
        -->
-    <string name="toast_pref_talkback_gesture_detection">Turn TalkBack off then on again to activate the setting.</string>
+    <string name="toast_pref_talkback_gesture_detection">Turn Yaasr off then on again to activate the setting.</string>
 
     <!--
       Source: Preference title.
@@ -1164,7 +1164,7 @@ Delays below 0.3 seconds will change double-tap to activate to two-finger tap to
   Source: Preference title.
   Description: This preference to download icon detection module and enable/disable the feature. [CHAR_LIMIT=NONE]
 -->
-  <string name="title_pref_category_automatic_description_summary">Get detailed AI image descriptions when you select \“Describe image\” from the TalkBack menu.\n\nYou can also get automatic descriptions when you focus on an image or icon. Automatic descriptions work without an internet connection.
+  <string name="title_pref_category_automatic_description_summary">Get detailed AI image descriptions when you select \“Describe image\” from the Yaasr menu.\n\nYou can also get automatic descriptions when you focus on an image or icon. Automatic descriptions work without an internet connection.
 </string>
 
   <!--
@@ -1205,7 +1205,7 @@ Delays below 0.3 seconds will change double-tap to activate to two-finger tap to
     Source: Preference title.
     Description: This preference to enable/disable the recognize text in images. [CHAR_LIMIT=NONE]
   -->
-  <string name="summary_pref_ai_description">Hear longer descriptions when you select \"<xliff:g id="TalkBack menu item" example="Describe image">%1$s</xliff:g>\" from the TalkBack menu</string>
+  <string name="summary_pref_ai_description">Hear longer descriptions when you select \"<xliff:g id="Yaasr menu item" example="Describe image">%1$s</xliff:g>\" from the Yaasr menu</string>
 
   <!-- Message for dialog shown when a user wants to enable detailed image description. [CHAR LIMIT=NONE]  -->
   <string name="dialog_message_detailed_ai_description">When using this feature, selected images will be sent to Google for processing and then deleted.\n\nGenerative AI is experimental, so it will make mistakes. By continuing, you agree to <xliff:g id="Gen AI Terms of Service" example="Google\'s Terms of Service">%1$s</xliff:g>.</string>
@@ -1235,7 +1235,7 @@ Delays below 0.3 seconds will change double-tap to activate to two-finger tap to
   <!-- Message for AI feature downloading with the download progress. [CHAR LIMIT=NONE]  -->
   <string name="message_aifeature_downloading_with_progress">Downloading still in progress. <xliff:g id="Download progress" example="50">%1$d</xliff:g> of <xliff:g id="Feature size" example="4096">%2$d</xliff:g>MB downloaded.</string>
   <!-- Message for AI feature download completed. [CHAR LIMIT=NONE]  -->
-  <string name="message_aifeature_download_complete">AI model downloaded. TalkBack can now generate image descriptions.</string>
+  <string name="message_aifeature_download_complete">AI model downloaded. Yaasr can now generate image descriptions.</string>
 
   <!--
     Source: Summary subtext for the "Automatic descriptions" setting.
@@ -1350,7 +1350,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   -->
   <string name="title_pref_disable_auto_icon_detection">Don\'t describe icons</string>
   <!-- Message for dialog shown when a user wants to enable detailed image description. [CHAR LIMIT=NONE]  -->
-  <string name="dialog_message_detailed_ai_promotion">Detailed image descriptions are powered by generative AI. When using this feature, selected images will be sent to Google for processing and then deleted.\n\nGenerative AI is experimental, so it will make mistakes. You can turn off detailed image descriptions anytime in TalkBack settings.\n\nBy continuing, you agree to <xliff:g id="Gen AI Terms of Service" example="Google\'s Terms of Service">%1$s</xliff:g>.</string>
+  <string name="dialog_message_detailed_ai_promotion">Detailed image descriptions are powered by generative AI. When using this feature, selected images will be sent to Google for processing and then deleted.\n\nGenerative AI is experimental, so it will make mistakes. You can turn off detailed image descriptions anytime in Yaasr settings.\n\nBy continuing, you agree to <xliff:g id="Gen AI Terms of Service" example="Google\'s Terms of Service">%1$s</xliff:g>.</string>
 
   <!-- Message for dialog shown when a user wants to enable screen description. [CHAR LIMIT=NONE]  -->
   <string name="dialog_message_screen_overview_promotion">When using this feature, a screenshot of your screen will be sent to Google for processing and then deleted. Processing takes several seconds.\n\nGenerative AI is experimental, so it will make mistakes. By continuing, you agree to <xliff:g id="Gen AI Terms of Service" example="Google\'s Terms of Service">%1$s</xliff:g>.</string>
@@ -1396,11 +1396,11 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!--
       Text that is temporary displayed on the screen when user chose screen dimming option. [CHAR_LIMIT=NONE]
     -->
-    <string name="screen_dimming_exit_instruction_line1">TalkBack accessibility service has hidden the screen</string>
+    <string name="screen_dimming_exit_instruction_line1">Yaasr accessibility service has hidden the screen</string>
     <!--
       Text that is temporary displayed on the screen for showing the screen from hidden mode. [CHAR_LIMIT=NONE]
     -->
-    <string name="screen_dimming_exit_instruction_line2">To change this, <xliff:g id="gesture" example="tap with 3 fingers">%1$s</xliff:g> to open the TalkBack menu, select \"<xliff:g id="menu item" example="show screen">%2$s</xliff:g>\", then double-tap.</string>
+    <string name="screen_dimming_exit_instruction_line2">To change this, <xliff:g id="gesture" example="tap with 3 fingers">%1$s</xliff:g> to open the Yaasr menu, select \"<xliff:g id="menu item" example="show screen">%2$s</xliff:g>\", then double-tap.</string>
 
     <!-- Category for shortcuts related to basic navigation. [CHAR_LIMIT=40] -->
     <string name="shortcut_title_basic_navigation">Basic Navigation</string>
@@ -1461,11 +1461,11 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="shortcut_quick_settings">Quick Settings</string>
     <!-- Label for the shortcut that opens the custom action menu. [CHAR_LIMIT=40] -->
     <string name="shortcut_show_custom_actions">Show custom actions</string>
-    <!-- Label for the shortcut that opens the TalkBack context breakout menu [CHAR_LIMIT=100] -->
-    <string name="shortcut_talkback_breakout">Open TalkBack menu</string>
-    <!-- Label for the shortcut that pauses all feedback from TalkBack. [CHAR_LIMIT=69] -->
+    <!-- Label for the shortcut that opens the Yaasr context breakout menu [CHAR_LIMIT=100] -->
+    <string name="shortcut_talkback_breakout">Open Yaasr menu</string>
+    <!-- Label for the shortcut that pauses all feedback from Yaasr. [CHAR_LIMIT=69] -->
     <string name="shortcut_pause_or_resume_feedback">Pause or resume speech</string>
-    <!-- Label for the shortcut that toggle voice feedback from TalkBack. [CHAR_LIMIT=72] -->
+    <!-- Label for the shortcut that toggle voice feedback from Yaasr. [CHAR_LIMIT=72] -->
     <string name="shortcut_toggle_voice_feedback">Turn speech on or off</string>
     <!-- Label for menu item that reads all on-screen content, starting from the top of the screen. [CHAR_LIMIT=40] -->
     <!--
@@ -1487,7 +1487,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="shortcut_first_in_screen">Focus on first item on screen</string>
     <!-- Label for the shortcut that will make a summary of the screen -->
     <string name="shortcut_summary">Summarize screen layout</string>
-    <!-- Label for the shortcut that will allow voice commands to invoke TalkBack actions. [CHAR_LIMIT=60] -->
+    <!-- Label for the shortcut that will allow voice commands to invoke Yaasr actions. [CHAR_LIMIT=60] -->
     <string name="shortcut_voice_commands">Start voice command</string>
     <!-- Label for the shortcut that will move focus to the last item on the screen -->
     <string name="shortcut_last_in_screen">Focus on last item on screen</string>
@@ -1509,14 +1509,14 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="shortcut_perform_double_click_action">Double click</string>
     <!-- Label for the shortcut that performs long click on focused item action. [CHAR_LIMIT=60] -->
     <string name="shortcut_perform_long_click_action">Touch and hold</string>
-    <!-- Title for dialog with general TalkBack actions and focused node actions [CHAR_LIMIT=40] -->
-    <string name="talkback_menu_title">TalkBack menu</string>
-    <!-- Text of TalkBack menu Close button. [CHAR_LIMIT=40] -->
+    <!-- Title for dialog with general Yaasr actions and focused node actions [CHAR_LIMIT=40] -->
+    <string name="talkback_menu_title">Yaasr menu</string>
+    <!-- Text of Yaasr menu Close button. [CHAR_LIMIT=40] -->
     <string name="talkback_menu_close_button_text">@string/close_string</string>
-    <!-- Text of TalkBack menu more options. [CHAR_LIMIT=NONE] -->
+    <!-- Text of Yaasr menu more options. [CHAR_LIMIT=NONE] -->
     <string name="talkback_menu_more_options_text">More menu options are available after you finish setup or unlock your device</string>
-  <!-- Title content description for dialog with general TalkBack actions and focused node actions [CHAR_LIMIT=200] -->
-  <string name="talkback_menu_title_content_description">TalkBack menu. Swipe right to explore options in the TalkBack menu.\n\nTo go back to the tutorial, use 2 fingers to swipe left or right from the edge of your screen.</string>
+  <!-- Title content description for dialog with general Yaasr actions and focused node actions [CHAR_LIMIT=200] -->
+  <string name="talkback_menu_title_content_description">Yaasr menu. Swipe right to explore options in the Yaasr menu.\n\nTo go back to the tutorial, use 2 fingers to swipe left or right from the edge of your screen.</string>
   <!-- Label for the shortcut that opens the language option menu. [CHAR_LIMIT=40] -->
   <string name="shortcut_show_language_options">Change spoken language</string>
   <!--Label for the shortcut that selects the next setting [CHAR_LIMIT=100]-->
@@ -1558,7 +1558,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="shortcut_braille_keyboard">Switch to braille keyboard</string>
     <!-- Label for the shortcut that perform navigate to braille display settings action. [CHAR_LIMIT=40]-->
     <string name="shortcut_braille_display_settings">Navigate to braille display settings</string>
-    <!-- Label for the shortcut that launch TalkBack tutorial action. [CHAR_LIMIT=40]-->
+    <!-- Label for the shortcut that launch Yaasr tutorial action. [CHAR_LIMIT=40]-->
     <string name="shortcut_tutorial">Open tutorial</string>
     <!-- Label for the shortcut of turning speaking time on or off. [CHAR_LIMIT=120]-->
     <string name="shortcut_control_speak_time">Speak time or don\'t speak time</string>
@@ -1610,7 +1610,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Keyboard key combination assignment for cycling the punctuation verbosity [CHAR LIMIT=40]-->
     <string name="shortcut_cycle_punctuation_verbosity">Cycle punctuation level</string>
 
-    <!-- Label for the TalkBack breakout menu when it contains no other items. [CHAR_LIMIT=100] -->
+    <!-- Label for the Yaasr breakout menu when it contains no other items. [CHAR_LIMIT=100] -->
     <string name="title_local_breakout_no_items">No menu items.</string>
     <!-- Label for the menu item to move to the next section within web content. [CHAR_LIMIT=40] -->
     <string name="title_web_breakout_next_section">Next section</string>
@@ -1640,7 +1640,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="title_edittext_grammar_suggestion"><xliff:g id="grammar_suggestion" example="This a">%1$s</xliff:g>. Grammar suggestion.</string>
     <!-- Label for the menu item to show the number of the spelling or grammar suggestion for a typo or grammar error. [CHAR_LIMIT=NONE] -->
     <string name="title_edittext_typo_suggestion_number"><xliff:g id="number" example="1">%1$d</xliff:g> of <xliff:g id="total_number" example="2">%2$d</xliff:g></string>
-    <!-- Label for the TalkBack breakout menu containing controls for navigating within a ViewPager control. [CHAR_LIMIT=70] -->
+    <!-- Label for the Yaasr breakout menu containing controls for navigating within a ViewPager control. [CHAR_LIMIT=70] -->
     <string name="title_viewpager_controls">Page navigation</string>
     <!-- Label for the menu item to move to the next page within a ViewPager control. [CHAR_LIMIT=40] -->
     <string name="title_viewpager_breakout_next_page">Next page</string>
@@ -1654,9 +1654,9 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="title_viewpager_breakout_page_left">Page left</string>
     <!-- Label for the menu item to move a page right within a ViewPager control. [CHAR_LIMIT=40] -->
     <string name="title_viewpager_breakout_page_right">Page right</string>
-    <!-- Label for the TalkBack breakout menu containing controls for managing user defined labels for unlabeled items [CHAR_LIMIT=40] -->
+    <!-- Label for the Yaasr breakout menu containing controls for managing user defined labels for unlabeled items [CHAR_LIMIT=40] -->
     <string name="title_labeling_controls">Labels</string>
-    <!-- Label for the TalkBack breakout menu settings containing controls for managing to show or hide label at TalkBack breakout menu [CHAR_LIMIT=130] -->
+    <!-- Label for the Yaasr breakout menu settings containing controls for managing to show or hide label at Yaasr breakout menu [CHAR_LIMIT=130] -->
     <string name="title_labeling_show_or_hide_controls">Add or edit labels</string>
     <!-- Label for the menu item that lets the user change the navigation granularity (ex. character, word). [CHAR_LIMIT=40] -->
     <string name="title_granularity">Navigation</string>
@@ -1684,8 +1684,8 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="title_show_voice_commands">Voice commands</string>
     <!-- Label for the context menu containing keyboard shortcuts. [CHAR_LIMIT=100] -->
     <string name="title_show_keyboard_shortcuts">Keyboard shortcuts</string>
-    <!-- Label for the context menu containing TalkBack settings. [CHAR_LIMIT=70] -->
-    <string name="talkback_show_talkback_settings">TalkBack settings</string>
+    <!-- Label for the context menu containing Yaasr settings. [CHAR_LIMIT=70] -->
+    <string name="talkback_show_talkback_settings">Yaasr settings</string>
     <!-- Label for the context menu containing braille display settings. [CHAR_LIMIT=70] -->
     <string name="title_show_braille_display_settings">Braille display settings</string>
 
@@ -1693,17 +1693,17 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="title_granularity_default">Default navigation</string>
 
     <!--
-      Source: A TalkBack menu option that allows dismissing an element on the screen.
+      Source: A Yaasr menu option that allows dismissing an element on the screen.
       Description: This is presented to the user when an element supports a "dismiss" action. [CHAR LIMIT=NONE]
     -->
     <string name="title_action_dismiss">Dismiss</string>
     <!--
-      Source: A TalkBack menu option that allows expanding an element on the screen.
+      Source: A Yaasr menu option that allows expanding an element on the screen.
       Description: This is presented to the user when an element supports a "expand" action. [CHAR LIMIT=NONE]
     -->
     <string name="title_action_expand">Expand</string>
     <!--
-      Source: A TalkBack menu option that allows collapsing an element on the screen.
+      Source: A Yaasr menu option that allows collapsing an element on the screen.
       Description: This is presented to the user when an element supports a "collapse" action. [CHAR LIMIT=NONE]
     -->
     <string name="title_action_collapse">Collapse</string>
@@ -1738,23 +1738,23 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Summary for the menu item that lets the user change the read from cursor position. [CHAR_LIMIT=NONE] -->
     <string name="summary_read_from_current">Starting from the focused item, read all items on the screen</string>
     <!-- Summary for the menu item that lets the user copies the last spoken phrase. [CHAR_LIMIT=NONE] -->
-    <string name="summary_copy_last_spoken_phrase">Copy the last phrase TalkBack said to the clipboard so you can paste the text</string>
+    <string name="summary_copy_last_spoken_phrase">Copy the last phrase Yaasr said to the clipboard so you can paste the text</string>
     <!-- Summary for the menu item that lets the user spells the last spoken phrase. [CHAR_LIMIT=NONE] -->
-    <string name="summary_spell_last_spoken_phrase">Spell each letter of the last phrase that TalkBack said</string>
+    <string name="summary_spell_last_spoken_phrase">Spell each letter of the last phrase that Yaasr said</string>
     <!-- Summary for the menu item that lets the user repeats the last spoken phrase. [CHAR_LIMIT=NONE] -->
-    <string name="summary_repeat_last_spoken_phrase">Hear the last phrase that TalkBack said again</string>
+    <string name="summary_repeat_last_spoken_phrase">Hear the last phrase that Yaasr said again</string>
     <!-- Summary for user to performs screen search keyword. [CHAR_LIMIT=NONE] -->
     <string name="summary_perform_screen_search">Enter a search term to find that text on the screen</string>
-    <!-- Summary for user to control TalkBack by voice. [CHAR_LIMIT=NONE] -->
-    <string name="summary_voice_commands">Control TalkBack with your voice</string>
+    <!-- Summary for user to control Yaasr by voice. [CHAR_LIMIT=NONE] -->
+    <string name="summary_voice_commands">Control Yaasr with your voice</string>
     <!-- Summary for the context menu containing show or hide screen. [CHAR_LIMIT=NONE] -->
     <string name="summary_show_hide_screen">Hide the display so your screen is not visible to others in public places. After hiding your screen, return it to a normal state.</string>
     <!-- Summary for user to control speaking time while waking up the device. [CHAR_LIMIT=NONE] -->
     <string name="summary_control_speak_time">Change whether the time is spoken aloud when you turn on the screen</string>
-    <!-- Summary for the menu item that open TalkBack keyboard shortcuts dialog. [CHAR_LIMIT=NONE] -->
+    <!-- Summary for the menu item that open Yaasr keyboard shortcuts dialog. [CHAR_LIMIT=NONE] -->
     <string name="summary_show_keyboard_shortcuts_preferences">Open list of keyboard shortcuts</string>
-    <!-- Summary for the activity that manages TalkBack settings. [CHAR_LIMIT=NONE] -->
-    <string name="summary_talkback_preferences">Open TalkBack settings</string>
+    <!-- Summary for the activity that manages Yaasr settings. [CHAR_LIMIT=NONE] -->
+    <string name="summary_talkback_preferences">Open Yaasr settings</string>
   <!-- Summary for the activity that manages braille display settings. [CHAR_LIMIT=NONE] -->
   <string name="summary_braile_display_preferences">Open braille display settings</string>
     <!-- Summary for the menu item that opens the dialog with system actions available on device from R. [CHAR_LIMIT=NONE] -->
@@ -1836,7 +1836,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Summary for the navigation options menu containing default granularity. [CHAR_LIMIT=NONE] -->
     <string name="summary_granularity_default">Read one item at a time</string>
     <!-- Summary for the quick menu containing speech rate. [CHAR_LIMIT=70] -->
-    <string name="summary_speech_rate">Change how quickly TalkBack speaks</string>
+    <string name="summary_speech_rate">Change how quickly Yaasr speaks</string>
     <!-- Summary for the quick menu containing verbosity. [CHAR_LIMIT=70] -->
     <string name="summary_selector_menu_verbosity">Change whether keys, usage hints, and more are read aloud</string>
     <!-- Summary for the quick menu containing punctuation. [CHAR_LIMIT=70] -->
@@ -1850,7 +1850,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Summary for the quick menu containing hide screen. [CHAR_LIMIT=70] -->
     <string name="summary_hide_screen">Hide the display so your screen isn\'t visible to others</string>
     <!-- Summary for the quick menu containing audio ducking. [CHAR_LIMIT=70] -->
-    <string name="summary_audio_ducking">Lower volume of other audio playing when TalkBack speaks</string>
+    <string name="summary_audio_ducking">Lower volume of other audio playing when Yaasr speaks</string>
     <!-- Summary for the quick menu containing scrolling. [CHAR_LIMIT=NONE] -->
     <string name="summary_support_scroll_seq">Scroll forward or backward</string>
     <!-- Summary for the quick menu containing Accessibility volume change. [CHAR_LIMIT=70] -->
@@ -1870,7 +1870,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Summary for the menu item to provide spelling suggestion for the misspelled word. [CHAR_LIMIT=70] -->
     <string name="summary_typo_suggestions">Shows when the cursor is on a typo</string>
 
-    <string name="summary_cache_keyboard_keys">TalkBack pre-loads announcements to reduce delay when you type</string>
+    <string name="summary_cache_keyboard_keys">Yaasr pre-loads announcements to reduce delay when you type</string>
     <string name="summary_cache_keyboard_keys_disabled">Use Google Text-to-Speech to use this feature</string>
 
     <!-- Label for the direction of the "swipe down" gesture. For instance, this is used in the tutorial to inform the user of how to perform a specific gesture. [CHAR_LIMIT=40] -->
@@ -2085,45 +2085,45 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Label for the preference specifying a very large amount of shake force is required to initiate the shake to read feature. -->
     <string name="value_shake_to_read_threshold_very_hard">Very hard</string>
 
-    <!-- Label for preference specifying that TalkBack on-screen keyboard settings. [CHAR_LIMIT=75]-->
+    <!-- Label for preference specifying that Yaasr on-screen keyboard settings. [CHAR_LIMIT=75]-->
     <string name="title_pref_on_screen_keyboard">On-screen keyboard</string>
-    <!-- Label for preference specifying that TalkBack physical keyboard settings. [CHAR_LIMIT=75] -->
+    <!-- Label for preference specifying that Yaasr physical keyboard settings. [CHAR_LIMIT=75] -->
     <string name="title_pref_physical_keyboard">Physical keyboard</string>
-    <!-- Label for preference specifying that TalkBack should only speak keys that the user types with an on-screen keyboard. [CHAR_LIMIT=75]-->
+    <!-- Label for preference specifying that Yaasr should only speak keys that the user types with an on-screen keyboard. [CHAR_LIMIT=75]-->
     <string name="title_pref_keyboard_echo_on_screen">Keyboard echo: On-screen keyboard</string>
-    <!-- Label for preference specifying that TalkBack should only speak keys that the user types with a physical keyboard. [CHAR_LIMIT=75] -->
+    <!-- Label for preference specifying that Yaasr should only speak keys that the user types with a physical keyboard. [CHAR_LIMIT=75] -->
     <string name="title_pref_keyboard_echo_physical">Keyboard echo: Physical keyboard</string>
-    <!-- Label for preference specifying that TalkBack should not echo of keyboard input. [CHAR_LIMIT=15] -->
+    <!-- Label for preference specifying that Yaasr should not echo of keyboard input. [CHAR_LIMIT=15] -->
     <string name="value_keyboard_echo_none">None</string>
-    <!-- Label for preference specifying that TalkBack should echo of typed characters. [CHAR_LIMIT=30] -->
+    <!-- Label for preference specifying that Yaasr should echo of typed characters. [CHAR_LIMIT=30] -->
     <string name="value_keyboard_echo_characters_only">Characters</string>
-    <!-- Label for preference specifying that TalkBack should echo of typed words. [CHAR_LIMIT=15] -->
+    <!-- Label for preference specifying that Yaasr should echo of typed words. [CHAR_LIMIT=15] -->
     <string name="value_keyboard_echo_words_only">Words</string>
-    <!-- Label for preference specifying that TalkBack should echo of typed characters and words. [CHAR_LIMIT=60] -->
+    <!-- Label for preference specifying that Yaasr should echo of typed characters and words. [CHAR_LIMIT=60] -->
     <string name="value_keyboard_echo_characters_and_words">Characters and words</string>
 
-    <!-- Label for preference specifying that TalkBack should describe elements in order: state, name type. -->
+    <!-- Label for preference specifying that Yaasr should describe elements in order: state, name type. -->
     <string name="pref_node_desc_order_entry_state_name_role_pos">State, name, type</string>
-    <!-- Label for preference specifying that TalkBack should describe elements in order: type, name, state. -->
+    <!-- Label for preference specifying that Yaasr should describe elements in order: type, name, state. -->
     <string name="pref_node_desc_order_entry_role_name_state_pos">Type, name, state</string>
-    <!-- Label for preference specifying that TalkBack should describe elements in order: name, type, state. -->
+    <!-- Label for preference specifying that Yaasr should describe elements in order: name, type, state. -->
     <string name="pref_node_desc_order_entry_name_role_state_pos">Name, type, state</string>
 
-    <!-- Label for preference specifying that TalkBack should announce time in the format used by the paired device. [CHAR LIMIT=120] -->
+    <!-- Label for preference specifying that Yaasr should announce time in the format used by the paired device. [CHAR LIMIT=120] -->
     <string name="pref_time_feedback_format_entries_default">Use device time format</string>
-    <!-- Label for preference specifying that TalkBack should announce time in 12 hour format. [CHAR LIMIT=60] -->
+    <!-- Label for preference specifying that Yaasr should announce time in 12 hour format. [CHAR LIMIT=60] -->
     <string name="pref_time_feedback_format_entries_12_hour">12 hour</string>
-    <!-- Label for preference specifying that TalkBack should announce time in 24 hour format. [CHAR LIMIT=60] -->
+    <!-- Label for preference specifying that Yaasr should announce time in 24 hour format. [CHAR LIMIT=60] -->
     <string name="pref_time_feedback_format_entries_24_hour">24 hour</string>
 
     <!--
-      Source: Title of a notification that TalkBack's gestures have been changed.
+      Source: Title of a notification that Yaasr's gestures have been changed.
       Description: Displays a more detailed notification with information about gesture changes [CHAR_LIMIT=30]
     -->
-    <string name="notification_title_talkback_gestures_changed">TalkBack gestures changed</string>
+    <string name="notification_title_talkback_gestures_changed">Yaasr gestures changed</string>
 
     <!--
-      Source: Description of a notification that TalkBack's gestures have been changed.
+      Source: Description of a notification that Yaasr's gestures have been changed.
       Description: Displays a more detailed notification with information about gesture changes [CHAR_LIMIT=70]
     -->
     <string name="notification_message_talkback_gestures_changed">Tap to review changes to accessibility gestures</string>
@@ -2144,9 +2144,9 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="label_dialog_text">Enter the text to be used as a label for this element\nInternal view name: <xliff:g id="view_resource_name">%1$s</xliff:g></string>
     <!-- Hint text that appears in the edit box within the alert shown when a user adds or edits a custom label for an unlabeled view. [CHAR_LIMIT=80] -->
     <string name="label_dialog_edit_hint">Label text</string>
-    <!-- Text that appears in the label management menu item, that allow user to import custom labels to TalkBack -->
+    <!-- Text that appears in the label management menu item, that allow user to import custom labels to Yaasr -->
     <string name="label_import">Import custom labels</string>
-    <string name="label_import_dialog_title">Import custom labels to TalkBack</string>
+    <string name="label_import_dialog_title">Import custom labels to Yaasr</string>
     <string name="label_import_dialog_message">Choose whether you want to override or skip existing labels in the case of conflict</string>
     <string name="label_import_dialog_skip">Skip</string>
     <string name="label_import_dialog_override">Override</string>
@@ -2163,24 +2163,24 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="label_choose_app_to_import">Choose application to import labels:</string>
     <string name="label_choose_app_to_export">Choose application to export labels:</string>
     <!--
-      Source: Description of a notification that TalkBack's gestures have been changed.
+      Source: Description of a notification that Yaasr's gestures have been changed.
       Description: Displays a more detailed notification with information about gesture changes [CHAR LIMIT=NONE]
      -->
-    <string name="talkback_gesture_change_details">This version of TalkBack includes changes to the default accessibility gestures.  The actions associated with these gestures can be customized within TalkBack settings.  When Explore by touch is enabled, you can use the following gestures to perform certain actions.\n\n<xliff:g id="mappings">%1$s</xliff:g></string>
+    <string name="talkback_gesture_change_details">This version of Yaasr includes changes to the default accessibility gestures.  The actions associated with these gestures can be customized within Yaasr settings.  When Explore by touch is enabled, you can use the following gestures to perform certain actions.\n\n<xliff:g id="mappings">%1$s</xliff:g></string>
 
     <!-- Title for the alert shown when a user attempts to set option that turns the phone screen dark to provide provide privacy. [CHAR_LIMIT=50] -->
     <string name="dialog_title_dim_screen">Hide screen?</string>
     <!-- Message for the alert shown when a user attempts to set option that turns the phone screen dark to provide provide privacy. [CHAR_LIMIT=NONE] -->
-    <string name="dialog_message_dim_screen">This turns off the display to improve privacy. Some content may still be shown, like messages for turning the display back on, or menus for accessibility features like TalkBack.</string>
+    <string name="dialog_message_dim_screen">This turns off the display to improve privacy. Some content may still be shown, like messages for turning the display back on, or menus for accessibility features like Yaasr.</string>
 
     <!--
-      Source: Description of a notification that some of TalkBack's built-in gestures have been changed.
+      Source: Description of a notification that some of Yaasr's built-in gestures have been changed.
       Description: Displays a more detailed notification with information about gesture changes [CHAR LIMIT=NONE]
      -->
-    <string name="talkback_built_in_gesture_change_details">This version of TalkBack includes changes to the default accessibility gestures.\n\nThe up-then-down gesture will allow you to move to the first item on the screen, and the down-then-up gesture will move to the last item.\n\nThe reading granularity can now be changed by focusing an item, then selecting a granularity from the talkback context menu.\n\nYou can change the actions performed by these gestures in TalkBack Settings.</string>
+    <string name="talkback_built_in_gesture_change_details">This version of Yaasr includes changes to the default accessibility gestures.\n\nThe up-then-down gesture will allow you to move to the first item on the screen, and the down-then-up gesture will move to the last item.\n\nThe reading granularity can now be changed by focusing an item, then selecting a granularity from the talkback context menu.\n\nYou can change the actions performed by these gestures in Yaasr Settings.</string>
 
     <!--
-      Source: Description of a notification that some of TalkBack's built-in gestures have been removed.
+      Source: Description of a notification that some of Yaasr's built-in gestures have been removed.
       Description: Displays a more detailed notification with information about gesture removes [CHAR LIMIT=NONE]
      -->
     <string name="default_action_changed_details">To pause and play media, you can now double tap and hold with two fingers.\n\nOther gestures have also changed.</string>
@@ -2192,15 +2192,15 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <string name="talkback_built_in_gesture_open_url">Open on phone to learn more</string>
 
     <!--
-      Source: Description of a notification that TalkBack's built-in swipe-up and swipe-down gestures have been changed in TalkBack 4.5.
+      Source: Description of a notification that Yaasr's built-in swipe-up and swipe-down gestures have been changed in Yaasr 4.5.
       Description: Displays a more detailed notification with information about gesture changes [CHAR LIMIT=NONE]
      -->
-    <string name="talkback_built_in_gesture_change_details_45">This version of TalkBack includes changes to the default accessibility gestures.\n\nThe up gesture now moves to the previous navigation setting, and the down gesture now moves to the next navigation setting.</string>
+    <string name="talkback_built_in_gesture_change_details_45">This version of Yaasr includes changes to the default accessibility gestures.\n\nThe up gesture now moves to the previous navigation setting, and the down gesture now moves to the next navigation setting.</string>
 
     <!--
-      Notification that TalkBack's side-tap and shake shortcuts have been removed. [CHAR_LIMIT=1300]
+      Notification that Yaasr's side-tap and shake shortcuts have been removed. [CHAR_LIMIT=1300]
      -->
-    <string name="side_tap_shortcuts_removed_details">These settings are removed from TalkBack, due to reliability issues:\n• Tap on side of device gestures\n• Shake to start continuous reading</string>
+    <string name="side_tap_shortcuts_removed_details">These settings are removed from Yaasr, due to reliability issues:\n• Tap on side of device gestures\n• Shake to start continuous reading</string>
 
     <!-- Label for the gesture change notificaiton dialog button to accept the suggested gesture mapping -->
     <string name="button_accept_changed_gesture_mappings">Accept gestures</string>
@@ -2245,10 +2245,10 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     <!-- Message for dialog shown when a user starts to turn on diagnosis-mode for debugging. [CHAR LIMIT=NONE]  -->
     <string name="dialog_message_diagnosis_mode">Diagnosis mode helps debugging.  Diagnosis mode overrides gesture tap with 4 fingers, to capture screen contents to system logs.  Screen contents may include personal information. \n\n Do you want to enable diagnosis mode?</string>
 
-  <!-- Title for requesting phone permission in TalkBack. [CHAR LIMIT=NONE] -->
+  <!-- Title for requesting phone permission in Yaasr. [CHAR LIMIT=NONE] -->
     <string name="title_request_phone_permission">Allow phone access?</string>
-    <!-- Message for requesting phone permission in TalkBack. It tells the reason for the users. [CHAR LIMIT=NONE] -->
-    <string name="message_request_phone_permission">This helps TalkBack reduce announcements when you\'re on a call</string>
+    <!-- Message for requesting phone permission in Yaasr. It tells the reason for the users. [CHAR LIMIT=NONE] -->
+    <string name="message_request_phone_permission">This helps Yaasr reduce announcements when you\'re on a call</string>
     <!-- Label for continue button. [CHAR_LIMIT=30] -->
     <string name="continue_button">Continue</string>
 
@@ -2421,7 +2421,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     Source: Message for the preference that allows user to focus latency.
     Description: The user can check or not check this. In another seekbar preference, the user can adjust the slider to change latency value. [CHAR LIMIT=NONE]
    -->
-  <string name="message_pref_touch_focus_latency">Shorter focus delay means TalkBack announcements are made faster after touching the screen</string>
+  <string name="message_pref_touch_focus_latency">Shorter focus delay means Yaasr announcements are made faster after touching the screen</string>
   <!--
     Source: Message for the preference that allows user to focus latency.
     Description: The user can check or not check this. In another seekbar preference, the user can adjust the slider to change latency value. [CHAR LIMIT=NONE]
@@ -2436,7 +2436,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
     Source: Title for the preference that allows user to adjust talkback speech rate.
     Description: The user can adjust the slider to change talkback speech rate. [CHAR LIMIT=81]
    -->
-  <string name="title_pref_talkback_speech_rate">TalkBack speech rate</string>
+  <string name="title_pref_talkback_speech_rate">Yaasr speech rate</string>
   <!--
   Source: Adjusting slider is the current setting of quick menu.
   Description: Notify user it's ready to adjust slider [CHAR LIMIT=45]
@@ -2533,27 +2533,27 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <string name="title_all_elements_list_button">All</string>
   <!-- Strings to speak to users -->
   <string name="msg_matches_found">{matches, plural, =0{No matches on this screen} =1{# match} other{# matches}}</string>
-  <!-- String to speak to users. If no matches are found, TalkBack should announce it. -->
+  <!-- String to speak to users. If no matches are found, Yaasr should announce it. -->
   <string name="msg_no_matches">No matches on this screen</string>
 
   <!-- Title for continuous reading mode tutorial read from top/next -->
   <string name="dialog_title_continuous_reading_mode">How continuous reading works</string>
   <!-- Message for continuous reading mode tutorial, lists available gestures. -->
-  <string name="dialog_message_continuous_reading_mode">After selecting \"Read from top\" or \"Read from focused item\", you can still navigate to the previous or next item while the text is being read. This lets you go back or skip ahead with ease.\n\nTo adjust the volume while TalkBack speaks, press the volume up or volume down key.</string>
+  <string name="dialog_message_continuous_reading_mode">After selecting \"Read from top\" or \"Read from focused item\", you can still navigate to the previous or next item while the text is being read. This lets you go back or skip ahead with ease.\n\nTo adjust the volume while Yaasr speaks, press the volume up or volume down key.</string>
   <!-- Checkbox text for always displaying the dialog -->
   <string name="always_show_this_message_label">Always show this message</string>
 
   <!-- Title for voice commands, first-time use dialog [CHAR_LIMIT=80] -->
-  <string name="dialog_title_voice_commands">Use voice commands to control TalkBack</string>
+  <string name="dialog_title_voice_commands">Use voice commands to control Yaasr</string>
   <!-- Message for voice commands, first-time use dialog [CHAR_LIMIT=NONE] -->
-  <string name="dialog_message_voice_commands">Here are some things you can say:\n\n• Copy\n• Read from focused item\n• Find [save]\n• Speak [faster]\n• TalkBack settings\n\nSay \"<xliff:g example="help" id="voice_help_cmd">%1$s</xliff:g>\" for a list of all voice commands</string>
+  <string name="dialog_message_voice_commands">Here are some things you can say:\n\n• Copy\n• Read from focused item\n• Find [save]\n• Speak [faster]\n• Yaasr settings\n\nSay \"<xliff:g example="help" id="voice_help_cmd">%1$s</xliff:g>\" for a list of all voice commands</string>
   <!-- Label for use voice commands, first-time use dialog [CHAR_LIMIT=40] -->
   <string name="start_voice_command">Use voice commands</string>
 
   <!-- Title for pass through mode, first-time use dialog. [CHAR_LIMIT=NONE] -->
-  <string name="dialog_title_pass_through_mode">Skip TalkBack gestures to use system gestures</string>
+  <string name="dialog_title_pass_through_mode">Skip Yaasr gestures to use system gestures</string>
   <!-- Message for pass-through mode tutorial. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 2757739143933456348]-->
-  <string name="dialog_message_pass_through_mode">When you hear a chime, you can use a system gesture that isn\'t supported by TalkBack. This is known as a pass-through gesture.</string>
+  <string name="dialog_message_pass_through_mode">When you hear a chime, you can use a system gesture that isn\'t supported by Yaasr. This is known as a pass-through gesture.</string>
 
   <!-- Title for voice input download dialog. [CHAR_LIMIT=NONE] -->
   <string name="dialog_title_voice_input_download">Update Gboard to use voice input</string>
@@ -2580,10 +2580,10 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- Placeholder text for the search screen EditText field, when searching among table elements. [CHAR_LIMIT=NONE] -->
   <string name="screen_search_hint_type_search_tables">Search tables</string>
 
-  <!-- Notification channel name of TalkBack. [CHAR_LIMIT=40] -->
+  <!-- Notification channel name of Yaasr. [CHAR_LIMIT=40] -->
   <string name="talkback_notification_channel_name">@string/talkback_label</string>
-  <!-- Notification channel description of TalkBack. [CHAR_LIMIT=42] -->
-  <string name="talkback_notification_channel_description">The Notification Channel of TalkBack</string>
+  <!-- Notification channel description of Yaasr. [CHAR_LIMIT=42] -->
+  <string name="talkback_notification_channel_description">The Notification Channel of Yaasr</string>
 
   <!-- For selector summary. -->
   <!--
@@ -2633,20 +2633,20 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- Usage hint for how to use the selected action. This is spoken to the user. [CHAR_LIMIT=150] -->
   <string name="use_action_hint">Double-tap to perform the action</string>
   <!-- Usage hint for how to assign gesture for the quick menu. This is spoken to the user. [CHAR_LIMIT=280] -->
-  <string name="no_adjust_setting_gesture">To use this, go to TalkBack settings and add a gesture for \'<xliff:g example="selected setting next action">%1$s</xliff:g>\'</string>
+  <string name="no_adjust_setting_gesture">To use this, go to Yaasr settings and add a gesture for \'<xliff:g example="selected setting next action">%1$s</xliff:g>\'</string>
   <!-- Usage hint for how to assign gesture for the navigate typo. This is spoken to the user. [CHAR_LIMIT=280] -->
-  <string name="no_navigate_typo_gesture">To use this, go to TalkBack settings and add a gesture for spell check</string>
+  <string name="no_navigate_typo_gesture">To use this, go to Yaasr settings and add a gesture for spell check</string>
   <!-- Usage hint for how to use the selected spelling suggestions. This is spoken to the user. [CHAR_LIMIT=NONE] -->
   <string name="use_spelling_suggestion_hint">Double-tap to replace text</string>
   <!-- Usage hint for screen-search keyword. [CHAR_LIMIT=NONE] -->
   <string name="screen_search_keyword_hint">keyword is <xliff:g example="keyword">%1$s</xliff:g></string>
   <!-- Usage hint for no screen-search keyword. [CHAR_LIMIT=NONE] -->
-  <string name="screen_search_no_keyword_hint">No keyword yet. To start a new search, tap and hold with 3 fingers or open screen search from the TalkBack menu.</string>
+  <string name="screen_search_no_keyword_hint">No keyword yet. To start a new search, tap and hold with 3 fingers or open screen search from the Yaasr menu.</string>
   <!-- Usage hint for no screen-search keyword. [CHAR_LIMIT=NONE] -->
-  <string name="screen_search_no_keyword_hint_pre_r">No keyword yet. To start a new search, swipe left then down or open screen search from the TalkBack menu.</string>
+  <string name="screen_search_no_keyword_hint_pre_r">No keyword yet. To start a new search, swipe left then down or open screen search from the Yaasr menu.</string>
 
   <!-- Announced when can't switching to braille keyboard . [CHAR_LIMIT=150] -->
-  <string name="switch_to_braille_keyboard_failure_msg">Braille keyboard isn\'t turned on. Go to TalkBack settings, set up Braille keyboard, and try again.</string>
+  <string name="switch_to_braille_keyboard_failure_msg">Braille keyboard isn\'t turned on. Go to Yaasr settings, set up Braille keyboard, and try again.</string>
   <!-- Announced when the popup window is shown. [CHAR_LIMIT=50]-->
   <string name="suggestions_window_available">Suggestions available</string>
   <!-- Announced when the popup window is shown. The user can performs a quick gesture to navigate to the suggestions window. [CHAR_LIMIT=150]-->
@@ -2677,27 +2677,27 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <string name="training_tip">Tip</string>
 
   <!-- For training on TV -->
-  <string name="tv_training_overview_step_title">How TalkBack works</string>
-  <string name="tv_training_overview_step_summary">TalkBack is Google\'s screen reader. It reads aloud the text on the screen and gives you spoken feedback, so that you can use your device without looking at the screen.\n\nWith TalkBack on, a selected item on the screen is spoken aloud, sometimes with additional information or context added.\n\nPress Select to continue. The Select button is located at the center of the directional pad, which is the large, circular button at the top of your remote.</string>
+  <string name="tv_training_overview_step_title">How Yaasr works</string>
+  <string name="tv_training_overview_step_summary">Yaasr is Google\'s screen reader. It reads aloud the text on the screen and gives you spoken feedback, so that you can use your device without looking at the screen.\n\nWith Yaasr on, a selected item on the screen is spoken aloud, sometimes with additional information or context added.\n\nPress Select to continue. The Select button is located at the center of the directional pad, which is the large, circular button at the top of your remote.</string>
   <string name="tv_training_remote_step_title">Using your remote</string>
   <string name="tv_training_remote_step_summary">Move around the screen using the circle-shaped directional button at the top of your remote. To select, press the center of the directional button at the top of your remote.\n\nIn the second row on the left, you have the back button. On the right you have the voice Assistant button.\n\nIn the third row on the left, you have the home button. On the right is the mute button.\n\nIn the fourth row on the left, you have the YouTube shortcut. On the right is the Netflix shortcut.\n\nIn the bottom row there are two small buttons. The left button is the power button. The right will open your TV’s input menu.\n\nThe volume buttons are located at the right side of the remote.\n\nPress Select to continue.</string>
-  <string name="tv_training_shortcut_step_title">TalkBack shortcut</string>
-  <string name="tv_training_shortcut_step_summary">To access the TalkBack shortcut, press the down and back buttons at the same time and hold them down for 3 seconds. This will either turn on or turn off TalkBack.\n\nYou can also access this shortcut within your TV settings.\n\nPress Select to continue.</string>
+  <string name="tv_training_shortcut_step_title">Yaasr shortcut</string>
+  <string name="tv_training_shortcut_step_summary">To access the Yaasr shortcut, press the down and back buttons at the same time and hold them down for 3 seconds. This will either turn on or turn off Yaasr.\n\nYou can also access this shortcut within your TV settings.\n\nPress Select to continue.</string>
 
   <!-- For on-boarding. -->
-  <!-- A item in settings page to introduce TalkBack new features. [CHAR_LIMIT=NONE]-->
-  <string name="new_feature_in_talkback_title">New features in TalkBack</string>
+  <!-- A item in settings page to introduce Yaasr new features. [CHAR_LIMIT=NONE]-->
+  <string name="new_feature_in_talkback_title">New features in Yaasr</string>
   <!-- The title of a dialog that is shown when exiting the tutorial. [CHAR_LIMIT=45]-->
   <string name="exit_tutorial_title">Finished reviewing?</string>
   <!-- The content of the exit tutorial page dialog. [CHAR_LIMIT=NONE]-->
-  <string name="exit_tutorial_content">You can come back to the tutorial anytime in TalkBack settings.</string>
+  <string name="exit_tutorial_content">You can come back to the tutorial anytime in Yaasr settings.</string>
   <!-- The content of the exit the onboarding page dialog. [CHAR_LIMIT=NONE]-->
-  <string name="exit_onboarding_content">You can come back to review new features anytime in TalkBack settings.</string>
+  <string name="exit_onboarding_content">You can come back to review new features anytime in Yaasr settings.</string>
   <!-- The text of the button that is for keep reviewing the tutorial. [CHAR_LIMIT=50]-->
   <string name="keep_reviewing_tutorial_button">Keep reviewing</string>
-  <!-- For welcome to the update TalkBack page in on-boarding. -->
-  <!-- The page title of welcome to updated TalkBack. [CHAR_LIMIT=NONE]-->
-  <string name="welcome_to_updated_talkback_title">Welcome to the updated TalkBack</string>
+  <!-- For welcome to the update Yaasr page in on-boarding. -->
+  <!-- The page title of welcome to updated Yaasr. [CHAR_LIMIT=NONE]-->
+  <string name="welcome_to_updated_talkback_title">Welcome to the updated Yaasr</string>
   <!-- For navigation and setting selector page in on-boarding. -->
   <!-- Navigation subtitle. The translation should be the same as "navigation" in jump_between_headings_text and jump_between_headings_text_pre_r.[CHAR_LIMIT=NONE]-->
   <string name="navigation_heading">Navigation</string>
@@ -2708,20 +2708,20 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The text to introduce how to pause or play media. [CHAR_LIMIT=NONE]-->
   <string name="new_shortcut_gesture_pause_or_play_media_subtext">Other apps may use this gesture for things like answering or ending a phone call. This gesture may not be supported by all apps.</string>
   <!-- The button text bring user to the tutorial page. [CHAR_LIMIT=NONE]-->
-  <string name="onboarding_link_to_talkback_tutorials">View all TalkBack tutorials</string>
+  <string name="onboarding_link_to_talkback_tutorials">View all Yaasr tutorials</string>
 
   <!--
   Source: Announces when media paused or playing.
   Description: This is spoken to the user. In RTL language, "right" and "left" should be translated reverse. [CHAR_LIMIT=NONE] TODO: The resource name can be changed to new_shortcut_gesture_pause_or_play_media_announcement.
   -->
   <string name="new_shortcut_gesture_pause_media_announcement">Media paused or playing. Usually, this will pause or play the current video or music. Swipe right to continue.</string>
-  <!-- The text to introduce how to stop TalkBack speech. [CHAR_LIMIT=NONE]-->
-  <string name="new_shortcut_gesture_stop_speech_text">To stop TalkBack from talking temporarily, tap with 2 fingers.</string>
+  <!-- The text to introduce how to stop Yaasr speech. [CHAR_LIMIT=NONE]-->
+  <string name="new_shortcut_gesture_stop_speech_text">To stop Yaasr from talking temporarily, tap with 2 fingers.</string>
   <!--
-  Source: Announces when TalkBack speech stopped.
+  Source: Announces when Yaasr speech stopped.
   Description: This is spoken to the user. In RTL language, "right" and "left" should be translated reverse. [CHAR_LIMIT=NONE]
   -->
-  <string name="new_shortcut_gesture_stop_speech_announcement">TalkBack speech stopped. Usually, this will stop the current phrase that TalkBack is saying. Swipe right to continue.</string>
+  <string name="new_shortcut_gesture_stop_speech_announcement">Yaasr speech stopped. Usually, this will stop the current phrase that Yaasr is saying. Swipe right to continue.</string>
   <!-- The text to introduce how to copy text. This is spoken to the user. [CHAR_LIMIT=NONE]-->
   <string name="new_shortcut_gesture_copy_text_text">To copy text, double-tap with 3 fingers.</string>
   <!--
@@ -2753,32 +2753,32 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The text to introduce how to use reading controls. [CHAR_LIMIT=NONE]-->
   <string name="new_shortcut_gesture_reading_menu_text">To use the reading controls, swipe left or right with 3 fingers. You can also swipe up or down with 3 fingers.</string>
   <!-- A text to notify that gestures might not be correct because some gestures are customized. [CHAR_LIMIT=NONE]-->
-  <string name="new_shortcut_gesture_note">Note: You have customized some of your gestures, so this information may not be accurate. To review your gestures, go to TalkBack settings.</string>
+  <string name="new_shortcut_gesture_note">Note: You have customized some of your gestures, so this information may not be accurate. To review your gestures, go to Yaasr settings.</string>
   <!-- For welcome page when user updates to R. -->
-  <!-- The title of welcome to TalkBack on Android 11 page. [CHAR_LIMIT=NONE]-->
-  <string name="welcome_to_android11">Welcome to TalkBack on Android 11</string>
-  <!-- The text about what's new in TalkBack on Android 11. [CHAR_LIMIT=NONE]-->
-  <string name="welcome_to_android11_text">New gestures have been added to make TalkBack faster and easier to use.\n\nOn this screen, you can try the new gestures. You can review this information in TalkBack settings at any time.</string>
-  <!-- The title of notification that to notify TalkBack supports new gestures. [CHAR_LIMIT=NONE]-->
-  <string name="new_gesture_notification_title">New gestures in TalkBack</string>
-  <!-- The content text of notification that to notify TalkBack supports new gestures. [CHAR_LIMIT=NONE]-->
-  <string name="new_gesture_notification_content">Tap to learn how to use TalkBack faster with new gestures.</string>
+  <!-- The title of welcome to Yaasr on Android 11 page. [CHAR_LIMIT=NONE]-->
+  <string name="welcome_to_android11">Welcome to Yaasr on Android 11</string>
+  <!-- The text about what's new in Yaasr on Android 11. [CHAR_LIMIT=NONE]-->
+  <string name="welcome_to_android11_text">New gestures have been added to make Yaasr faster and easier to use.\n\nOn this screen, you can try the new gestures. You can review this information in Yaasr settings at any time.</string>
+  <!-- The title of notification that to notify Yaasr supports new gestures. [CHAR_LIMIT=NONE]-->
+  <string name="new_gesture_notification_title">New gestures in Yaasr</string>
+  <!-- The content text of notification that to notify Yaasr supports new gestures. [CHAR_LIMIT=NONE]-->
+  <string name="new_gesture_notification_content">Tap to learn how to use Yaasr faster with new gestures.</string>
   <!-- Announces when user dump the node tree log. This is spoken to the user. [CHAR_LIMIT=NONE]-->
   <string name="dump_node_tree_description">Node tree has been printed to logs.</string>
   <!-- The hint description provided to users to report gesture issues. [CHAR_LIMIT=NONE]-->
   <string name="report_gesture_description">Here are gestures performed recently, please report which gesture is wrong and what is expected.</string>
-  <!-- For TalkBack 16.0 onboarding. -->
-  <!-- The first item of the welcome to the updated TalkBack page. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_text_content">You can now connect to braille displays via HID, a way to connect to bluetooth devices. Make sure you have the latest firmware drivers from your manufacturer, then turn on Bluetooth on your braille display. Go to TalkBack settings > Braille display and turn on \"Use braille display\". Find your device in the devices list, and connect to it. </string>
-  <!-- The first item of the welcome to the updated TalkBack page for TTS. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_text_content_tts">You can now connect to braille displays via HID, a way to connect to bluetooth devices. Make sure you have the latest firmware drivers from your manufacturer, then turn on Bluetooth on your braille display. Go to TalkBack settings then Braille display and turn on \"Use braille display\". Find your device in the devices list, and connect to it. </string>
-  <!-- The first item of the welcome to the updated TalkBack page. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_text_content_with_link">Learn how to use your braille display with TalkBack.</string>
+  <!-- For Yaasr 16.0 onboarding. -->
+  <!-- The first item of the welcome to the updated Yaasr page. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_text_content">You can now connect to braille displays via HID, a way to connect to bluetooth devices. Make sure you have the latest firmware drivers from your manufacturer, then turn on Bluetooth on your braille display. Go to Yaasr settings > Braille display and turn on \"Use braille display\". Find your device in the devices list, and connect to it. </string>
+  <!-- The first item of the welcome to the updated Yaasr page for TTS. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_text_content_tts">You can now connect to braille displays via HID, a way to connect to bluetooth devices. Make sure you have the latest firmware drivers from your manufacturer, then turn on Bluetooth on your braille display. Go to Yaasr settings then Braille display and turn on \"Use braille display\". Find your device in the devices list, and connect to it. </string>
+  <!-- The first item of the welcome to the updated Yaasr page. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_text_content_with_link">Learn how to use your braille display with Yaasr.</string>
 
-  <!-- The text about what's new in TalkBack 16.1. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_talkback_16.1">This TalkBack update introduces support for Describe screen in more languages and other quality improvements that make TalkBack easier to use.\n\nYou\'ll learn more about these changes in the next few screens.\n\nYou can review this information later in TalkBack settings > New features in TalkBack.</string>
-  <!-- The speech of the text about what's new in TalkBack 16.1. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_talkback_16.1_tts">This TalkBack update introduces support for Describe screen in more languages and other quality improvements that make TalkBack easier to use.\n\nYou\'ll learn more about these changes in the next few screens.\n\nYou can review this information later in TalkBack settings then New features in TalkBack.</string>
+  <!-- The text about what's new in Yaasr 16.1. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_talkback_16.1">This Yaasr update introduces support for Describe screen in more languages and other quality improvements that make Yaasr easier to use.\n\nYou\'ll learn more about these changes in the next few screens.\n\nYou can review this information later in Yaasr settings > New features in Yaasr.</string>
+  <!-- The speech of the text about what's new in Yaasr 16.1. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_talkback_16.1_tts">This Yaasr update introduces support for Describe screen in more languages and other quality improvements that make Yaasr easier to use.\n\nYou\'ll learn more about these changes in the next few screens.\n\nYou can review this information later in Yaasr settings then New features in Yaasr.</string>
   <!-- The title of the Shortcut for describe screen page. [CHAR_LIMIT=NONE]-->
   <string name="describe_screen_and_qna_title">New languages for Describe screen and Ask Gemini</string>
   <!-- The content of the Shortcut for describe screen page. [CHAR_LIMIT=NONE]-->
@@ -2794,47 +2794,47 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The title of the Keyboard page. [CHAR_LIMIT=NONE]-->
   <string name="keyboard_title">Keyboard</string>
   <!-- The content of the Keyboard page. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_content">TalkBack now has an \"Enhanced keymap\" for its keyboard, with a variety of new commands and shortcuts. This enhancement, which includes \"browse mode\" for more efficient web navigation, streamlines navigation and interaction for TalkBack users who rely on physical keyboards. You can switch to \"Enhanced keymap\" in TalkBack settings > Advanced settings > Keyboard shortcuts.</string>
+  <string name="keyboard_content">Yaasr now has an \"Enhanced keymap\" for its keyboard, with a variety of new commands and shortcuts. This enhancement, which includes \"browse mode\" for more efficient web navigation, streamlines navigation and interaction for Yaasr users who rely on physical keyboards. You can switch to \"Enhanced keymap\" in Yaasr settings > Advanced settings > Keyboard shortcuts.</string>
   <!-- The speech of the text about the Keyboard page. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_content_tts">TalkBack now has an \"Enhanced keymap\" for its keyboard, with a variety of new commands and shortcuts. This enhancement, which includes \"browse mode\" for more efficient web navigation, streamlines navigation and interaction for TalkBack users who rely on physical keyboards. You can switch to \"Enhanced keymap\" in TalkBack settings then Advanced settings then Keyboard shortcuts.</string>
+  <string name="keyboard_content_tts">Yaasr now has an \"Enhanced keymap\" for its keyboard, with a variety of new commands and shortcuts. This enhancement, which includes \"browse mode\" for more efficient web navigation, streamlines navigation and interaction for Yaasr users who rely on physical keyboards. You can switch to \"Enhanced keymap\" in Yaasr settings then Advanced settings then Keyboard shortcuts.</string>
   <!-- The title of the Reduce delay page. [CHAR_LIMIT=NONE]-->
   <string name="reduce_delay_title">Reduce delay</string>
   <!-- The content of the Reduce delay page. [CHAR_LIMIT=NONE]-->
-  <string name="reduce_delay_content">You can now reduce TalkBack announcement delays for touch exploration and typing. To view these settings, go to TalkBack settings > Advanced settings > Reduce delay.</string>
+  <string name="reduce_delay_content">You can now reduce Yaasr announcement delays for touch exploration and typing. To view these settings, go to Yaasr settings > Advanced settings > Reduce delay.</string>
   <!-- The speech of the text about the Reduce delay page. [CHAR_LIMIT=NONE]-->
-  <string name="reduce_delay_content_tts">You can now reduce TalkBack announcement delays for touch exploration and typing. To view these settings, go to TalkBack settings then Advanced settings then Reduce delay.</string>
+  <string name="reduce_delay_content_tts">You can now reduce Yaasr announcement delays for touch exploration and typing. To view these settings, go to Yaasr settings then Advanced settings then Reduce delay.</string>
   <!-- The title of the Customize braille keyboard improvements page. [CHAR_LIMIT=NONE]-->
   <string name="customize_braille_keyboard_improvements_title">Customize braille keyboard gestures</string>
   <!-- The content of the Customize braille keyboard improvements page. [CHAR_LIMIT=NONE]-->
-  <string name="customize_braille_keyboard_improvements_content">It\'s now possible to customize gestures for the virtual on-screen braille keyboard. To customize, go to TalkBack settings > Braille keyboard > Gestures.</string>
+  <string name="customize_braille_keyboard_improvements_content">It\'s now possible to customize gestures for the virtual on-screen braille keyboard. To customize, go to Yaasr settings > Braille keyboard > Gestures.</string>
   <!-- The speech of the text about the Customize braille keyboard improvements page. [CHAR_LIMIT=NONE]-->
-  <string name="customize_braille_keyboard_improvements_content_tts">It\'s now possible to customize gestures for the virtual on-screen braille keyboard. To customize, go to TalkBack settings then Braille keyboard then Gestures.</string>
+  <string name="customize_braille_keyboard_improvements_content_tts">It\'s now possible to customize gestures for the virtual on-screen braille keyboard. To customize, go to Yaasr settings then Braille keyboard then Gestures.</string>
   <!-- Click link to get more information about braille keyboard. [CHAR_LIMIT=NONE]-->
   <string name="learn_more_about_braille_keyboard">Learn more about braille keyboard</string>
   <!-- The title of the Other changes page. [CHAR_LIMIT=NONE]-->
   <string name="other_changes_title">Other changes</string>
   <!-- The content of the Other changes page. [CHAR_LIMIT=NONE]-->
-  <string name="other_changes_content">An on-screen message now helps you quickly turn off TalkBack if it\'s accidentally turned on. You can turn this off in TalkBack settings > Show instructions for turning off TalkBack.</string>
+  <string name="other_changes_content">An on-screen message now helps you quickly turn off Yaasr if it\'s accidentally turned on. You can turn this off in Yaasr settings > Show instructions for turning off Yaasr.</string>
   <!-- The speech of the text of the Other changes page. [CHAR_LIMIT=NONE]-->
-  <string name="other_changes_content_tts">An on-screen message now helps you quickly turn off TalkBack if it\'s accidentally turned on. You can turn this off in TalkBack settings then Show instructions for turning off TalkBack.</string>
+  <string name="other_changes_content_tts">An on-screen message now helps you quickly turn off Yaasr if it\'s accidentally turned on. You can turn this off in Yaasr settings then Show instructions for turning off Yaasr.</string>
   <!-- The speech of the text of the keymap page. [CHAR_LIMIT=NONE]-->
   <string name="keymap_changes_content">Classic keymap has been switched to default keymap, which includes more shortcuts.</string>
   <!-- The title of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
   <string name="announcing_text_formatting_title">Announcing text formatting</string>
   <!-- The header content of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
-  <string name="announcing_text_formatting_header">TalkBack can now announce changes in text formatting, like bold, italics, and text color. To get started:</string>
+  <string name="announcing_text_formatting_header">Yaasr can now announce changes in text formatting, like bold, italics, and text color. To get started:</string>
   <!-- The first instruction of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
-  <string name="announcing_text_formatting_option1">Focus on the item with formatting, open the TalkBack menu, and select \"Describe text formatting\", or</string>
+  <string name="announcing_text_formatting_option1">Focus on the item with formatting, open the Yaasr menu, and select \"Describe text formatting\", or</string>
   <!-- The second instruction of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
   <string name="announcing_text_formatting_option2">Add a reading control for text formatting that will turn on or off the announcement of formatting changes.</string>
   <!-- The middle content of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
   <string name="announcing_text_formatting_middle">When you’re ready to try it, here’s an example of formatted text:</string>
   <!-- The tail content of the Announcing text formatting page. [CHAR_LIMIT=NONE]-->
   <string name="announcing_text_formatting_tail">If you want to change how formatted text is announced, you can go to <xliff:g id="settings_path">%1$s</xliff:g>.</string>
-  <!-- The path of the text formatting options in TalkBack Settings.  [CHAR_LIMIT=NONE]-->
-  <string name="text_formatting_options_settings_path">TalkBack settings > Verbosity > Text formatting options</string>
-  <!-- The speech of the path of the text formatting options in TalkBack Settings.  [CHAR_LIMIT=NONE]-->
-  <string name="text_formatting_options_settings_path_tts">TalkBack settings then Verbosity then Text formatting options</string>
+  <!-- The path of the text formatting options in Yaasr Settings.  [CHAR_LIMIT=NONE]-->
+  <string name="text_formatting_options_settings_path">Yaasr settings > Verbosity > Text formatting options</string>
+  <!-- The speech of the path of the text formatting options in Yaasr Settings.  [CHAR_LIMIT=NONE]-->
+  <string name="text_formatting_options_settings_path_tts">Yaasr settings then Verbosity then Text formatting options</string>
   <!-- An example to test announcing text formatting feature. [CHAR_LIMIT=NONE]-->
   <string name="announcing_text_formatiing_sample"><![CDATA[This text is in <b>bold</b>, a confident shout,
 <br>While this is <u>underlined</u>, a whisper, no doubt.<br>
@@ -2846,10 +2846,10 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
 <br>
 <br>Colors can splash, a vibrant display,
 <br>From <font color="#db372d">fiery red</font> to <font color="#128937">verdant green\'s</font> gentle sway.]]></string>
-  <!-- The text about what's new in TalkBack 16.2. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_talkback_16.2">This TalkBack update introduces a new \"Enhanced keymap\" for physical keyboards, support for text formatting announcements, and a redesigned settings layout, along with other improvements to make TalkBack easier to use.\n\nYou will learn more about these changes in the next few screens.\n\nYou can review this information later in TalkBack settings > New features in TalkBack.</string>
-  <!-- The sppech about what's new in TalkBack 16.2. [CHAR_LIMIT=NONE]-->
-  <string name="update_welcome_talkback_16.2_tts">This TalkBack update introduces a new \"Enhanced keymap\" for physical keyboards, support for text formatting announcements, and a redesigned settings layout, along with other improvements to make TalkBack easier to use.\n\nYou will learn more about these changes in the next few screens.\n\nYou can review this information later in TalkBack settings then New features in TalkBack.</string>
+  <!-- The text about what's new in Yaasr 16.2. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_talkback_16.2">This Yaasr update introduces a new \"Enhanced keymap\" for physical keyboards, support for text formatting announcements, and a redesigned settings layout, along with other improvements to make Yaasr easier to use.\n\nYou will learn more about these changes in the next few screens.\n\nYou can review this information later in Yaasr settings > New features in Yaasr.</string>
+  <!-- The sppech about what's new in Yaasr 16.2. [CHAR_LIMIT=NONE]-->
+  <string name="update_welcome_talkback_16.2_tts">This Yaasr update introduces a new \"Enhanced keymap\" for physical keyboards, support for text formatting announcements, and a redesigned settings layout, along with other improvements to make Yaasr easier to use.\n\nYou will learn more about these changes in the next few screens.\n\nYou can review this information later in Yaasr settings then New features in Yaasr.</string>
   <!-- The title about new settings layout page. [CHAR_LIMIT=NONE]-->
   <string name="new_settings_layout_title">New settings layout</string>
   <!-- The text about new settings layout page. [CHAR_LIMIT=NONE]-->
@@ -2861,65 +2861,65 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The title about enhanced keymap for keyboard page. [CHAR_LIMIT=NONE]-->
   <string name="keyboard_enhanced_keymap_title">Keyboard: Enhanced keymap</string>
   <!-- The text about enhanced keymap for keyboard page. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_enhanced_keymap_text">TalkBack now has an "Enhanced keymap" for physical keyboards, featuring a variety of new commands and shortcuts. This enhancement includes a \"browse mode\" for more efficient web navigation, streamlining navigation and interaction for TalkBack users who rely on physical keyboards. You can switch to the \"Enhanced keymap\" in <xliff:g id="settings_path">%1$s</xliff:g>.\n\nIf you use a Braille display, you can also use new browse mode shortcuts to traverse through content directly from your Braille display. Some Braille display shortcuts were changed to accommodate this change. You can see a list of all Braille display shortcuts in <xliff:g id="braille_display_settings_path">%2$s</xliff:g>.</string>
-  <!-- The path of keyboard shortcuts in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_shortcuts_link">TalkBack settings > Keyboard shortcuts</string>
-  <!-- The speech of the path of keyboard shortcuts in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_shortcuts_link_tts">TalkBack settings then Keyboard shortcuts</string>
+  <string name="keyboard_enhanced_keymap_text">Yaasr now has an "Enhanced keymap" for physical keyboards, featuring a variety of new commands and shortcuts. This enhancement includes a \"browse mode\" for more efficient web navigation, streamlining navigation and interaction for Yaasr users who rely on physical keyboards. You can switch to the \"Enhanced keymap\" in <xliff:g id="settings_path">%1$s</xliff:g>.\n\nIf you use a Braille display, you can also use new browse mode shortcuts to traverse through content directly from your Braille display. Some Braille display shortcuts were changed to accommodate this change. You can see a list of all Braille display shortcuts in <xliff:g id="braille_display_settings_path">%2$s</xliff:g>.</string>
+  <!-- The path of keyboard shortcuts in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="keyboard_shortcuts_link">Yaasr settings > Keyboard shortcuts</string>
+  <!-- The speech of the path of keyboard shortcuts in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="keyboard_shortcuts_link_tts">Yaasr settings then Keyboard shortcuts</string>
   <!-- The text of braille display settings. [CHAR_LIMIT=NONE]-->
   <string name="braille_display_settings_link">Braille display settings</string>
   <!-- The title about smart browse mode for keyboard page. [CHAR_LIMIT=NONE]-->
   <string name="keyboard_smart_browse_mode_title">Keyboard: Smart browse mode</string>
   <!-- The text about smart browse mode for keyboard page. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_smart_browse_mode_text">TalkBack smart browse mode turns off browse mode on an edit field to help you type with a physical keyboard when you browse the web. It then turns it back on when you jump to a non-edit field on the web so that you can continue browsing efficiently. You can turn \"Smart browse mode\" on or off in <xliff:g id="settings_path">%1$s</xliff:g>.</string>
-  <!-- The path of advanced settings in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="advanced_settings_link">TalkBack settings > Advanced settings</string>
-  <!-- The speech of the path of advanced settings  in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="advanced_settings_link_tts">TalkBack settings then Advanced settings</string>
+  <string name="keyboard_smart_browse_mode_text">Yaasr smart browse mode turns off browse mode on an edit field to help you type with a physical keyboard when you browse the web. It then turns it back on when you jump to a non-edit field on the web so that you can continue browsing efficiently. You can turn \"Smart browse mode\" on or off in <xliff:g id="settings_path">%1$s</xliff:g>.</string>
+  <!-- The path of advanced settings in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="advanced_settings_link">Yaasr settings > Advanced settings</string>
+  <!-- The speech of the path of advanced settings  in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="advanced_settings_link_tts">Yaasr settings then Advanced settings</string>
   <!-- The title about keyboard tutorial page. [CHAR_LIMIT=NONE]-->
   <string name="keyboard_tutorial_title">Keyboard tutorial</string>
   <!-- The text about keyboard tutorial page. [CHAR_LIMIT=NONE]-->
-  <string name="keyboard_tutorial_text">TalkBack now includes a Keyboard Tutorial designed to help you learn the keyboard shortcuts and commands for the Enhanced keymap when using a physical keyboard. To access the tutorial, navigate to: <xliff:g id="settings_path">%1$s</xliff:g>.</string>
-  <!-- The path of TalkBack tutorial in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="tutorial_link">TalkBack settings > TalkBack tutorial</string>
-  <!-- The speech of the path of TalkBack tutorial in TalkBack Settings. [CHAR_LIMIT=NONE]-->
-  <string name="tutorial_link_tts">TalkBack settings then TalkBack tutorial</string>
+  <string name="keyboard_tutorial_text">Yaasr now includes a Keyboard Tutorial designed to help you learn the keyboard shortcuts and commands for the Enhanced keymap when using a physical keyboard. To access the tutorial, navigate to: <xliff:g id="settings_path">%1$s</xliff:g>.</string>
+  <!-- The path of Yaasr tutorial in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="tutorial_link">Yaasr settings > Yaasr tutorial</string>
+  <!-- The speech of the path of Yaasr tutorial in Yaasr Settings. [CHAR_LIMIT=NONE]-->
+  <string name="tutorial_link_tts">Yaasr settings then Yaasr tutorial</string>
 
   <!-- For tutorial. -->
-  <!-- An item in settings page to explain how to use TalkBack. [CHAR_LIMIT=25]-->
+  <!-- An item in settings page to explain how to use Yaasr. [CHAR_LIMIT=25]-->
   <string name="tutorial_entry_point_title">Tutorial</string>
   <!-- For welcome page in tutorial. -->
-  <!-- The title of welcoming to use TalkBack. [CHAR_LIMIT=NONE]-->
-  <string name="welcome_to_talkback_title">Welcome to TalkBack</string>
-  <!-- The title of TalkBack is on. [CHAR_LIMIT=NONE]-->
-  <string name="talkback_is_on">TalkBack is on</string>
-  <!-- The description of TalkBack is on. [CHAR_LIMIT=NONE]-->
-  <string name="talkback_turn_off_description">TalkBack reads content on your screen aloud and changes how navigation works on your device. To turn it off, tap “Turn off TalkBack” 2 times.</string>
-  <!-- The text of TalkBack exit button. [CHAR_LIMIT=NONE]-->
-  <string name="turn_off_talkback">Turn off TalkBack</string>
-  <!-- The text of TalkBack exit button that taps again to turn off TalkBack. [CHAR_LIMIT=NONE]-->
+  <!-- The title of welcoming to use Yaasr. [CHAR_LIMIT=NONE]-->
+  <string name="welcome_to_talkback_title">Welcome to Yaasr</string>
+  <!-- The title of Yaasr is on. [CHAR_LIMIT=NONE]-->
+  <string name="talkback_is_on">Yaasr is on</string>
+  <!-- The description of Yaasr is on. [CHAR_LIMIT=NONE]-->
+  <string name="talkback_turn_off_description">Yaasr reads content on your screen aloud and changes how navigation works on your device. To turn it off, tap “Turn off Yaasr” 2 times.</string>
+  <!-- The text of Yaasr exit button. [CHAR_LIMIT=NONE]-->
+  <string name="turn_off_talkback">Turn off Yaasr</string>
+  <!-- The text of Yaasr exit button that taps again to turn off Yaasr. [CHAR_LIMIT=NONE]-->
   <string name="tap_again_to_turn_off">Tap again to turn off</string>
-  <!-- The description of TalkBack is on with both touch screen and pointer. [CHAR_LIMIT=NONE]-->
-  <string name="talkback_turn_off_description_pointer_and_touch">TalkBack reads content on your screen aloud and changes how navigation works on your device. To turn it off, select \"Turn off TalkBack\" or tap it 2 times.</string>
+  <!-- The description of Yaasr is on with both touch screen and pointer. [CHAR_LIMIT=NONE]-->
+  <string name="talkback_turn_off_description_pointer_and_touch">Yaasr reads content on your screen aloud and changes how navigation works on your device. To turn it off, select \"Turn off Yaasr\" or tap it 2 times.</string>
 
   <!--
-  Source: The text of introducing TalkBack.
+  Source: The text of introducing Yaasr.
   Description: In RTL language, "right" and "left" should be translated reverse. [CHAR_LIMIT=NONE]
   -->
-  <string name="welcome_to_talkback_text">TalkBack provides spoken feedback so that you can use your device without looking at the screen. TalkBack can be helpful for people who have difficulty seeing the screen. \n\nIf you want to quickly turn TalkBack on or off using your volume keys, you can set up a shortcut in TalkBack settings > TalkBack shortcut.\n\nWhen TalkBack is on, the focused item on the screen is spoken out loud.\n\nSwiping right will move to the next item, and swiping left will move to the previous item.\n\nSwipe right now to find the next button.</string>
-  <!-- Source: The text of introducing TalkBack for TTS span. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 943803475813273517]-->
-  <string name="welcome_to_talkback_text_tts">TalkBack provides spoken feedback so that you can use your device without looking at the screen. TalkBack can be helpful for people who have difficulty seeing the screen. \n\nIf you want to quickly turn TalkBack on or off using your volume keys, you can set up a shortcut in TalkBack settings then TalkBack shortcut.\n\nWhen TalkBack is on, the focused item on the screen is spoken out loud.\n\nSwiping right will move to the next item, and swiping left will move to the previous item.\n\nSwipe right now to find the next button.</string>
+  <string name="welcome_to_talkback_text">Yaasr provides spoken feedback so that you can use your device without looking at the screen. Yaasr can be helpful for people who have difficulty seeing the screen. \n\nIf you want to quickly turn Yaasr on or off using your volume keys, you can set up a shortcut in Yaasr settings > Yaasr shortcut.\n\nWhen Yaasr is on, the focused item on the screen is spoken out loud.\n\nSwiping right will move to the next item, and swiping left will move to the previous item.\n\nSwipe right now to find the next button.</string>
+  <!-- Source: The text of introducing Yaasr for TTS span. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 943803475813273517]-->
+  <string name="welcome_to_talkback_text_tts">Yaasr provides spoken feedback so that you can use your device without looking at the screen. Yaasr can be helpful for people who have difficulty seeing the screen. \n\nIf you want to quickly turn Yaasr on or off using your volume keys, you can set up a shortcut in Yaasr settings then Yaasr shortcut.\n\nWhen Yaasr is on, the focused item on the screen is spoken out loud.\n\nSwiping right will move to the next item, and swiping left will move to the previous item.\n\nSwipe right now to find the next button.</string>
   <!-- The idle announcement talkback tutorial welcome page. [CHAR_LIMIT=NONE] -->
   <string name="welcome_to_talkback_page_idle_announcement">Swipe right now to find the next button</string>
   <!-- For touch explore page in tutorial. -->
   <!-- The title of exploring by touch page. [CHAR_LIMIT=NONE] -->
   <string name="explore_by_touch_title">Drag your finger to explore</string>
-  <!-- The text to explain how to use TalkBack via touch explore. [CHAR_LIMIT=NONE]-->
+  <!-- The text to explain how to use Yaasr via touch explore. [CHAR_LIMIT=NONE]-->
   <string name="explore_by_touch_text">You can also focus on an item by dragging your finger across the screen.\n\nTry this now by touching the screen and dragging toward the bottom left corner until you find the next button.</string>
   <!-- For scrolling page in tutorial. -->
   <!-- The title of scrolling page. [CHAR_LIMIT=NONE]-->
   <string name="scrolling_title">Scroll by swiping up or down with 2 fingers</string>
-  <!-- The text to explain how to use TalkBack to scroll page. [CHAR_LIMIT=NONE]-->
+  <!-- The text to explain how to use Yaasr to scroll page. [CHAR_LIMIT=NONE]-->
   <string name="scrolling_text">You can practice on this screen until you find the \"Next\" button.</string>
   <!-- The text placed in the tutorial scrolling item to help notify user how to scroll. [CHAR_LIMIT=NONE] -->
   <string name="scrolling_item_text">Try scrolling by swiping up or down with 2 fingers</string>
@@ -2928,8 +2928,8 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- For gestures page in tutorial. -->
   <!-- The title of system gestures page. [CHAR_LIMIT=NONE]-->
   <string name="system_gestures_title">Add 1 finger to system gestures</string>
-  <!-- The text to introduce some useful gestures in TalkBack. [CHAR_LIMIT=NONE]-->
-  <string name="system_gestures_text">This means when using TalkBack, you can go to the home screen by swiping up from the bottom with 2 fingers instead of 1.\n\nTrying these gestures now will close the tutorial. You may want to wait until you have completed the tutorial.</string>
+  <!-- The text to introduce some useful gestures in Yaasr. [CHAR_LIMIT=NONE]-->
+  <string name="system_gestures_text">This means when using Yaasr, you can go to the home screen by swiping up from the bottom with 2 fingers instead of 1.\n\nTrying these gestures now will close the tutorial. You may want to wait until you have completed the tutorial.</string>
   <!-- The text to explain how to go Home via gesture. [CHAR_LIMIT=NONE]-->
   <string name="system_gestures_home_text">To go to your home screen, swipe up from the bottom of your screen with 2 fingers.</string>
   <!-- The text to explain how to go to the recent apps via gesture. [CHAR_LIMIT=NONE]-->
@@ -2945,30 +2945,30 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- For adjusting volume page in tutorial. -->
   <!-- The title of adjusting volume page. [CHAR_LIMIT=NONE]-->
   <string name="adjusting_volume_title">Adjust the volume</string>
-  <!-- The head text introduce TalkBack how to adjust volume. [CHAR_LIMIT=NONE]-->
-  <string name="adjusting_volume_head">The volume for TalkBack speech is called the accessibility volume. It\'s adjusted separately from the media volume.\n\nTo adjust the accessibility volume:</string>
-  <!-- The first instruction text introduce TalkBack how to adjust volume append after the head text. [CHAR_LIMIT=NONE]-->
+  <!-- The head text introduce Yaasr how to adjust volume. [CHAR_LIMIT=NONE]-->
+  <string name="adjusting_volume_head">The volume for Yaasr speech is called the accessibility volume. It\'s adjusted separately from the media volume.\n\nTo adjust the accessibility volume:</string>
+  <!-- The first instruction text introduce Yaasr how to adjust volume append after the head text. [CHAR_LIMIT=NONE]-->
   <string name="adjusting_volume_first_instruction">Hold 1 finger on the screen</string>
-  <!-- The second instruction text introduce TalkBack how to adjust volume append after the first instruction. [CHAR_LIMIT=NONE]-->
+  <!-- The second instruction text introduce Yaasr how to adjust volume append after the first instruction. [CHAR_LIMIT=NONE]-->
   <string name="adjusting_volume_second_instruction">While holding, press the volume up or volume down key on the side of your device</string>
-  <!-- The tail text introduce TalkBack how to adjust volume append after the second instruction. [CHAR_LIMIT=NONE]-->
+  <!-- The tail text introduce Yaasr how to adjust volume append after the second instruction. [CHAR_LIMIT=NONE]-->
   <string name="adjusting_volume_tail">You\'ll hear the new accessibility volume after a few seconds.\n\nTry adjusting the accessibility volume now.</string>
 
   <!-- For menus page in tutorial. -->
   <!-- The title of menus page. [CHAR_LIMIT=NONE]-->
   <string name="menus_title">Use menus and controls</string>
-  <!-- The text to introduce TalkBack menu and how to open it via multi-fingers gestures. [CHAR_LIMIT=NONE]-->
-  <string name="menus_talkback_menu_text">The TalkBack menu includes settings and controls that you may need often.\n\nOpen the TalkBack menu now by tapping the screen with 3 fingers.</string>
-  <!-- The text to introduce TalkBack menu and how to open it via single finger gestures. [CHAR_LIMIT=NONE]-->
-  <string name="menus_talkback_menu_text_pre_r">The TalkBack menu includes settings and controls that you may need often.\n\nOpen the TalkBack menu now by swiping down then right.</string>
+  <!-- The text to introduce Yaasr menu and how to open it via multi-fingers gestures. [CHAR_LIMIT=NONE]-->
+  <string name="menus_talkback_menu_text">The Yaasr menu includes settings and controls that you may need often.\n\nOpen the Yaasr menu now by tapping the screen with 3 fingers.</string>
+  <!-- The text to introduce Yaasr menu and how to open it via single finger gestures. [CHAR_LIMIT=NONE]-->
+  <string name="menus_talkback_menu_text_pre_r">The Yaasr menu includes settings and controls that you may need often.\n\nOpen the Yaasr menu now by swiping down then right.</string>
   <!-- The text to introduce how to adjust reading settings quickly via multi-fingers gestures. [CHAR_LIMIT=NONE]-->
-  <string name="menus_selector_text">These shortcuts can help you quickly change settings, like switching your navigation from characters to words or changing TalkBack\'s speech rate.\n\nTo quickly change your reading controls, swipe left with 3 fingers or swipe right with 3 fingers.\n\nYou can customize the TalkBack menu and your reading controls later in TalkBack settings.</string>
+  <string name="menus_selector_text">These shortcuts can help you quickly change settings, like switching your navigation from characters to words or changing Yaasr\'s speech rate.\n\nTo quickly change your reading controls, swipe left with 3 fingers or swipe right with 3 fingers.\n\nYou can customize the Yaasr menu and your reading controls later in Yaasr settings.</string>
   <!-- The text to introduce how to adjust reading settings quickly via single finger gestures. [CHAR_LIMIT=NONE]-->
-  <string name="menus_selector_text_pre_r">These shortcuts can help you quickly change settings, like switching your navigation from characters to words or changing TalkBack\'s speech rate.\n\nTo quickly change your reading controls, swipe down and then back up.\n\nYou can customize the TalkBack menu and your reading controls later in TalkBack settings.</string>
+  <string name="menus_selector_text_pre_r">These shortcuts can help you quickly change settings, like switching your navigation from characters to words or changing Yaasr\'s speech rate.\n\nTo quickly change your reading controls, swipe down and then back up.\n\nYou can customize the Yaasr menu and your reading controls later in Yaasr settings.</string>
   <!-- The title of all set page. [CHAR_LIMIT=NONE]-->
   <string name="all_set_title">All set!</string>
   <!-- The text to notify user tutorial is finished. [CHAR_LIMIT=NONE]-->
-  <string name="all_set_text">You are ready to use TalkBack.\n\nKeep learning about other topics now, or review this info anytime in TalkBack settings.</string>
+  <string name="all_set_text">You are ready to use Yaasr.\n\nKeep learning about other topics now, or review this info anytime in Yaasr settings.</string>
   <!-- For tutorial index page. -->
   <!-- The title of talkback tutorial. [CHAR_LIMIT=NONE] -->
   <string name="talkback_tutorial_title" translatable="false">@string/title_pref_category_tutorial</string>
@@ -2976,7 +2976,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   Source: The description on the tutorial index page.
   Description: In RTL language, "right" and "left" should be translated reverse. [CHAR_LIMIT=NONE]
   -->
-  <string name="talkback_tutorial_text">Swipe right to select a topic. For the best experience, turn on TalkBack before getting started.</string>
+  <string name="talkback_tutorial_text">Swipe right to select a topic. For the best experience, turn on Yaasr before getting started.</string>
   <!-- The text of basic navigation on the index page. [CHAR_LIMIT=NONE]-->
   <string name="basic_navigation_link_text">Basic navigation</string>
   <!-- The subtext of basic navigation on the index page. [CHAR_LIMIT=NONE]-->
@@ -2998,7 +2998,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The text of voice commands on the index page. [CHAR_LIMIT=NONE]-->
   <string name="voice_commands_link_text">Voice commands</string>
   <!-- The subtext of voice commands on the index page. [CHAR_LIMIT=NONE]-->
-  <string name="voice_commands_link_subtext">Control TalkBack with your voice</string>
+  <string name="voice_commands_link_subtext">Control Yaasr with your voice</string>
   <!-- The text of "Find on screen" on the index page. [CHAR_LIMIT=NONE]-->
   <string name="screen_search_link_text">Find on screen</string>
   <!-- The subtext of "Find on screen" search on the index page. [CHAR_LIMIT=NONE]-->
@@ -3012,10 +3012,10 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The subtext of practice gestures on the index page. [CHAR_LIMIT=NONE]-->
   <string name="practice_gestures_link_subtext">Try different gestures to learn what they do</string>
   <!-- The subtext of help and feedback on the index page. [CHAR_LIMIT=NONE]-->
-  <string name="help_and_feedback_link_subtext">Learn more about TalkBack and send feedback</string>
+  <string name="help_and_feedback_link_subtext">Learn more about Yaasr and send feedback</string>
 
   <!-- The title of the keyboard tutorial choose tutorial page. [CHAR_LIMIT=NONE]-->
-  <string name="choose_tutorial_title">Choose how you would like to interact with TalkBack</string>
+  <string name="choose_tutorial_title">Choose how you would like to interact with Yaasr</string>
   <!-- The button of the touch tutorial. [CHAR_LIMIT=NONE]-->
   <string name="touch_tutorial_button">Touch tutorial</string>
   <!-- The button of the keyboard tutorial. [CHAR_LIMIT=NONE]-->
@@ -3038,15 +3038,15 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The description about how to type text. [CHAR_LIMIT=NONE]-->
   <string name="typing_text_text">Move your finger across the keyboard. When you hear the letter you want to type, lift your finger.\n\nTry activating the text box below and type your name.</string>
   <!-- The description about how to type with braille keyboard. [CHAR_LIMIT=NONE]-->
-  <string name="typing_text_with_braille_keyboard_text">You can also type with the braille keyboard. Find it in TalkBack settings.</string>
+  <string name="typing_text_with_braille_keyboard_text">You can also type with the braille keyboard. Find it in Yaasr settings.</string>
   <!-- The sub title of other ways to type in typing text page. [CHAR_LIMIT=NONE]-->
   <string name="other_ways_to_type_title">Other ways to type</string>
   <!-- The description of other ways to type in typing text page. [CHAR_LIMIT=NONE]-->
-  <string name="other_ways_to_type_text">There are other ways to type in TalkBack. For example, you can use double tap to enter a letter.</string>
+  <string name="other_ways_to_type_text">There are other ways to type in Yaasr. For example, you can use double tap to enter a letter.</string>
   <!-- The description of other ways to type in typing text page. [CHAR_LIMIT=NONE]-->
-  <string name="basic_other_ways_to_type_text">There are other ways to type in TalkBack. For example, you can use double tap to enter a letter. You can change this later in TalkBack settings > On-screen keyboard > Typing preference.</string>
-  <!-- Source: The text of introducing TalkBack for TTS span. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 380750154623317254]-->
-  <string name="basic_other_ways_to_type_text_tts">There are other ways to type in TalkBack. For example, you can use double tap to enter a letter. You can change this later in TalkBack settings then On-screen keyboard then Typing preference.</string>
+  <string name="basic_other_ways_to_type_text">There are other ways to type in Yaasr. For example, you can use double tap to enter a letter. You can change this later in Yaasr settings > On-screen keyboard > Typing preference.</string>
+  <!-- Source: The text of introducing Yaasr for TTS span. [CHAR_LIMIT=NONE] [BACKUP_MESSAGE_ID: 380750154623317254]-->
+  <string name="basic_other_ways_to_type_text_tts">There are other ways to type in Yaasr. For example, you can use double tap to enter a letter. You can change this later in Yaasr settings then On-screen keyboard then Typing preference.</string>
   <!-- The text of change typing preference button in typing text page. [CHAR_LIMIT=NONE]-->
   <string name="change_typing_preference_text">Change typing preference</string>
   <!-- The title of moving cursor page. [CHAR_LIMIT=NONE]-->
@@ -3054,13 +3054,13 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The description about how to move cursor. [CHAR_LIMIT=NONE]-->
   <string name="moving_cursor_text">When you have activated a text box, you can move the cursor between letters by swiping up or down.\n\nTry it in the text box below.</string>
   <!-- The text in edit box to try some editing actions, like copy and paste. [CHAR_LIMIT=NONE]-->
-  <string name="edit_box_text">Welcome to TalkBack</string>
+  <string name="edit_box_text">Welcome to Yaasr</string>
   <!-- The title of selecting text from edit box. [CHAR_LIMIT=NONE]-->
   <string name="selecting_text_title">Selecting text</string>
   <!-- The description about how to select the text via gesture. [CHAR_LIMIT=NONE]-->
   <string name="selecting_text_text">In a text box, move the cursor to the beginning of the text you want to select.\n\nDouble-tap and hold with 2 fingers to start selection mode. Then move the cursor to the end of the text. Double-tap and hold with 2 fingers again to end selection mode.\n\nTry to select the word \"Welcome\" in the text box below.</string>
   <!-- The description about how to select the text via gesture. [CHAR_LIMIT=NONE]-->
-  <string name="selecting_text_text_pre_r">In a text box, move the cursor to the beginning of the text you want to select.\n\nSwipe down and then right to open the TalkBack menu. Double-tap actions and then start selection mode. Move the cursor to the end of the text.\n\nOpen the TalkBack menu again, then double-tap actions to end selection mode.\n\nTry to select the word \"Welcome\" in the text box below.</string>
+  <string name="selecting_text_text_pre_r">In a text box, move the cursor to the beginning of the text you want to select.\n\nSwipe down and then right to open the Yaasr menu. Double-tap actions and then start selection mode. Move the cursor to the end of the text.\n\nOpen the Yaasr menu again, then double-tap actions to end selection mode.\n\nTry to select the word \"Welcome\" in the text box below.</string>
   <!-- The title of coping, cutting and pasting text. [CHAR_LIMIT=NONE]-->
   <string name="copy_cut_paste_title">Copy, cut, and paste</string>
   <!-- The description about how to copy text. [CHAR_LIMIT=NONE]-->
@@ -3068,9 +3068,9 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The description about how to cut or paste text. [CHAR_LIMIT=NONE]-->
   <string name="cut_paste_text">To cut text, double-tap and hold with 3 fingers.\n\nTo paste text, triple-tap with 3 fingers.\n\nTry to paste a word in the text box below.</string>
   <!-- The description about how to copy text. [CHAR_LIMIT=NONE]-->
-  <string name="copy_text_pre_r">After selecting text, you can copy it in the TalkBack menu. Swipe down and then right to open the TalkBack menu. Double-tap actions and then copy.\n\nTry to copy a word in the text box below.</string>
+  <string name="copy_text_pre_r">After selecting text, you can copy it in the Yaasr menu. Swipe down and then right to open the Yaasr menu. Double-tap actions and then copy.\n\nTry to copy a word in the text box below.</string>
   <!-- The description about how to cut or paste text. [CHAR_LIMIT=NONE]-->
-  <string name="cut_paste_text_pre_r">To cut or paste text, open the TalkBack menu and double-tap actions.\n\nTry to paste a word in the text box below.</string>
+  <string name="cut_paste_text_pre_r">To cut or paste text, open the Yaasr menu and double-tap actions.\n\nTry to paste a word in the text box below.</string>
   <!-- The text in edit box to give a hint to the user. [CHAR_LIMIT=140]-->
   <string name="edit_box_hint_paste_text">Paste text here</string>
   <!-- The title of typo correction tutorial text. [CHAR_LIMIT=NONE]-->
@@ -3084,7 +3084,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The content of typo correction tutorial text for supported locale but none English for pre R. [CHAR_LIMIT=NONE]-->
   <string name="typo_correction_text_supported_but_not_english_pre_r">You can use proofreading to check the spelling or grammar within a text box.\n\nTo try it, focus on the text box below and type a misspelled word. After focusing, swipe down and then up until you find \"Proofread\".</string>
   <!-- The content of typo correction edit box typos example. [CHAR_LIMIT=NONE]-->
-  <string name="typo_correction_typo_example" translatable="false">Wellcome too TalkBack.</string>
+  <string name="typo_correction_typo_example" translatable="false">Wellcome too Yaasr.</string>
   <!-- The content of typo correction edit box hint. [CHAR_LIMIT=NONE]-->
   <string name="typo_correction_editbox_hint">Type here</string>
 
@@ -3188,13 +3188,13 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The title of voice commands page. [CHAR_LIMIT=NONE] -->
   <string name="voice_commands_title">Voice commands</string>
   <!-- The description about how to use voice command. [CHAR_LIMIT=NONE]-->
-  <string name="voice_commands_text">You can use your voice to control TalkBack quickly.\n\nFor example, say a command to change navigation, jump to the next heading, copy text, and more.\n\nTo try it now, swipe right and then up.</string>
+  <string name="voice_commands_text">You can use your voice to control Yaasr quickly.\n\nFor example, say a command to change navigation, jump to the next heading, copy text, and more.\n\nTo try it now, swipe right and then up.</string>
 
   <!-- For screen search pages in tutorial. -->
   <!-- The title of using screen search page. [CHAR_LIMIT=NONE] -->
   <string name="using_screen_search_title">Using screen search</string>
   <!-- The description about how to use screen search. [CHAR_LIMIT=NONE]-->
-  <string name="using_screen_search_text">The screen search feature allows you to look for specific content on the screen.\n\nTo try it, open the TalkBack menu by tapping with 3 fingers, and find “screen search” in the menu. Type in a keyword, like “next”, to find items with that text on the screen.\n\nTry searching for “next” now to find the next button.</string>
+  <string name="using_screen_search_text">The screen search feature allows you to look for specific content on the screen.\n\nTo try it, open the Yaasr menu by tapping with 3 fingers, and find “screen search” in the menu. Type in a keyword, like “next”, to find items with that text on the screen.\n\nTry searching for “next” now to find the next button.</string>
   <!-- The title of navigate by screen search page. [CHAR_LIMIT=NONE] -->
   <string name="screen_search_navigation_title">Navigate by screen search</string>
   <!-- The description about how to use screen search navigation. [CHAR_LIMIT=NONE]-->
@@ -3238,7 +3238,7 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The title of the "Checking notifications" page. [CHAR_LIMIT=NONE] -->
   <string name="checking_notifications_title">Checking notifications</string>
   <!-- The head description of the "Checking notifications" page. [CHAR_LIMIT=NONE] -->
-  <string name="checking_notifications_text_head">TalkBack will announce when you get a new notification.</string>
+  <string name="checking_notifications_text_head">Yaasr will announce when you get a new notification.</string>
   <!-- The first bullet point description of the "Checking notifications" page. [CHAR_LIMIT=NONE] -->
   <string name="checking_notifications_step_one">First, swipe down with 4 fingers to access the notification.</string>
   <!-- The Second bullet point description of the "Checking notifications" page. [CHAR_LIMIT=NONE] -->
@@ -3254,13 +3254,13 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- General image description tutorial playground page title. [CHAR_LIMIT=NONE] -->
   <string name="image_description_playground_title">Try getting image descriptions</string>
   <!-- General image description tutorial playground page content one. [CHAR_LIMIT=NONE] -->
-  <string name="image_description_playground_content_one">When you’re focused on an image, open the TalkBack menu and select “Describe image”.\n\nThere’s one photo below. Try getting a description for it.</string>
+  <string name="image_description_playground_content_one">When you’re focused on an image, open the Yaasr menu and select “Describe image”.\n\nThere’s one photo below. Try getting a description for it.</string>
   <!-- General image description tutorial playground page content two. [CHAR_LIMIT=NONE] -->
-  <string name="image_description_playground_content_two">You can change image description settings anytime in TalkBack settings > Image &#38; icon descriptions.</string>
+  <string name="image_description_playground_content_two">You can change image description settings anytime in Yaasr settings > Image &#38; icon descriptions.</string>
   <!-- General image description tutorial playground page content two for TTS. [CHAR_LIMIT=NONE] -->
-  <string name="image_description_playground_content_two_tts">You can change image description settings anytime in TalkBack settings then Image &#38; icon descriptions.</string>
+  <string name="image_description_playground_content_two_tts">You can change image description settings anytime in Yaasr settings then Image &#38; icon descriptions.</string>
   <!-- Image description tutorial playground image content description. [CHAR_LIMIT=NONE] -->
-  <string name="image_description_sample_image_content_description">Sample image; tap with 3 fingers to open the TalkBack menu and select \"Describe image\" to hear a description.</string>
+  <string name="image_description_sample_image_content_description">Sample image; tap with 3 fingers to open the Yaasr menu and select \"Describe image\" to hear a description.</string>
 
   <!-- For practice gestures pages in tutorial. -->
   <!-- The title of practicing gesture page. [CHAR_LIMIT=NONE]-->
@@ -3270,11 +3270,11 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The title of practicing gesture page. [CHAR_LIMIT=NONE]-->
   <string name="pref_gesture_set_key_title">Gesture set</string>
   <!-- The description about how to try gestures. [CHAR_LIMIT=NONE]-->
-  <string name="practice_gestures_text">Try any TalkBack gesture on this screen to hear what that gesture does.\n\nTap the screen with 2 fingers. Keep practicing by tapping once, twice, or three times with 2, 3, or 4 fingers.\n\nYou can also double-tap and hold with 2, 3, or 4 fingers.</string>
+  <string name="practice_gestures_text">Try any Yaasr gesture on this screen to hear what that gesture does.\n\nTap the screen with 2 fingers. Keep practicing by tapping once, twice, or three times with 2, 3, or 4 fingers.\n\nYou can also double-tap and hold with 2, 3, or 4 fingers.</string>
   <!-- The description about how to try gestures. [CHAR_LIMIT=NONE]-->
-  <string name="practice_gestures_text_pre_r">Try any TalkBack gesture on this screen to hear what that gesture does.\n\nTry any gesture where two swipes form a right angle. For example, swipe down and then right, without lifting your finger in between.</string>
+  <string name="practice_gestures_text_pre_r">Try any Yaasr gesture on this screen to hear what that gesture does.\n\nTry any gesture where two swipes form a right angle. For example, swipe down and then right, without lifting your finger in between.</string>
   <!-- The description about how to try keyboard shortcuts and gestures. [CHAR_LIMIT=NONE]-->
-  <string name="practice_keyboard_gestures_text">Press a physical keyboard key or key combination to hear what it does. Press Ctrl + W, or Escape to exit.\n\nYou can also practice TalkBack gestures here.</string>
+  <string name="practice_keyboard_gestures_text">Press a physical keyboard key or key combination to hear what it does. Press Ctrl + W, or Escape to exit.\n\nYou can also practice Yaasr gestures here.</string>
   <!-- The text of the first button which lets users try jumping between controls in tutorial. [CHAR_LIMIT=NONE]-->
   <string name="button_1">Button 1</string>
   <!-- The text of the second button which lets users try jumping between controls in tutorial. [CHAR_LIMIT=NONE]-->
@@ -3285,32 +3285,32 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <string name="button_4">Button 4</string>
   <!-- The text is shown on the Toast when the view, like button or link, is clicked. The toast is to notify users that they activate a button or a link. [CHAR_LIMIT=NONE]-->
   <string name="activated_view">Activated <xliff:g example="button">%1$s</xliff:g></string>
-  <!-- Alert dialog title when the user starts the TalkBack tutorial but TalkBack is inactive. [CHAR_LIMIT=60] -->
-  <string name="talkback_inactive_title">TalkBack is off</string>
-  <!-- Alert dialog warning message when the user starts the TalkBack tutorial but TalkBack is inactive. [CHAR_LIMIT=NONE] -->
-  <string name="talkback_inactive_warning_message">This tutorial works best with TalkBack on. You can make this change in Settings.\n\nIf you continue with TalkBack off, some of the tutorial may not work as intended.</string>
+  <!-- Alert dialog title when the user starts the Yaasr tutorial but Yaasr is inactive. [CHAR_LIMIT=60] -->
+  <string name="talkback_inactive_title">Yaasr is off</string>
+  <!-- Alert dialog warning message when the user starts the Yaasr tutorial but Yaasr is inactive. [CHAR_LIMIT=NONE] -->
+  <string name="talkback_inactive_warning_message">This tutorial works best with Yaasr on. You can make this change in Settings.\n\nIf you continue with Yaasr off, some of the tutorial may not work as intended.</string>
   <!-- The checkbox text of the dialog to reject showing the dialog again. [CHAR_LIMIT=60]-->
   <string name="do_not_show_again_check_box">Do not show this again</string>
-  <!-- The button when the user starts the TalkBack tutorial but TalkBack is inactive, tap it can keep reviewing talkback tutorial. [CHAR_LIMIT=30] -->
+  <!-- The button when the user starts the Yaasr tutorial but Yaasr is inactive, tap it can keep reviewing talkback tutorial. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_warning_positive_button">Continue anyways</string>
-  <!-- The button when the user starts the TalkBack tutorial but TalkBack is inactive, tap it to go to talkback settings. [CHAR_LIMIT=30] -->
+  <!-- The button when the user starts the Yaasr tutorial but Yaasr is inactive, tap it to go to talkback settings. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_go_to_settings_button">Go to Settings</string>
-  <!-- The alert dialog button when the user starts the TalkBack tutorial section which needs TalkBack to be active during SUW but TalkBack is inactive, tap it to stay in tutorial. [CHAR_LIMIT=30] -->
+  <!-- The alert dialog button when the user starts the Yaasr tutorial section which needs Yaasr to be active during SUW but Yaasr is inactive, tap it to stay in tutorial. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_stay_in_tutorial_button">Stay in tutorial</string>
-  <!-- The alert dialog button when the user starts the TalkBack tutorial section which needs TalkBack to be active during SUW but TalkBack is inactive, tap it to exit tutorial. [CHAR_LIMIT=30] -->
+  <!-- The alert dialog button when the user starts the Yaasr tutorial section which needs Yaasr to be active during SUW but Yaasr is inactive, tap it to exit tutorial. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_exit_tutorial_button">Exit tutorial</string>
-  <!-- The button when the user starts the TalkBack tutorial but TalkBack is inactive, tap it cancel the dialog. [CHAR_LIMIT=30] -->
+  <!-- The button when the user starts the Yaasr tutorial but Yaasr is inactive, tap it cancel the dialog. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_not_now_button">Not now</string>
-  <!-- Alert dialog message when the user starts the TalkBack practice gestures tutorial but TalkBack is inactive, user has to turn on talkback in advance. [CHAR_LIMIT=NONE] -->
-  <string name="talkback_inactive_message_practice_gestures">To practice gestures, first turn on TalkBack</string>
-  <!-- Alert dialog message when the user starts the TalkBack image description tutorial but TalkBack is inactive, user has to turn on talkback in advance. [CHAR_LIMIT=NONE] -->
-  <string name="talkback_inactive_message_image_description">To try getting image descriptions, first turn on TalkBack</string>
+  <!-- Alert dialog message when the user starts the Yaasr practice gestures tutorial but Yaasr is inactive, user has to turn on talkback in advance. [CHAR_LIMIT=NONE] -->
+  <string name="talkback_inactive_message_practice_gestures">To practice gestures, first turn on Yaasr</string>
+  <!-- Alert dialog message when the user starts the Yaasr image description tutorial but Yaasr is inactive, user has to turn on talkback in advance. [CHAR_LIMIT=NONE] -->
+  <string name="talkback_inactive_message_image_description">To try getting image descriptions, first turn on Yaasr</string>
 
-  <!-- The button when the user starts the TalkBack tutorial but TalkBack is inactive, tap it to close tutorial. [CHAR_LIMIT=30] -->
+  <!-- The button when the user starts the Yaasr tutorial but Yaasr is inactive, tap it to close tutorial. [CHAR_LIMIT=30] -->
   <string name="talkback_inactive_close_tutorial_button">Close tutorial</string>
 
   <!-- Welcome page items for Wear. [CHAR_LIMIT=NONE] -->
-  <string name="wear_training_welcome_paragraph">When TalkBack is on, the focused item on the screen is spoken out loud.\n\nSwiping right moves to the next item. Swiping left moves to the previous item.\n\nSwipe right now until you find the next button.</string>
+  <string name="wear_training_welcome_paragraph">When Yaasr is on, the focused item on the screen is spoken out loud.\n\nSwiping right moves to the next item. Swiping left moves to the previous item.\n\nSwipe right now until you find the next button.</string>
 
   <!-- Training page for wear-->
   <!-- The content of Scroll page for Wear. [CHAR_LIMIT=NONE] -->
@@ -3332,33 +3332,33 @@ Description: Explain that the feature is enabled for all images. [CHAR_LIMIT=NON
   <!-- The content of Volume down page for Wear. [CHAR_LIMIT=150] -->
   <string name="wear_training_volume_down_text">Swipe right and then down</string>
     <!-- The title of End of tutorial page for Wear. [CHAR_LIMIT=90] -->
-  <string name="wear_training_open_talkback_menu_title">Open TalkBack menu</string>
+  <string name="wear_training_open_talkback_menu_title">Open Yaasr menu</string>
   <!-- The content of End of tutorial page for Wear. [CHAR_LIMIT=150] -->
   <string name="wear_training_open_talkback_menu_text">To open settings and controls you may need often, swipe down and then right</string>
-  <!-- The title of teaching how to use IME when TalkBack is on for Wear. [CHAR_LIMIT=90] -->
+  <!-- The title of teaching how to use IME when Yaasr is on for Wear. [CHAR_LIMIT=90] -->
   <string name="wear_training_typing_title">Typing</string>
-  <!-- The content of teaching how to use IME when TalkBack is on for Wear. (the 1st paragraph) [CHAR_LIMIT=150] -->
+  <!-- The content of teaching how to use IME when Yaasr is on for Wear. (the 1st paragraph) [CHAR_LIMIT=150] -->
   <string name="wear_training_typing_text1">To type with keyboard, move your finger across the keyboard. When you hear the letter you want to type, lift your finger.</string>
-  <!-- The content of teaching how to use IME when TalkBack is on for Wear. (the 2nd paragraph) [CHAR_LIMIT=150] -->
+  <!-- The content of teaching how to use IME when Yaasr is on for Wear. (the 2nd paragraph) [CHAR_LIMIT=150] -->
   <string name="wear_training_typing_text2">To hide the keyboard and check your input, swipe down from the top of your screen with 2 fingers.</string>
-  <!-- The content of teaching how to use IME when TalkBack is on for Wear. (the 3rd paragraph) [CHAR_LIMIT=150] -->
+  <!-- The content of teaching how to use IME when Yaasr is on for Wear. (the 3rd paragraph) [CHAR_LIMIT=150] -->
   <string name="wear_training_typing_text3">To return to keyboard, swipe up from the bottom of your screen with 2 fingers.</string>
-  <!-- The content of teaching how to use IME when TalkBack is on for Wear. (the 4th paragraph) [CHAR_LIMIT=150] -->
+  <!-- The content of teaching how to use IME when Yaasr is on for Wear. (the 4th paragraph) [CHAR_LIMIT=150] -->
   <string name="wear_training_typing_text4">To close the keyboard and cancel typing, swipe right from the left edge of your screen with 2 fingers.</string>
-  <!-- The content of teaching how to use IME when TalkBack is on for Wear. (the 5th paragraph) [CHAR_LIMIT=150] -->
+  <!-- The content of teaching how to use IME when Yaasr is on for Wear. (the 5th paragraph) [CHAR_LIMIT=150] -->
   <string name="wear_training_typing_text5">Try it below.</string>
   <!-- The content description of the button to practice typing for Wear. [CHAR_LIMIT=60] -->
   <string name="wear_training_typing_practice_button_content_description">Typing with keyboard</string>
   <!-- The title of End of tutorial page for Wear. [CHAR_LIMIT=180] -->
-  <string name="wear_training_end_tutorial_title">You\'re ready to start using TalkBack</string>
+  <string name="wear_training_end_tutorial_title">You\'re ready to start using Yaasr</string>
 
-  <!-- TalkBack updated notification -->
-  <!-- The title of notification to notify users TalkBack has been updated. [CHAR_LIMIT=120]-->
-  <string name="talkback_updated_notification_title">TalkBack has been updated</string>
-  <!-- The context of notification to notify users that TalkBack has been updated. [CHAR_LIMIT=150]-->
+  <!-- Yaasr updated notification -->
+  <!-- The title of notification to notify users Yaasr has been updated. [CHAR_LIMIT=120]-->
+  <string name="talkback_updated_notification_title">Yaasr has been updated</string>
+  <!-- The context of notification to notify users that Yaasr has been updated. [CHAR_LIMIT=150]-->
   <string name="talkback_updated_notification_content">Tap to find out more</string>
   <!-- The title for the What's new page. [CHAR_LIMIT=150] -->
-  <string name="wear_new_feature_page_title">Welcome to the updated TalkBack</string>
+  <string name="wear_new_feature_page_title">Welcome to the updated Yaasr</string>
   <!-- The content for the What's new page. [CHAR_LIMIT=NONE] -->
   <string name="wear_new_feature_page_content">You\'ll notice some bug fixes and changes to how the focus moves</string>
   <!-- The content description for the action button in the What's new page. [CHAR_LIMIT=NONE] -->
@@ -3605,7 +3605,7 @@ Do not use any markdown in your response."</string>
   <!-- The button text of the dialog to confirm downloading of a module. [CHAR_LIMIT=NONE]-->
   <string name="confirm_download_positive_button_text">Download</string>
   <!-- The hint of rejecting the download of the module. [CHAR_LIMIT=NONE]-->
-  <string name="confirm_download_negative_button_hint">TalkBack can still describe text in images</string>
+  <string name="confirm_download_negative_button_hint">Yaasr can still describe text in images</string>
   <!-- The hint to notify the icon-detection is downloading. [CHAR_LIMIT=NONE]-->
   <string name="downloading_icon_detection_hint">Downloading automatic icon descriptions</string>
   <!-- The hint to notify the icon-detection has been downloaded successfully. [CHAR_LIMIT=NONE]-->
@@ -3627,7 +3627,7 @@ Do not use any markdown in your response."</string>
   <!-- The title of the notification that announces the download completion. [CHAR_LIMIT=NONE]-->
   <string name="download_complete_notification_title">Download complete</string>
   <!-- The content text of the notification that announces the download completion. [CHAR_LIMIT=NONE]-->
-  <string name="download_complete_notification_content">You\'ll now hear automatic image and icon descriptions with TalkBack </string>
+  <string name="download_complete_notification_content">You\'ll now hear automatic image and icon descriptions with Yaasr </string>
   <!-- The action of the notification that announces the download completion. [CHAR_LIMIT=NONE]-->
   <string name="download_complete_notification_action">Settings</string>
   <!-- The hint to notify the failure of downloading the module because storage error. [CHAR_LIMIT=NONE]-->
@@ -3647,7 +3647,7 @@ Do not use any markdown in your response."</string>
   <!-- The subtitle of the dialog to disable/enable of the icon-detection module. [CHAR_LIMIT=NONE]-->
   <string name="switch_auto_image_caption_dialog_subtitle">Downloaded</string>
   <!-- The subtext of the dialog to disable/enable of a module. [CHAR_LIMIT=NONE]-->
-  <string name="disable_auto_image_caption_dialog_subtext">You can still get descriptions for a selected image from the TalkBack menu</string>
+  <string name="disable_auto_image_caption_dialog_subtext">You can still get descriptions for a selected image from the Yaasr menu</string>
   <!-- The button text of the dialog to accept to enable/disable of a module. [CHAR_LIMIT=NONE]-->
   <string name="switch_auto_image_caption_dialog_positive_button_text">OK</string>
   <!-- The button text of the dialog to delete of a module. [CHAR_LIMIT=NONE]-->
@@ -3659,9 +3659,9 @@ Do not use any markdown in your response."</string>
   <!-- The title of the dialog to confirm the deletion of all image-captioning modules. [CHAR_LIMIT=NONE]-->
   <string name="delete_all_image_captioning_dialog_title">Delete automatic image &amp; icon descriptions?</string>
   <!-- The message of the dialog to confirm the deletion of a module. [CHAR_LIMIT=NONE]-->
-  <string name="delete_dialog_message">To get descriptions again later, you can download this feature from TalkBack settings</string>
+  <string name="delete_dialog_message">To get descriptions again later, you can download this feature from Yaasr settings</string>
   <!-- The message of the dialog to confirm the deletion of all modules. [CHAR_LIMIT=NONE]-->
-  <string name="delete_all_dialog_message">This deletes automatic descriptions for both icons and images.\n\nTo get descriptions again later, you can download these features from TalkBack settings.</string>
+  <string name="delete_all_dialog_message">This deletes automatic descriptions for both icons and images.\n\nTo get descriptions again later, you can download these features from Yaasr settings.</string>
   <!-- The button text of the dialog to accept a module deletion. [CHAR_LIMIT=NONE]-->
   <string name="delete_dialog_positive_button_text">Delete</string>
   <!-- The button text of the dialog to reject a module deletion. [CHAR_LIMIT=NONE]-->
@@ -3673,7 +3673,7 @@ Do not use any markdown in your response."</string>
   <!-- The hint of the image-description module has been deleted. [CHAR_LIMIT=NONE]-->
   <string name="delete_all_image_captioning_hint">Automatic image &amp; icon descriptions deleted</string>
   <!-- The title of the dialog to disable/enable of the Gemini support. [CHAR_LIMIT=NONE]-->
-  <string name="gemini_enable_dialog_title">Use Gemini in TalkBack</string>
+  <string name="gemini_enable_dialog_title">Use Gemini in Yaasr</string>
   <!-- The message of the dialog to disable/enable of the Gemini support. [CHAR_LIMIT=NONE]-->
   <string name="gemini_disable_dialog_message">Screen understanding with Gemini</string>
   <!-- The subtext of the dialog to disable Gemini feature. [CHAR_LIMIT=NONE]-->
@@ -3682,7 +3682,7 @@ Do not use any markdown in your response."</string>
   <!-- The title of the dialog for updating AI services. [CHAR_LIMIT=NONE]-->
   <string name="ai_services_update_dialog_title">Update <xliff:g example="AICore" id="service_app_name">%1$s</xliff:g> app to describe images</string>
   <!-- The message of the dialog for updating AI services. [CHAR_LIMIT=NONE]-->
-  <string name="ai_services_update_dialog_message">To hear image descriptions, get the latest version of <xliff:g example="AICore" id="service_app_name">%1$s</xliff:g>  from Google Play.\n\nOnce downloading is complete, come back to TalkBack settings and turn on automatic image descriptions again. </string>
+  <string name="ai_services_update_dialog_message">To hear image descriptions, get the latest version of <xliff:g example="AICore" id="service_app_name">%1$s</xliff:g>  from Google Play.\n\nOnce downloading is complete, come back to Yaasr settings and turn on automatic image descriptions again. </string>
   <!-- The confirm button for updating AI services. [CHAR_LIMIT=NONE]-->
   <string name="ai_services_update_dialog_button_text">Go to Google Play</string>
   <!-- The app name of AiCore. [CHAR_LIMIT=NONE]-->
@@ -3846,28 +3846,28 @@ Do not use any markdown in your response."</string>
   <!-- Smart Browse Mode toggle's title in the settings. [CHAR_LIMIT=60] -->
   <string name="title_smart_browse_mode">Smart browse mode</string>
   <!-- Smart Browse Mode toggle's summary in the settings. [CHAR_LIMIT=NONE] -->
-  <string name="summary_smart_browse_mode">Automatically turns browse mode on or off based on the item you\'re on. This syncs input focus with TalkBack focus.</string>
+  <string name="summary_smart_browse_mode">Automatically turns browse mode on or off based on the item you\'re on. This syncs input focus with Yaasr focus.</string>
 
   <!-- Visual feedback for a new typing echo setting. Only displayed after the keyboard shortcut is pressed. [CHAR_LIMIT=100] -->
   <string name="typing_echo_change_visual_feedback">Physical keyboard echo: <xliff:g example="Characters" id="echoValue">%1$s</xliff:g></string>
 
 
   <!-- Speech bubble dialog strings. -->
-  <!-- The title of the dialog to turn off TalkBack. [CHAR_LIMIT=NONE]-->
-  <string name="talkback_turn_off_title">Turn off TalkBack?</string>
-  <!-- The button text of the dialog to turn off TalkBack. [CHAR_LIMIT=NONE]-->
+  <!-- The title of the dialog to turn off Yaasr. [CHAR_LIMIT=NONE]-->
+  <string name="talkback_turn_off_title">Turn off Yaasr?</string>
+  <!-- The button text of the dialog to turn off Yaasr. [CHAR_LIMIT=NONE]-->
   <string name="talkback_turn_off_button">Turn off</string>
-  <!-- The button text of the dialog to keep TalkBack on. [CHAR_LIMIT=NONE]-->
+  <!-- The button text of the dialog to keep Yaasr on. [CHAR_LIMIT=NONE]-->
   <string name="talkback_keep_on_button">Keep on</string>
   <!-- The title of the speech bubble overlay. [CHAR_LIMIT=NONE]-->
   <string name="talkback_speech_bubble_label">@string/talkback_label</string>
 
   <!-- Label for close. [CHAR_LIMIT=NONE] -->
   <string name="close_string">Close</string>
-  <!-- TalkBack label. [CHAR_LIMIT=NONE]-->
-  <string name="talkback_label">TalkBack</string>
+  <!-- Yaasr label. [CHAR_LIMIT=NONE]-->
+  <string name="talkback_label">Yaasr</string>
 
   <!-- Tip notification content for lock screen notifications. [CHAR_LIMIT=NONE] -->
-  <string name="notifictions_in_lock_screen_notification_content">To hear notifications when your screen is off, turn on \"Speak notifications when screen is off\" in TalkBack verbosity settings</string>
+  <string name="notifictions_in_lock_screen_notification_content">To hear notifications when your screen is off, turn on \"Speak notifications when screen is off\" in Yaasr verbosity settings</string>
 
 </resources>
