@@ -5,6 +5,14 @@
     <!--The human-readable name of this service. Do not translate. -->
     <string name="talkback_title" translatable="false">yaasr</string>
 
+    <!-- yaasr first-run TalkBack settings import. -->
+    <string name="yaasr_import_settings_title">Import TalkBack settings?</string>
+    <string name="yaasr_import_settings_message">yaasr found settings from %1$s. Copy them over, including verbosity, speech and gesture options? System speech settings are already shared.</string>
+    <string name="yaasr_import_settings_import">Import</string>
+    <string name="yaasr_import_settings_fresh">Start fresh</string>
+    <string name="yaasr_import_settings_done">TalkBack settings imported. Restart yaasr to apply everything.</string>
+    <string name="yaasr_import_settings_failed">Could not read TalkBack settings automatically. Android keeps each app\'s data private, so match the important ones by hand.</string>
+
     <!--
       Source: A brief description of TalkBack.
       Description: This is presented to the user on the accessibility settings view. [CHAR LIMIT=NONE]
